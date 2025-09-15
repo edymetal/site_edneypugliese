@@ -52,11 +52,11 @@ nav ul li a:hover, nav ul li a.active {
     align-items: center;
     justify-content: center; /* Centraliza o conteúdo */
     padding: 70px 0;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .text-content {
-    max-width: 100%; /* Permite que ocupe a largura total */
+    max-width: 50%;
 }
 
 .text-content h1 {
