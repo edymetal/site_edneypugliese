@@ -129,6 +129,7 @@ nav ul li a:hover, nav ul li a.active {
     width: 300px;
     height: 346px;
     z-index: 1;
+    transform: translateZ(0);
 }
 
 .hexagon-border {
@@ -161,6 +162,6 @@ nav ul li a:hover, nav ul li a.active {
     transform: translate(-50%, -50%);
     width: 95%;
     height: 95%;
-    background: #081b29 url('base/Edy_capa.png') center/cover no-repeat;
+    background: #081b29 url('base/Edy_capa.png') center/cover no-repeat !important;
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 }
