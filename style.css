@@ -141,7 +141,7 @@ nav ul li a:hover, nav ul li a.active {
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 }
 
-.hexagon-wrapper::after {
+.hexagon-border::after {
     content: '';
     position: absolute;
     top: 0;
@@ -161,9 +161,6 @@ nav ul li a:hover, nav ul li a.active {
     transform: translate(-50%, -50%);
     width: 95%;
     height: 95%;
-    background-color: #081b29;
-    background-image: url('base/Edy_capa.png');
-    background-size: cover;
-    background-position: center;
+    background: #081b29 url('base/Edy_capa.png') center/cover no-repeat;
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 }
