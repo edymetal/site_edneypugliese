@@ -2,8 +2,8 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    /* AJUSTE 1: Cor de fundo exata do modelo (cinza-escuro/chumbo) */
-    background-color: #1f242d;
+    /* Retornando à cor de fundo azul escura original */
+    background-color: #081b29;
     color: #ededed;
     margin: 0;
     padding: 0 8%;
@@ -149,11 +149,11 @@ nav ul li a:hover, nav ul li a.active {
     bottom: 0;
     width: 300px;
     height: 346px;
-    /* AJUSTE 1: Cor de fundo idêntica à do body para que só o brilho defina a forma */
-    background-color: #1f242d;
+    /* AJUSTE 1: Cor de fundo azul retornada */
+    background-color: #00abf0;
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-    /* AJUSTE 2: Brilho muito mais forte e suave para criar o efeito de "bordas arredondadas" */
-    filter: drop-shadow(0 0 40px rgba(0, 171, 240, 0.7));
+    /* AJUSTE 2: Brilho suave da mesma cor para criar o efeito de "borda arredondada" */
+    filter: drop-shadow(0 0 25px rgba(0, 171, 240, 0.8));
     z-index: 1;
 }
 
