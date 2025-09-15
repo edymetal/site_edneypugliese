@@ -50,13 +50,13 @@ nav ul li a:hover, nav ul li a.active {
 .main-container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center; /* Centraliza o conteúdo */
     padding: 70px 0;
     gap: 2rem;
 }
 
 .text-content {
-    max-width: 50%;
+    max-width: 100%; /* Permite que ocupe a largura total */
 }
 
 .text-content h1 {
