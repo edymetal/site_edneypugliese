@@ -2,7 +2,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    /* AJUSTE: Cor de fundo mais escura, como no modelo */
+    /* AJUSTE 1: Cor de fundo exata do modelo (cinza-escuro/chumbo) */
     background-color: #1f242d;
     color: #ededed;
     margin: 0;
@@ -138,8 +138,8 @@ nav ul li a:hover, nav ul li a.active {
     background: #00abf0;
     border-radius: 50%;
     filter: blur(100px);
-    opacity: 0.6; /* Levemente mais sutil */
-    z-index: 0; /* Fica atrás de tudo */
+    opacity: 0.6;
+    z-index: 0;
     transform: translateY(120px);
 }
 
@@ -149,23 +149,20 @@ nav ul li a:hover, nav ul li a.active {
     bottom: 0;
     width: 300px;
     height: 346px;
-    /* AJUSTE: Cor de fundo escura, como no modelo */
-    background-color: #2a303a;
+    /* AJUSTE 1: Cor de fundo idêntica à do body para que só o brilho defina a forma */
+    background-color: #1f242d;
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-    /* AJUSTE: Brilho mais forte e suave para dar a sensação de cantos arredondados */
-    filter: drop-shadow(0 0 35px #00abf0);
-    z-index: 1; /* Fica na frente do brilho de baixo */
+    /* AJUSTE 2: Brilho muito mais forte e suave para criar o efeito de "bordas arredondadas" */
+    filter: drop-shadow(0 0 40px rgba(0, 171, 240, 0.7));
+    z-index: 1;
 }
 
 /* Imagem do perfil */
 .profile-image {
     position: relative;
-    z-index: 2; /* Fica na frente do hexágono */
-    /* AJUSTE: Largura igual à do hexágono para evitar que o braço saia pelas laterais */
+    z-index: 2;
     width: 300px;
     transform: translateY(-30px);
-
-    /* AJUSTE: Máscara mais forte para esconder completamente a parte de baixo */
     mask-image: linear-gradient(to top, transparent 15%, black 40%);
     -webkit-mask-image: linear-gradient(to top, transparent 15%, black 40%);
 }
