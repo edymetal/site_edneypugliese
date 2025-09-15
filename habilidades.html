@@ -5,78 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Habilidades - Edney</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        .text-content {
-            text-align: center; /* Centraliza o título principal */
-            max-width: 800px; /* Limita a largura do conteúdo para melhor legibilidade */
-            margin: 0 auto; /* Centraliza o bloco de texto */
-            padding: 20px; /* Adiciona um pouco de padding */
-        }
-        .text-content h1 {
-            margin-bottom: 30px; /* Espaço abaixo do título principal */
-        }
-        .text-content h2 {
-            text-align: left; /* Alinha os subtítulos à esquerda */
-            margin-top: 40px; /* Espaço acima dos subtítulos */
-            margin-bottom: 15px; /* Espaço abaixo dos subtítulos */
-        }
-        .text-content p, .text-content ul {
-            text-align: left; /* Alinha parágrafos e listas à esquerda */
-            margin-bottom: 20px; /* Espaço abaixo de parágrafos e listas */
-        }
-        .text-content ul {
-            list-style-position: inside; /* Garante que os marcadores da lista fiquem dentro do conteúdo */
-            padding-left: 20px; /* Adiciona um recuo para a lista */
-        }
-    </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="fotos.html">Fotos</a></li>
-                <li><a href="habilidades.html">Habilidades</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="index.html">Edney</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="fotos.html">Fotos</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="habilidades.html">Habilidades <span class="sr-only">(current)</span></a></li>
+                </ul>
+            </div>
         </nav>
     </header>
 
-    <main class="main-container">
-        <section class="text-content">
-            <h1>Habilidades</h1>
-            <p>Profissional de TI com sólida experiência em automação de processos, desenvolvimento e suporte técnico. Possuo um perfil versátil, com competências que abrangem desde a programação e automação de tarefas até o desenvolvimento web front-end e conhecimentos em personalização de Inteligências Artificiais.</p>
+    <main class="container my-5">
+        <section id="habilidades" class="text-center">
+            <h2 class="display-4 mb-4">Habilidades</h2>
+            <p class="lead">Profissional de TI com sólida experiência em automação de processos, desenvolvimento e suporte técnico. Possuo um perfil versátil, com competências que abrangem desde a programação e automação de tarefas até o desenvolvimento web front-end e conhecimentos em personalização de Inteligências Artificiais.</p>
 
-            <h2>Linguagens de Programação e Scripting:</h2>
-            <ul>
-                <li><strong>Python, C#, Java, Kotlin:</strong> Desenvolvimento de aplicações e scripts para diversas finalidades.</li>
-                <li><strong>AutoIt:</strong> Vasta experiência na criação de scripts para automação de tarefas, testes e instalações em ambiente Windows.</li>
-                <li><strong>HTML, CSS, JavaScript:</strong> Criação e estilização de interfaces web modernas e interativas.</li>
-            </ul>
+            <div class="row text-left">
+                <div class="col-md-8 mx-auto">
+                    <h3 class="mt-4">Linguagens de Programação e Scripting:</h3>
+                    <ul>
+                        <li><strong>Python, C#, Java, Kotlin:</strong> Desenvolvimento de aplicações e scripts para diversas finalidades.</li>
+                        <li><strong>AutoIt:</strong> Vasta experiência na criação de scripts para automação de tarefas, testes e instalações em ambiente Windows.</li>
+                        <li><strong>HTML, CSS, JavaScript:</strong> Criação e estilização de interfaces web modernas e interativas.</li>
+                    </ul>
 
-            <h2>Automação e DevOps:</h2>
-            <ul>
-                <li>Ampla experiência em automatização do fluxo de trabalho, otimizando processos e melhorando a eficiência operacional.</li>
-                <li>Desenvolvimento de robôs (software de automação) para instalação, manutenção e coleta de dados.</li>
-                <li>Profundo conhecimento em homologação e validação de software em ambientes virtualizados.</li>
-            </ul>
+                    <h3 class="mt-4">Automação e DevOps:</h3>
+                    <ul>
+                        <li>Ampla experiência em automatização do fluxo de trabalho, otimizando processos e melhorando a eficiência operacional.</li>
+                        <li>Desenvolvimento de robôs (software de automação) para instalação, manutenção e coleta de dados.</li>
+                        <li>Profundo conhecimento em homologação e validação de software em ambientes virtualizados.</li>
+                    </ul>
 
-            <h2>Desenvolvimento e IA:</h2>
-            <ul>
-                <li>Conhecimento em personalização de IA local e web, aplicando inteligência para otimizar fluxos de trabalho e criar soluções mais inteligentes.</li>
-                <li>Sólida base em lógica de programação, essencial para resolver problemas complexos e desenvolver algoritmos eficientes.</li>
-            </ul>
+                    <h3 class="mt-4">Desenvolvimento e IA:</h3>
+                    <ul>
+                        <li>Conhecimento em personalização de IA local e web, aplicando inteligência para otimizar fluxos de trabalho e criar soluções mais inteligentes.</li>
+                        <li>Sólida base em lógica de programação, essencial para resolver problemas complexos e desenvolver algoritmos eficientes.</li>
+                    </ul>
 
-            <h2>Infraestrutura e Suporte:</h2>
-            <ul>
-                <li>Suporte técnico remoto e diagnóstico de problemas em sistemas e hardware.</li>
-                <li>Experiência com ferramentas de distribuição de software como SCCM e de desenvolvimento de instaladores como InstallShield.</li>
-                <li>Elaboração de documentação técnica detalhada para processos e projetos.</li>
-            </ul>
+                    <h3 class="mt-4">Infraestrutura e Suporte:</h3>
+                    <ul>
+                        <li>Suporte técnico remoto e diagnóstico de problemas em sistemas e hardware.</li>
+                        <li>Experiência com ferramentas de distribuição de software como SCCM e de desenvolvimento de instaladores como InstallShield.</li>
+                        <li>Elaboração de documentação técnica detalhada para processos e projetos.</li>
+                    </ul>
+                </div>
+            </div>
         </section>
     </main>
 
-    <footer>
+    <footer class="bg-dark text-white text-center py-3 mt-5">
         <p>&copy; 2025 Edney. Todos os direitos reservados.</p>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
