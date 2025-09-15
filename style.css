@@ -159,6 +159,9 @@ nav ul li a:hover, nav ul li a.active {
     position: relative;
     z-index: 2; /* Fica na frente do hexágono */
     width: 320px;
-    /* Move a imagem um pouco para cima para a cabeça sair */
     transform: translateY(-20px);
+
+    /* CORREÇÃO: Adiciona uma máscara para suavizar a parte de baixo */
+    mask-image: linear-gradient(to top, transparent 5%, black 30%);
+    -webkit-mask-image: linear-gradient(to top, transparent 5%, black 30%);
 }
