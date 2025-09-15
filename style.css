@@ -6,7 +6,7 @@ body {
     color: #ededed;
     margin: 0;
     padding: 0 8%;
-    overflow-x: hidden; /* Previne scroll horizontal causado pelo brilho */
+    overflow-x: hidden; /* Previne scroll horizontal */
 }
 
 header {
@@ -118,66 +118,47 @@ nav ul li a:hover, nav ul li a.active {
     box-shadow: 0 0 20px #00abf0;
 }
 
+/* Container principal da imagem */
 .image-content {
     position: relative;
+    width: 350px;
+    height: 350px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
 }
 
-/* AJUSTE 1: Brilho focado apenas na parte de baixo */
+/* O brilho suave na parte de baixo */
 .image-content::after {
     content: '';
     position: absolute;
-    width: 400px;  /* Mais largo para espalhar bem */
-    height: 300px;
+    width: 100%;
+    height: 100%;
     background: #00abf0;
     border-radius: 50%;
-    z-index: 0;
-    filter: blur(100px); /* Bem suave */
+    filter: blur(100px);
     opacity: 0.7;
-    /* Posiciona o brilho para baixo, saindo do container */
-    transform: translateY(180px); 
+    z-index: 0; /* Fica atrás de tudo */
+    transform: translateY(120px);
 }
 
-.hexagon-wrapper {
-    position: relative;
+/* Hexágono de fundo */
+.hexagon-background {
+    position: absolute;
+    bottom: 0;
     width: 300px;
     height: 346px;
-    z-index: 1; 
-}
-
-.hexagon-border {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #00abf0;
+    background-color: #00abf0; /* Cor de fundo igual à da borda */
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-    filter: drop-shadow(0 0 20px #00abf0);
+    filter: drop-shadow(0 0 25px #00abf0);
+    z-index: 1; /* Fica na frente do brilho de baixo */
 }
 
-.hexagon-image-container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 95%;
-    height: 95%;
-    background-color: #081b29; 
-    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-}
-
-/* AJUSTE 2: Efeito da cabeça "saindo" do quadro */
-.hexagon-image {
-    width: 100%;
-    height: 100%;
-    background-image: url('base/Edy_capa.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    /* Move a imagem para cima dentro do quadro */
-    background-position: center 30%; 
-    /* Aumenta levemente o zoom na imagem para preencher melhor */
-    transform: scale(1.1);
+/* Imagem do perfil */
+.profile-image {
+    position: relative;
+    z-index: 2; /* Fica na frente do hexágono */
+    width: 320px;
+    /* Move a imagem um pouco para cima para a cabeça sair */
+    transform: translateY(-20px);
 }
