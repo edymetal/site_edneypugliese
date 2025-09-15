@@ -122,20 +122,23 @@ nav ul li a:hover, nav ul li a.active {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 400px; /* Adicionado para dar espaço ao brilho */
+    height: 400px; /* Adicionado para dar espaço ao brilho */
 }
 
-/* AJUSTE 1: Brilho de baixo mais forte e intenso */
+/* AJUSTE NO BRILHO INFERIOR: Mais suave e espalhado */
 .image-content::after {
     content: '';
     position: absolute;
-    width: 320px;  /* Levemente maior */
-    height: 320px; /* Levemente maior */
+    width: 100%; /* Ocupa toda a largura do container */
+    height: 100%; /* Ocupa toda a altura do container */
     background: #00abf0;
     border-radius: 50%;
-    bottom: -110px; /* Ajuste na posição */
     z-index: 0;
-    filter: blur(80px); /* Blur um pouco menor para mais intensidade */
-    opacity: 0.9;       /* Opacidade maior */
+    filter: blur(90px);
+    opacity: 0.9;
+    /* Move o brilho para baixo */
+    transform: translateY(60px); 
 }
 
 .hexagon-wrapper {
@@ -154,8 +157,8 @@ nav ul li a:hover, nav ul li a.active {
     height: 100%;
     background: #00abf0;
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-    /* AJUSTE 2: Brilho da borda mais forte */
-    filter: drop-shadow(0 0 30px #00abf0);
+    /* AJUSTE NO BRILHO DA BORDA */
+    filter: drop-shadow(0 0 25px #00abf0);
 }
 
 .hexagon-image-container {
@@ -165,8 +168,8 @@ nav ul li a:hover, nav ul li a.active {
     transform: translate(-50%, -50%);
     width: 95%;
     height: 95%;
-    /* PONTO CHAVE: Esta é a linha que coloca o fundo escuro na imagem */
-    background-color: #081b29;
+    /* PONTO CRÍTICO: Esta linha aplica a cor de fundo na imagem */
+    background-color: #081b29; 
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 }
 
