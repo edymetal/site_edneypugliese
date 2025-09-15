@@ -4,28 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edney Pugliese - Desenvolvedor</title>
-    <link rel="stylesheet" href="style.css?v=1.14">
+    <link rel="stylesheet" href="style.css?v=1.15">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <!-- ADICIONADO: Definição da forma do hexágono arredondado -->
+    <!-- Definição da forma do hexágono com cantos arredondados -->
     <svg width="0" height="0">
         <defs>
             <clipPath id="rounded-hexagon-clip" clipPathUnits="objectBoundingBox">
-                <path d="M0.5,0 L0.93,0.23 C0.97,0.25,1,0.3,1,0.35 L1,0.65 C1,0.7,0.97,0.75,0.93,0.77 L0.5,1 L0.07,0.77 C0.03,0.75,0,0.7,0,0.65 L0,0.35 C0,0.3,0.03,0.25,0.07,0.23 Z"></path>
+                <path d="M0.93,0.23 C0.97,0.25,1,0.3,1,0.35 L1,0.65 C1,0.7,0.97,0.75,0.93,0.77 Q0.5,1 0.07,0.77 C0.03,0.75,0,0.7,0,0.65 L0,0.35 C0,0.3,0.03,0.25,0.07,0.23 Q0.5,0 0.93,0.23 Z"></path>
             </clipPath>
         </defs>
     </svg>
 
     <header>
         <nav>
-            <div class="logo">Portfolio.</div>
+            <!-- REMOVIDO: O texto "Portfolio." que servia como logo -->
+            <!-- <div class="logo">Portfolio.</div> -->
             <ul>
+                <!-- ALTERADO: Links do menu de navegação -->
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Fotos</a></li>
                 <li><a href="#">Habilidades</a></li>
-                <li><a href="#">Portfólio</a></li>
-                <li><a href="#">Contato</a></li>
             </ul>
         </nav>
     </header>
@@ -35,11 +35,13 @@
             <p>Olá, sou</p>
             <h1>Edney Pugliese</h1>
             <h2>E eu sou um <span class="highlight">Desenvolvedor</span></h2>
-            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus nulla sed saepe rerum, animi expedita.</p>
+            <!-- SUBSTITUÍDO: O texto de descrição -->
+            <p class="description">Desenvolvedor apaixonado por tecnologia e por transformar ideias em realidade. Busco criar soluções eficientes e com ótima experiência para o usuário.</p>
             <div id="contact-links" class="social-media">
                 <!-- Os ícones de redes sociais serão inseridos aqui pelo script.js -->
             </div>
-            <a href="#" class="cv-button">Download CV</a>
+            <!-- REMOVIDO: O botão "Download CV" -->
+            <!-- <a href="#" class="cv-button">Download CV</a> -->
         </section>
 
         <section class="image-content">
