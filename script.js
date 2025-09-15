@@ -22,7 +22,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 if (element.tagName === 'TITLE') {
                     document.title = translations[key];
                 } else {
-                    element.textContent = translations[key];
+                    // Check if the translation contains HTML tags
+                    if (/<[a-z][\s\S]*>/i.test(translations[key])) {
+                        element.innerHTML = translations[key];
+                    } else {
+                        element.textContent = translations[key];
+                    }
                 }
             }
         });
