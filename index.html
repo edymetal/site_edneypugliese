@@ -5,27 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edney Pugliese - Desenvolvedor</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
-        <img src="base/Edy_capa.png" alt="Edney Pugliese - Capa">
+        <nav>
+            <div class="logo">Portfolio.</div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Habilidades</a></li>
+                <li><a href="#">Portfólio</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <main>
-        <section id="gallery">
-            <h2>Fotos</h2>
-            <div id="photo-carousel">
-                <!-- As imagens do carrossel serão inseridas aqui via JavaScript -->
+    <main class="main-container">
+        <section class="text-content">
+            <p>Olá, sou</p>
+            <h1>Edney Pugliese</h1>
+            <h2>E eu sou um <span class="highlight">Desenvolvedor</span></h2>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus nulla sed saepe rerum, animi expedita.</p>
+            <div id="contact-links" class="social-media">
+                <!-- Os ícones de redes sociais serão inseridos aqui -->
+            </div>
+            <a href="#" class="cv-button">Download CV</a>
+        </section>
+        <section class="image-content">
+            <div class="hexagon">
+                <img src="base/Edy_capa.png" alt="Edney Pugliese">
             </div>
         </section>
     </main>
-
-    <footer>
-        <h2>Contato</h2>
-        <div id="contact-links">
-            <!-- Os links de redes sociais serão inseridos aqui via JavaScript -->
-        </div>
-    </footer>
 
     <script src="script.js"></script>
 </body>
