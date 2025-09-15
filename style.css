@@ -128,9 +128,10 @@ nav ul li a:hover, nav ul li a.active {
     position: relative;
     width: 300px;
     height: 346px;
+    z-index: 1;
 }
 
-.hexagon {
+.hexagon-border {
     position: absolute;
     top: 0;
     left: 0;
