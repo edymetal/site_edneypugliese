@@ -165,3 +165,26 @@ nav ul li a:hover, nav ul li a.active {
     mask-image: linear-gradient(to top, transparent 15%, black 40%);
     -webkit-mask-image: linear-image: linear-gradient(to top, transparent 15%, black 40%);
 }
+
+/* Estilos para conteúdo de páginas como Habilidades e Fotos */
+.page-content {
+    max-width: 800px; /* Limita a largura do conteúdo */
+    margin: 0 auto; /* Centraliza o bloco de conteúdo */
+    padding: 20px; /* Adiciona um padding interno */
+    text-align: center; /* Centraliza o texto dentro da seção */
+}
+
+.page-content h1, .page-content h2 {
+    text-align: center; /* Garante que os títulos sejam centralizados */
+    margin-bottom: 20px; /* Espaçamento abaixo dos títulos */
+}
+
+.page-content p, .page-content ul {
+    text-align: left; /* Alinha parágrafos e listas à esquerda dentro do bloco centralizado */
+    margin-bottom: 15px;
+}
+
+.page-content ul {
+    list-style-position: inside;
+    padding-left: 20px;
+}
