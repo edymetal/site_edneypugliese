@@ -122,8 +122,8 @@ nav ul li a:hover, nav ul li a.active {
 /* Container principal da imagem */
 .image-content {
     position: relative;
-    width: 350px;
-    height: 350px;
+    width: 280px; /* Ajustado para a nova imagem menor */
+    height: 280px; /* Ajustado para a nova imagem menor */
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -147,8 +147,8 @@ nav ul li a:hover, nav ul li a.active {
 .hexagon-background {
     position: absolute;
     bottom: 0;
-    width: 300px;
-    height: 346px;
+    width: 250px; /* Ajustado para a nova imagem menor */
+    height: 288px; /* Ajustado proporcionalmente */
     background-color: #00abf0;
     clip-path: url(#rounded-hexagon-clip);
     -webkit-clip-path: url(#rounded-hexagon-clip);
@@ -160,8 +160,8 @@ nav ul li a:hover, nav ul li a.active {
 .profile-image {
     position: relative;
     z-index: 2;
-    width: 300px;
-    transform: translateY(-30px);
+    width: 250px; /* Diminuído o tamanho */
+    transform: translateY(-20px); /* Ajustado para centralizar melhor */
     mask-image: linear-gradient(to top, transparent 15%, black 40%);
-    -webkit-mask-image: linear-gradient(to top, transparent 15%, black 40%);
+    -webkit-mask-image: linear-image: linear-gradient(to top, transparent 15%, black 40%);
 }
