@@ -6,14 +6,19 @@
     <title>Fotos - Edney</title>
     <link rel="stylesheet" href="style.css">
     <style>
+        /* Centraliza o conteúdo da seção de texto */
+        .text-content {
+            text-align: center; /* Centraliza o título */
+            max-width: 100%; /* Garante que o text-content ocupe a largura total disponível */
+        }
+
         .carousel-container {
             position: relative;
-            max-width: 800px;
-            margin: auto;
+            max-width: 500px; /* Diminui o tamanho do carrossel */
+            margin: 30px auto 0 auto; /* Centraliza o carrossel e adiciona espaço superior */
             overflow: hidden;
             border: 1px solid #ddd;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            margin-top: 30px; /* Adiciona espaço entre o título e o carrossel */
         }
         .carousel-slide {
             display: flex;
