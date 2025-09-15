@@ -53,7 +53,7 @@ nav ul li a:hover, nav ul li a.active {
 
 .language-selector select {
     background-color: #00abf0; /* Highlight color */
-    color: #081b29; /* Dark text for contrast */
+    color: #ededed; /* Dark text for contrast */
     border: none;
     padding: 8px 12px;
     border-radius: 5px;
