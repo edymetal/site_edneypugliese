@@ -18,6 +18,7 @@ nav {
     /* Alterado para justificar os links à direita após a remoção do logo */
     justify-content: flex-end;
     align-items: center;
+    position: relative; /* Necessário para posicionar o menu mobile */
 }
 
 .logo {
@@ -215,4 +216,94 @@ nav ul li a:hover, nav ul li a.active {
 .page-content ul {
     list-style-position: inside;
     padding-left: 20px;
+}
+
+/* Hamburger menu */
+.hamburger-menu {
+    display: none; /* Hidden by default */
+    font-size: 24px;
+    cursor: pointer;
+    color: #ededed;
+    margin-left: 20px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    body {
+        padding: 0 5%;
+    }
+
+    nav {
+        justify-content: space-between; /* Space out items */
+    }
+
+    nav ul {
+        display: none; /* Hide nav links by default */
+        flex-direction: column;
+        position: absolute;
+        top: 60px; /* Below header */
+        left: 0;
+        width: 100%;
+        background-color: #081b29;
+        padding: 10px 0;
+        text-align: center;
+        z-index: 1000;
+    }
+
+    nav ul.active {
+        display: flex; /* Show when active */
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .language-selector {
+        margin-left: 0;
+    }
+
+    .hamburger-menu {
+        display: block; /* Show hamburger menu */
+    }
+
+    .main-container {
+        flex-direction: column; /* Stack content vertically */
+        padding: 40px 0;
+    }
+
+    .text-content,
+    .image-content {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .text-content h1 {
+        font-size: 40px;
+    }
+
+    .text-content h2 {
+        font-size: 24px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+
+    .page-content {
+        padding: 10px;
+    }
+
+    .carousel-container {
+        max-width: 100%; /* Allow carousel to take full width */
+    }
+
+    .profile-image {
+        width: 200px; /* Adjust profile image size */
+        height: auto;
+    }
+
+    .hexagon-background {
+        width: 220px;
+        height: 250px;
+    }
 }

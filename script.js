@@ -56,6 +56,16 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
+    // Hamburger menu toggle
+    const hamburgerMenu = document.querySelector('.hamburger-menu');
+    const navUl = document.querySelector('nav ul');
+
+    if (hamburgerMenu && navUl) {
+        hamburgerMenu.addEventListener('click', () => {
+            navUl.classList.toggle('active');
+        });
+    }
+
     if (contactLinks) { // Adiciona esta verificação
         const socialMedia = {
             'facebook-f': 'https://www.facebook.com/edney.pugleise',
