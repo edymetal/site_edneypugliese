@@ -2,7 +2,8 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #081b29;
+    /* AJUSTE: Cor de fundo mais escura, como no modelo */
+    background-color: #1f242d;
     color: #ededed;
     margin: 0;
     padding: 0 8%;
@@ -137,7 +138,7 @@ nav ul li a:hover, nav ul li a.active {
     background: #00abf0;
     border-radius: 50%;
     filter: blur(100px);
-    opacity: 0.7;
+    opacity: 0.6; /* Levemente mais sutil */
     z-index: 0; /* Fica atrás de tudo */
     transform: translateY(120px);
 }
@@ -148,9 +149,11 @@ nav ul li a:hover, nav ul li a.active {
     bottom: 0;
     width: 300px;
     height: 346px;
-    background-color: #00abf0; /* Cor de fundo igual à da borda */
+    /* AJUSTE: Cor de fundo escura, como no modelo */
+    background-color: #2a303a;
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-    filter: drop-shadow(0 0 25px #00abf0);
+    /* AJUSTE: Brilho mais forte e suave para dar a sensação de cantos arredondados */
+    filter: drop-shadow(0 0 35px #00abf0);
     z-index: 1; /* Fica na frente do brilho de baixo */
 }
 
@@ -158,10 +161,11 @@ nav ul li a:hover, nav ul li a.active {
 .profile-image {
     position: relative;
     z-index: 2; /* Fica na frente do hexágono */
-    width: 320px;
-    transform: translateY(-20px);
+    /* AJUSTE: Largura igual à do hexágono para evitar que o braço saia pelas laterais */
+    width: 300px;
+    transform: translateY(-30px);
 
-    /* CORREÇÃO: Adiciona uma máscara para suavizar a parte de baixo */
-    mask-image: linear-gradient(to top, transparent 5%, black 30%);
-    -webkit-mask-image: linear-gradient(to top, transparent 5%, black 30%);
+    /* AJUSTE: Máscara mais forte para esconder completamente a parte de baixo */
+    mask-image: linear-gradient(to top, transparent 15%, black 40%);
+    -webkit-mask-image: linear-gradient(to top, transparent 15%, black 40%);
 }
