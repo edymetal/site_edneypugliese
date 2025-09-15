@@ -153,13 +153,16 @@ nav ul li a:hover, nav ul li a.active {
     z-index: -1;
 }
 
-.hexagon img {
+.hexagon-image {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 95%;
     height: 95%;
-    object-fit: cover;
+    background-color: #081b29;
+    background-image: url('base/Edy_capa.png');
+    background-size: cover;
+    background-position: center;
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 }
