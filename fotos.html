@@ -6,31 +6,22 @@
     <title>Fotos - Edney</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        /* Estilos básicos para a galeria de fotos */
-        .photo-gallery {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-            padding: 20px;
-        }
-        .photo-item {
+        .carousel-container {
+            position: relative;
+            max-width: 800px;
+            margin: auto;
+            overflow: hidden;
             border: 1px solid #ddd;
-            padding: 10px;
-            text-align: center;
-            background-color: #fff;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
-        .photo-item img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin-bottom: 10px;
+        .carousel-slide {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
         }
-        .photo-item p {
-            margin: 0;
-            font-size: 0.9em;
-            color: #333;
+        .carousel-slide img {
+            width: 100%;
+            flex-shrink: 0;
+            display: block;
         }
     </style>
 </head>
@@ -48,42 +39,17 @@
     <main class="main-container">
         <section class="text-content">
             <h1>Minhas Fotos</h1>
-            <div class="photo-gallery">
-                <div class="photo-item">
-                    <img src="base/download (1).png" alt="download (1).png">
-                    <p>download (1).png</p>
-                </div>
-                <div class="photo-item">
-                    <img src="base/download (2).png" alt="download (2).png">
-                    <p>download (2).png</p>
-                </div>
-                <div class="photo-item">
-                    <img src="base/download (3).png" alt="download (3).png">
-                    <p>download (3).png</p>
-                </div>
-                <div class="photo-item">
-                    <img src="base/download (4).png" alt="download (4).png">
-                    <p>download (4).png</p>
-                </div>
-                <div class="photo-item">
-                    <img src="base/download (5).png" alt="download (5).png">
-                    <p>download (5).png</p>
-                </div>
-                <div class="photo-item">
-                    <img src="base/download (6).png" alt="download (6).png">
-                    <p>download (6).png</p>
-                </div>
-                <div class="photo-item">
-                    <img src="base/download (7).png" alt="download (7).png">
-                    <p>download (7).png</p>
-                </div>
-                <div class="photo-item">
-                    <img src="base/Edy_capa.png" alt="Edy_capa.png">
-                    <p>Edy_capa.png</p>
-                </div>
-                <div class="photo-item">
-                    <img src="base/modelo.jpg" alt="modelo.jpg">
-                    <p>modelo.jpg</p>
+            <div class="carousel-container">
+                <div class="carousel-slide">
+                    <img src="base/download (1).png" alt="Foto 1">
+                    <img src="base/download (2).png" alt="Foto 2">
+                    <img src="base/download (3).png" alt="Foto 3">
+                    <img src="base/download (4).png" alt="Foto 4">
+                    <img src="base/download (5).png" alt="Foto 5">
+                    <img src="base/download (6).png" alt="Foto 6">
+                    <img src="base/download (7).png" alt="Foto 7">
+                    <img src="base/Edy_capa.png" alt="Foto 8">
+                    <img src="base/modelo.jpg" alt="Foto 9">
                 </div>
             </div>
         </section>
@@ -92,5 +58,33 @@
     <footer>
         <p>&copy; 2025 Edney. Todos os direitos reservados.</p>
     </footer>
+
+    <script>
+        const carouselSlide = document.querySelector('.carousel-slide');
+        const carouselImages = document.querySelectorAll('.carousel-slide img');
+
+        let counter = 0;
+        const totalImages = carouselImages.length;
+
+        function slideNext() {
+            counter++;
+            if (counter === totalImages) {
+                counter = 0;
+            }
+            carouselSlide.style.transform = 'translateX(' + (-carouselImages[0].clientWidth * counter) + 'px)';
+        }
+
+        setInterval(slideNext, 3000); // Change image every 3 seconds
+
+        // Optional: Adjust slide on window resize
+        window.addEventListener('resize', () => {
+            carouselSlide.style.transition = "none"; // Disable transition during resize
+            carouselSlide.style.transform = 'translateX(' + (-carouselImages[0].clientWidth * counter) + 'px)';
+            // Re-enable transition after a short delay
+            setTimeout(() => {
+                carouselSlide.style.transition = "transform 0.5s ease-in-out";
+            }, 50);
+        });
+    </script>
 </body>
 </html>
