@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fotos - Edney</title>
+    <title data-i18n="page_title_photos">Fotos - Edney</title>
     <link rel="stylesheet" href="style.css">
     <style>
         /* Centraliza o conteúdo da seção de texto */
@@ -35,16 +35,24 @@
     <header>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="fotos.html">Fotos</a></li>
-                <li><a href="habilidades.html">Habilidades</a></li>
+                <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+                <li><a href="fotos.html" data-i18n="nav_photos">Fotos</a></li>
+                <li><a href="habilidades.html" data-i18n="nav_skills">Habilidades</a></li>
             </ul>
+            <div class="language-selector">
+                <select id="language-switcher">
+                    <option value="pt">Português</option>
+                    <option value="en">English</option>
+                    <option value="es">Español</option>
+                    <option value="it">Italiano</option>
+                </select>
+            </div>
         </nav>
     </header>
 
     <main class="main-container">
         <section class="page-content">
-            <h1>Fotos</h1>
+            <h1 data-i18n="photos_heading">Fotos</h1>
             <div class="carousel-container">
                 <div class="carousel-slide">
                     <img src="base/download (1).png" alt="Foto 1">
@@ -60,7 +68,7 @@
     </main>
 
     <footer>
-        <p>&copy; 2025 Edney. Todos os direitos reservados.</p>
+        <p>&copy; 2025 Edney. <span data-i18n="footer_rights">Todos os direitos reservados.</span></p>
     </footer>
 
     <script>

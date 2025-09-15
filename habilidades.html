@@ -3,56 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Habilidades - Edney</title>
+    <title data-i18n="page_title_skills">Habilidades - Edney</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="fotos.html">Fotos</a></li>
-                <li><a href="habilidades.html">Habilidades</a></li>
+                <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+                <li><a href="fotos.html" data-i18n="nav_photos">Fotos</a></li>
+                <li><a href="habilidades.html" data-i18n="nav_skills">Habilidades</a></li>
             </ul>
+            <div class="language-selector">
+                <select id="language-switcher">
+                    <option value="pt">Português</option>
+                    <option value="en">English</option>
+                    <option value="es">Español</option>
+                    <option value="it">Italiano</option>
+                </select>
+            </div>
         </nav>
     </header>
 
     <main class="main-container">
         <section class="page-content">
-            <h1>Habilidades</h1>
-            <p>Profissional de TI com sólida experiência em automação de processos, desenvolvimento e suporte técnico. Possuo um perfil versátil, com competências que abrangem desde a programação e automação de tarefas até o desenvolvimento web front-end e conhecimentos em personalização de Inteligências Artificiais.</p>
+            <h1 data-i18n="skills_heading">Habilidades</h1>
+            <p data-i18n="skills_intro">Profissional de TI com sólida experiência em automação de processos, desenvolvimento e suporte técnico. Possuo um perfil versátil, com competências que abrangem desde a programação e automação de tarefas até o desenvolvimento web front-end e conhecimentos em personalização de Inteligências Artificiais.</p>
 
-            <h2>Linguagens de Programação e Scripting:</h2>
+            <h2 data-i18n="skills_programming_heading">Linguagens de Programação e Scripting:</h2>
             <ul>
-                <li><strong>Python, C#, Java, Kotlin:</strong> Desenvolvimento de aplicações e scripts para diversas finalidades.</li>
-                <li><strong>AutoIt:</strong> Vasta experiência na criação de scripts para automação de tarefas, testes e instalações em ambiente Windows.</li>
-                <li><strong>HTML, CSS, JavaScript:</strong> Criação e estilização de interfaces web modernas e interativas.</li>
+                <li><strong>Python, C#, Java, Kotlin:</strong> <span data-i18n="skills_programming_python">Desenvolvimento de aplicações e scripts para diversas finalidades.</span></li>
+                <li><strong>AutoIt:</strong> <span data-i18n="skills_programming_autoit">Vasta experiência na criação de scripts para automação de tarefas, testes e instalações em ambiente Windows.</span></li>
+                <li><strong>HTML, CSS, JavaScript:</strong> <span data-i18n="skills_programming_web">Criação e estilização de interfaces web modernas e interativas.</span></li>
             </ul>
 
-            <h2>Automação e DevOps:</h2>
+            <h2 data-i18n="skills_automation_heading">Automação e DevOps:</h2>
             <ul>
-                <li>Ampla experiência em automatização do fluxo de trabalho, otimizando processos e melhorando a eficiência operacional.</li>
-                <li>Desenvolvimento de robôs (software de automação) para instalação, manutenção e coleta de dados.</li>
-                <li>Profundo conhecimento em homologação e validação de software em ambientes virtualizados.</li>
+                <li data-i18n="skills_automation_workflow">Ampla experiência em automatização do fluxo de trabalho, otimizando processos e melhorando a eficiência operacional.</li>
+                <li data-i18n="skills_automation_robots">Desenvolvimento de robôs (software de automação) para instalação, manutenção e coleta de dados.</li>
+                <li data-i18n="skills_automation_validation">Profundo conhecimento em homologação e validação de software em ambientes virtualizados.</li>
             </ul>
 
-            <h2>Desenvolvimento e IA:</h2>
+            <h2 data-i18n="skills_development_ia_heading">Desenvolvimento e IA:</h2>
             <ul>
-                <li>Conhecimento em personalização de IA local e web, aplicando inteligência para otimizar fluxos de trabalho e criar soluções mais inteligentes.</li>
-                <li>Sólida base em lógica de programação, essencial para resolver problemas complexos e desenvolver algoritmos eficientes.</li>
+                <li data-i18n="skills_development_ia_personalization">Conhecimento em personalização de IA local e web, aplicando inteligência para otimizar fluxos de trabalho e criar soluções mais inteligentes.</li>
+                <li data-i18n="skills_development_ia_logic">Sólida base em lógica de programação, essencial para resolver problemas complexos e desenvolver algoritmos eficientes.</li>
             </ul>
 
-            <h2>Infraestrutura e Suporte:</h2>
+            <h2 data-i18n="skills_infra_support_heading">Infraestrutura e Suporte:</h2>
             <ul>
-                <li>Suporte técnico remoto e diagnóstico de problemas em sistemas e hardware.</li>
-                <li>Experiência com ferramentas de distribuição de software como SCCM e de desenvolvimento de instaladores como InstallShield.</li>
-                <li>Elaboração de documentação técnica detalhada para processos e projetos.</li>
+                <li data-i18n="skills_infra_support_remote">Suporte técnico remoto e diagnóstico de problemas em sistemas e hardware.</li>
+                <li data-i18n="skills_infra_support_tools">Experiência com ferramentas de distribuição de software como SCCM e de desenvolvimento de instaladores como InstallShield.</li>
+                <li data-i18n="skills_infra_support_documentation">Elaboração de documentação técnica detalhada para processos e projetos.</li>
             </ul>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 Edney. Todos os direitos reservados.</p>
+        <p>&copy; 2025 Edney. <span data-i18n="footer_rights">Todos os direitos reservados.</span></p>
     </footer>
 </body>
 </html>
