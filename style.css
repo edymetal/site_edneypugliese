@@ -374,7 +374,8 @@ nav ul li a:hover, nav ul li a.active {
 }
 
 .skill-category ul li strong {
-    color: #00abf0; /* Cor de destaque para o texto em negrito */
+    color: #66d9ef; /* Um azul mais claro para destacar os nomes das linguagens */
+    text-shadow: 0 0 5px rgba(102, 217, 239, 0.5); /* Sombra sutil para o brilho */
 }
 
 /* Ajustes para o .page-content na página de habilidades */
