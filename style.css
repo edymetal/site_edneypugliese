@@ -323,3 +323,107 @@ nav ul li a:hover, nav ul li a.active {
         height: 250px;
     }
 }
+
+/* Estilos para a página de Habilidades */
+.skill-category {
+    background-color: #0a2133; /* Um fundo ligeiramente mais claro para a categoria */
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Sombra sutil */
+    text-align: left; /* Alinha o texto à esquerda dentro da categoria */
+}
+
+.skill-category .category-title {
+    font-size: 28px;
+    font-weight: 600;
+    color: #00abf0; /* Cor de destaque para o título da categoria */
+    margin-bottom: 20px;
+    border-bottom: 2px solid #00abf0; /* Linha de destaque abaixo do título */
+    padding-bottom: 10px;
+    display: flex; /* Para alinhar o ícone e o texto */
+    align-items: center;
+    gap: 10px; /* Espaçamento entre o ícone e o texto */
+}
+
+.skill-category .category-title i {
+    font-size: 30px; /* Tamanho do ícone do título */
+    color: #00abf0;
+}
+
+.skill-category ul {
+    list-style: none; /* Remove os marcadores de lista padrão */
+    padding: 0;
+    margin-top: 20px;
+}
+
+.skill-category ul li {
+    font-size: 17px;
+    margin-bottom: 12px;
+    line-height: 1.5;
+    color: #ededed;
+    display: flex; /* Para alinhar o ícone e o texto */
+    align-items: flex-start;
+    gap: 10px; /* Espaçamento entre o ícone e o texto */
+}
+
+.skill-category ul li i {
+    font-size: 20px; /* Tamanho dos ícones da lista */
+    color: #00abf0; /* Cor de destaque para os ícones da lista */
+    margin-top: 3px; /* Ajuste vertical para alinhar com o texto */
+}
+
+.skill-category ul li strong {
+    color: #00abf0; /* Cor de destaque para o texto em negrito */
+}
+
+/* Ajustes para o .page-content na página de habilidades */
+.page-content {
+    max-width: 900px; /* Aumenta a largura máxima para o conteúdo das habilidades */
+    padding: 40px 20px; /* Mais padding */
+    text-align: center;
+}
+
+.page-content h1 {
+    font-size: 48px;
+    margin-bottom: 40px;
+    color: #ededed;
+}
+
+.page-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 50px;
+    color: #ccc;
+}
+
+/* Media Queries for Responsiveness (ajustes específicos para habilidades) */
+@media (max-width: 768px) {
+    .skill-category {
+        padding: 20px;
+    }
+
+    .skill-category .category-title {
+        font-size: 24px;
+    }
+
+    .skill-category .category-title i {
+        font-size: 26px;
+    }
+
+    .skill-category ul li {
+        font-size: 16px;
+    }
+
+    .skill-category ul li i {
+        font-size: 18px;
+    }
+
+    .page-content h1 {
+        font-size: 38px;
+    }
+
+    .page-content p {
+        font-size: 16px;
+    }
+}
