@@ -230,7 +230,11 @@ nav ul li a:hover, nav ul li a.active {
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
     body {
-        padding: 0 5%;
+        padding: 0 2%; /* Reduce padding on mobile */
+    }
+
+    .text-content {
+        margin-top: 20px; /* Add some space above text content */
     }
 
     nav {
