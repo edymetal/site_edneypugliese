@@ -344,7 +344,7 @@ nav ul li a:hover, nav ul li a.active {
     display: flex; /* Para alinhar o ícone e o texto */
     align-items: center;
     gap: 10px; /* Espaçamento entre o ícone e o texto */
-    text-shadow: 0 0 8px #00abf0, 0 0 15px #00abf0; /* Efeito de brilho reduzido */
+    text-shadow: 0 0 5px #00abf0, 0 0 10px #00abf0; /* Efeito de brilho ainda mais reduzido */
 }
 
 .skill-category .category-title i {
