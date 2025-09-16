@@ -428,4 +428,11 @@ nav ul li a:hover, nav ul li a.active {
     .page-content p {
         font-size: 16px;
     }
+
+    .skill-category ul li strong {
+        display: inline-block;
+        min-width: 100px; /* Ajuste conforme necessário para o maior nome de linguagem */
+        white-space: nowrap; /* Impede a quebra de linha do nome da linguagem */
+        text-align: right; /* Alinha o nome da linguagem à direita */
+    }
 }
