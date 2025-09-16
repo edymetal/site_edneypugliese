@@ -101,6 +101,7 @@ nav ul li a:hover, nav ul li a.active {
 
 .text-content .highlight {
     color: #00abf0;
+    text-shadow: 0 0 10px #00abf0, 0 0 20px #00abf0, 0 0 30px #00abf0;
 }
 
 .description {
@@ -122,12 +123,13 @@ nav ul li a:hover, nav ul li a.active {
     text-decoration: none;
     margin-right: 15px;
     transition: 0.5s;
+    box-shadow: 0 0 5px #00abf0;
 }
 
 .social-media a:hover {
     background: #00abf0;
     color: #081b29;
-    box-shadow: 0 0 20px #00abf0;
+    box-shadow: 0 0 20px #00abf0, 0 0 40px #00abf0;
 }
 
 .cv-button {
