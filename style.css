@@ -482,6 +482,7 @@ nav ul li a:hover, nav ul li a.active {
     align-items: center;
     padding: 20px;
     text-align: center;
+    background-color: #081b29 !important; /* Adicionado para garantir a cor de fundo do tema */
 }
 .location-content h1 {
     margin-bottom: 20px;
