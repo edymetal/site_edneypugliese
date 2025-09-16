@@ -96,4 +96,12 @@ document.addEventListener('DOMContentLoaded', function() {
             contactLinks.appendChild(a);
         }
     }
+
+    // Fade-in effect for the profile image
+    const imageContent = document.querySelector('.image-content');
+    if (imageContent) {
+        setTimeout(() => {
+            imageContent.classList.remove('fade-in');
+        }, 100); // Small delay to ensure CSS is applied before removing the class
+    }
 });

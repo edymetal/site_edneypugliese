@@ -156,6 +156,12 @@ nav ul li a:hover, nav ul li a.active {
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    opacity: 0; /* Inicialmente invisível */
+    transition: opacity 1.5s ease-in-out; /* Transição suave de 1.5 segundos */
+}
+
+.image-content.fade-in {
+    opacity: 1; /* Torna visível */
 }
 
 /* O brilho suave na parte de baixo */
