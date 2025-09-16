@@ -268,7 +268,7 @@ nav ul li a:hover, nav ul li a.active {
     }
 
     .main-container {
-        flex-direction: column; /* Stack content vertically */
+        flex-direction: column-reverse; /* Stack content vertically, image above text */
         padding: 40px 0;
     }
 
