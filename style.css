@@ -279,7 +279,7 @@ nav ul li a:hover, nav ul li a.active {
 
     .main-container {
         flex-direction: column-reverse; /* Stack content vertically, image above text */
-        padding: 20px 0; /* Reduz o padding vertical para diminuir o espaço vazio */
+        padding: 20px 0 0; /* Reduz o padding vertical para diminuir o espaço vazio, removendo o padding inferior */
     }
 
     .text-content,
@@ -304,6 +304,10 @@ nav ul li a:hover, nav ul li a.active {
     .description {
         font-size: 14px;
         margin-bottom: 20px; /* Reduz a margem inferior da descrição */
+    }
+
+    .social-media {
+        margin-bottom: 10px; /* Adiciona uma margem inferior para os ícones sociais */
     }
 
     .page-content {
