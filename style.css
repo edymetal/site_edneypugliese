@@ -265,11 +265,15 @@ nav ul li a:hover, nav ul li a.active {
     }
 
     .text-content {
-        order: 2; /* Move text content below image */
+        width: 100%;
+        box-sizing: border-box;
+        order: 1; /* Move text content above image */
     }
 
     .image-content {
-        order: 1; /* Move image content above text */
+        width: 100%;
+        box-sizing: border-box;
+        order: 2; /* Move image content below text */
     }
 
     .text-content h1 {
