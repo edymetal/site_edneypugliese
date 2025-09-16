@@ -41,6 +41,13 @@
             height: 100%;
             border: 0;
         }
+        .address-text {
+            color: #ededed; /* Ensure text is visible */
+            font-size: 1.3em; /* Slightly larger font */
+            font-weight: 500; /* Medium font weight */
+            margin-top: 20px; /* Add some space above the address */
+            text-shadow: 0 0 5px rgba(0, 171, 240, 0.5); /* Subtle glow */
+        }
     </style>
 </head>
 <body>
@@ -82,8 +89,8 @@
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.8546000000003!2d12.4922309!3d41.8902102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f61b6532013ad%3A0x28f1c82e9085033!2sColosseo!5e0!3m2!1spt-BR!2sit!4v1678912345678!5m2!1spt-BR!2sit"
                     allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-            <a href="https://www.google.com/maps/search/?api=1&query=Piazza+del+Colosseo,+1,+00184+Roma+RM,+It%C3%A1lia" target="_blank" class="btn btn-primary btn-lg mt-3" data-i18n="view_on_google_maps">Ver no Google Maps</a>
-            <p data-i18n="location_address" class="mt-3">Estamos localizados na Itália, no endereço: Piazza del Colosseo, 1, 00184 Roma RM</p>
+            <a href="https://www.google.com/maps/search/?api=1&query=Piazza+del+Colosseo,+1,+00184+Roma+RM,+It%C3%A1lia" target="_blank" class="btn btn-primary btn-lg mt-3" data-i18n="view_on_google_maps"><i class="fas fa-map-marker-alt me-2"></i>Ver no Google Maps</a>
+            <p data-i18n="location_address" class="mt-3 address-text">Estamos localizados na Itália, no endereço: Piazza del Colosseo, 1, 00184 Roma RM</p>
         </section>
     </main>
 
