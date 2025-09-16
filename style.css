@@ -415,25 +415,23 @@ nav ul li a:hover, nav ul li a.active {
 
     .skill-category ul li {
         font-size: 16px;
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-start; /* Align content to the left */
     }
 
     .skill-category ul li i {
         font-size: 18px;
-    }
-
-    .page-content h1 {
-        font-size: 38px;
-    }
-
-    .page-content p {
-        font-size: 16px;
+        margin-bottom: 5px; /* Espaço entre o ícone e o nome da linguagem */
     }
 
     .skill-category ul li strong {
-        display: inline-block;
-        min-width: 150px; /* Aumenta a largura mínima para acomodar nomes mais longos */
-        white-space: nowrap; /* Impede a quebra de linha do nome da linguagem */
-        margin-right: 10px; /* Adiciona espaço entre o nome da linguagem e a descrição */
-        /* text-align: right; Removido para evitar alinhamento indesejado com a descrição */
+        /* Removido min-width, white-space: nowrap, margin-right */
+        margin-left: 0; /* Alinha o nome da linguagem com o ícone */
+    }
+
+    .skill-description {
+        display: block; /* Força a descrição para uma nova linha */
+        margin-top: 5px; /* Espaço entre o nome da linguagem e a descrição */
+        margin-left: 0; /* Alinha a descrição com o nome da linguagem */
     }
 }
