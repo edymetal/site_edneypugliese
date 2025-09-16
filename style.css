@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family/Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 body {
     font-family: 'Poppins', sans-serif;
@@ -285,10 +285,6 @@ nav ul li a:hover, nav ul li a.active {
         background-color: rgba(8, 27, 41, 0.8); /* Transparent dark background */
     }
 
-    nav ul li {
-        margin: 10px 0;
-    }
-
     .language-selector {
         margin-left: 0;
     }
@@ -338,6 +334,10 @@ nav ul li a:hover, nav ul li a.active {
 
     .carousel-container {
         max-width: 100%; /* Allow carousel to take full width */
+    }
+
+    .carousel-slide img {
+        width: 100%; /* Garante que a imagem ocupe 100% da largura do container */
     }
 
     .profile-image {
@@ -464,15 +464,54 @@ nav ul li a:hover, nav ul li a.active {
         width: 100%; /* Garante que a imagem ocupe 100% da largura do container */
     }
 
-    .skill-category ul li strong {
-        /* Removido min-width, white-space: nowrap, margin-right */
-        margin-left: 0; /* Alinha o nome da linguagem com o ícone */
+    .profile-image {
+        width: 200px; /* Adjust profile image size */
+        height: auto;
     }
 
-    .skill-description {
-        display: block; /* Força a descrição para uma nova linha */
-        margin-top: 5px; /* Espaço entre o nome da linguagem e a descrição */
-        margin-left: 0; /* Alinha a descrição com o nome da linguagem */
+    .hexagon-background {
+        width: 220px;
+        height: 250px;
+    }
+
+    body {
+        padding: 0 5% 0; /* Remove o padding inferior do body */
+    }
+
+    footer {
+        margin-top: 0; /* Remove margem superior padrão do footer */
+        padding: 10px 0; /* Adiciona um pequeno padding para o conteúdo do footer */
     }
 }
 
+/* Styles for localizacao.html */
+.location-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+.location-content h1 {
+    margin-bottom: 20px;
+    color: #FFFFFF; /* Set h1 color to white */
+}
+.location-content p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: #FFFFFF; /* Set p color to white */
+}
+.map-container {
+    width: 80%;
+    max-width: 800px;
+    height: 450px;
+    margin-bottom: 30px;
+    border: 2px solid #00abf0; /* Using highlight color from theme */
+    border-radius: 8px;
+    overflow: hidden;
+}
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
