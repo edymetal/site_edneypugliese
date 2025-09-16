@@ -1,7 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family/Poppins:wght@300;400;500;600;700&display=swap');
 
 body {
-    background-color: #081b29 !important;
+    font-family: 'Poppins', sans-serif;
+    background-color: #081b29;
     color: #ededed;
     margin: 0;
     padding: 0 8%;
@@ -284,6 +285,10 @@ nav ul li a:hover, nav ul li a.active {
         background-color: rgba(8, 27, 41, 0.8); /* Transparent dark background */
     }
 
+    nav ul li {
+        margin: 10px 0;
+    }
+
     .language-selector {
         margin-left: 0;
     }
@@ -335,10 +340,6 @@ nav ul li a:hover, nav ul li a.active {
         max-width: 100%; /* Allow carousel to take full width */
     }
 
-    .carousel-slide img {
-        width: 100%; /* Garante que a imagem ocupe 100% da largura do container */
-    }
-
     .profile-image {
         width: 200px; /* Adjust profile image size */
         height: auto;
@@ -359,38 +360,118 @@ nav ul li a:hover, nav ul li a.active {
     }
 }
 
-/* Styles for localizacao.html */
-.location-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    text-align: center;
-}
-.location-content h1 {
-    margin-bottom: 20px;
-    color: #FFFFFF; /* Set h1 color to white */
-}
-.location-content p {
-    font-size: 1.2em;
+/* Estilos para a página de Habilidades */
+.skill-category {
+    background-color: #0a2133; /* Um fundo ligeiramente mais claro para a categoria */
+    border-radius: 10px;
+    padding: 25px;
     margin-bottom: 30px;
-    color: #FFFFFF; /* Set p color to white */
-}
-.map-container {
-    width: 80%;
-    max-width: 800px;
-    height: 450px;
-    margin-bottom: 30px;
-    border: 2px solid #00abf0; /* Using highlight color from theme */
-    border-radius: 8px;
-    overflow: hidden;
-}
-.map-container iframe {
-    width: 100%;
-    height: 100%;
-    border: 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Sombra sutil */
+    text-align: left; /* Alinha o texto à esquerda dentro da categoria */
 }
 
-.footer-text {
-    color: #FFFFFF;
+.skill-category .category-title {
+    font-size: 28px;
+    font-weight: 600;
+    color: #00abf0; /* Cor de destaque para o título da categoria */
+    margin-bottom: 20px;
+    border-bottom: 2px solid #00abf0; /* Linha de destaque abaixo do título */
+    padding-bottom: 10px;
+    display: flex; /* Para alinhar o ícone e o texto */
+    align-items: center;
+    gap: 10px; /* Espaçamento entre o ícone e o texto */
+    text-shadow: 0 0 5px #00abf0, 0 0 10px #00abf0; /* Efeito de brilho ainda mais reduzido */
+}
+
+.skill-category ul {
+    list-style: none; /* Remove os marcadores de lista padrão */
+    padding: 0;
+    margin-top: 20px;
+}
+
+.skill-category ul li {
+    font-size: 17px;
+    margin-bottom: 12px;
+    line-height: 1.5;
+    color: #ededed;
+    display: flex; /* Para alinhar o ícone e o texto */
+    align-items: flex-start;
+    gap: 10px; /* Espaçamento entre o ícone e o texto */
+}
+
+.skill-category ul li i {
+    font-size: 20px; /* Tamanho dos ícones da lista */
+    color: #00abf0; /* Cor de destaque para os ícones da lista */
+    margin-top: 3px; /* Ajuste vertical para alinhar com o texto */
+}
+
+.skill-category ul li strong {
+    color: #66d9ef; /* Um azul mais claro para destacar os nomes das linguagens */
+    text-shadow: 0 0 3px rgba(102, 217, 239, 0.5); /* Sombra sutil para o brilho */
+}
+
+/* Ajustes para o .page-content na página de habilidades */
+.page-content {
+    max-width: 900px; /* Aumenta a largura máxima para o conteúdo das habilidades */
+    padding: 40px 20px; /* Mais padding */
+    text-align: center;
+}
+
+.page-content h1 {
+    font-size: 48px;
+    margin-bottom: 40px;
+    color: #ededed;
+}
+
+.page-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 50px;
+    color: #ccc;
+}
+
+/* Media Queries for Responsiveness (ajustes específicos para habilidades) */
+@media (max-width: 768px) {
+    .skill-category {
+        padding: 20px;
+    }
+
+    .skill-category .category-title {
+        font-size: 24px;
+    }
+
+    .skill-category .category-title i {
+        font-size: 26px;
+    }
+
+    .skill-category ul li {
+        font-size: 16px;
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-start; /* Align content to the left */
+    }
+
+    .skill-category ul li i {
+        font-size: 18px;
+        margin-bottom: 5px; /* Espaço entre o ícone e o nome da linguagem */
+    }
+
+    .carousel-container {
+        max-width: 100%; /* Permite que o carrossel ocupe a largura total disponível */
+        margin: 30px auto 0 auto; /* Centraliza o carrossel e adiciona espaço superior */
+    }
+
+    .carousel-slide img {
+        width: 100%; /* Garante que a imagem ocupe 100% da largura do container */
+    }
+
+    .skill-category ul li strong {
+        /* Removido min-width, white-space: nowrap, margin-right */
+        margin-left: 0; /* Alinha o nome da linguagem com o ícone */
+    }
+
+    .skill-description {
+        display: block; /* Força a descrição para uma nova linha */
+        margin-top: 5px; /* Espaço entre o nome da linguagem e a descrição */
+        margin-left: 0; /* Alinha a descrição com o nome da linguagem */
+    }
 }
