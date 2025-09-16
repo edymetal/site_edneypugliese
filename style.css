@@ -255,6 +255,8 @@ nav ul li a:hover, nav ul li a.active {
 .carousel-slide img {
     flex-shrink: 0;
     display: block;
+    width: 100%; /* Garante que a imagem ocupe 100% da largura do container */
+    flex-basis: 100%; /* Garante que cada imagem ocupe 100% do espaço disponível */
     height: auto; /* Garante que a altura seja ajustada proporcionalmente */
 }
 
