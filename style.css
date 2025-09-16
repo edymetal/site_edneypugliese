@@ -307,7 +307,7 @@ nav ul li a:hover, nav ul li a.active {
     }
 
     .social-media {
-        margin-bottom: 10px; /* Adiciona uma margem inferior para os ícones sociais */
+        margin-bottom: 0; /* Remove a margem inferior dos ícones sociais */
     }
 
     .page-content {
@@ -329,7 +329,12 @@ nav ul li a:hover, nav ul li a.active {
     }
 
     body {
-        padding: 0 5% 20px; /* Adiciona padding inferior ao body para um pequeno buffer */
+        padding: 0 5% 0; /* Remove o padding inferior do body */
+    }
+
+    footer {
+        margin-top: 0; /* Remove margem superior padrão do footer */
+        padding: 10px 0; /* Adiciona um pequeno padding para o conteúdo do footer */
     }
 }
 
