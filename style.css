@@ -279,7 +279,7 @@ nav ul li a:hover, nav ul li a.active {
 
     .main-container {
         flex-direction: column-reverse; /* Stack content vertically, image above text */
-        padding: 40px 0;
+        padding: 20px 0; /* Reduz o padding vertical para diminuir o espaço vazio */
     }
 
     .text-content,
