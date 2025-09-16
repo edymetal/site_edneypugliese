@@ -1,4 +1,3 @@
-console.log('Script loaded!');
 document.addEventListener('DOMContentLoaded', function() {
     const contactLinks = document.getElementById('contact-links');
     const languageSwitcher = document.getElementById('language-switcher');
@@ -54,21 +53,6 @@ document.addEventListener('DOMContentLoaded', function() {
             const newLang = event.target.value;
             localStorage.setItem('lang', newLang);
             loadTranslations(newLang);
-        });
-    }
-
-    // Hamburger menu toggle
-    const hamburgerMenu = document.querySelector('.hamburger-menu');
-    const navUl = document.querySelector('nav ul');
-
-    console.log('Hamburger Menu Element:', hamburgerMenu);
-    console.log('Nav UL Element:', navUl);
-
-    if (hamburgerMenu && navUl) {
-        hamburgerMenu.addEventListener('click', () => {
-            console.log('Hamburger menu clicked!');
-            navUl.classList.toggle('active');
-            console.log('Nav UL active class toggled. Current classes:', navUl.classList);
         });
     }
 
