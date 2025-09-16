@@ -255,7 +255,6 @@ nav ul li a:hover, nav ul li a.active {
     flex-shrink: 0;
     display: block;
     height: auto; /* Garante que a altura seja ajustada proporcionalmente */
-    flex-basis: 100%; /* Cada imagem ocupa 100% da largura do slide */
 }
 
 /* Media Queries for Responsiveness */
@@ -461,6 +460,10 @@ nav ul li a:hover, nav ul li a.active {
         margin: 30px auto 0 auto; /* Centraliza o carrossel e adiciona espaço superior */
     }
 
+    .carousel-slide img {
+        width: 100%; /* Garante que a imagem ocupe 100% da largura do container */
+    }
+
     .skill-category ul li strong {
         /* Removido min-width, white-space: nowrap, margin-right */
         margin-left: 0; /* Alinha o nome da linguagem com o ícone */
@@ -472,3 +475,4 @@ nav ul li a:hover, nav ul li a.active {
         margin-left: 0; /* Alinha a descrição com o nome da linguagem */
     }
 }
+
