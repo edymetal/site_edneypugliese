@@ -17,6 +17,8 @@ body {
 
 header, footer {
     background-color: #081b29; /* Garante que o cabeçalho e rodapé tenham a cor de fundo do tema */
+    margin: 0;
+    padding: 0;
 }
 
 nav {
@@ -25,6 +27,8 @@ nav {
     justify-content: flex-end;
     align-items: center;
     position: relative; /* Necessário para posicionar o menu mobile */
+    margin: 0;
+    padding: 0;
 }
 
 .logo {
