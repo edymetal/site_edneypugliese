@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="page_title_location">Edney Pugliese - Localização</title>
+    <link rel="stylesheet" href="style.css?v=1.26">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .location-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            text-align: center;
+        }
+        .location-content h1 {
+            margin-bottom: 20px;
+            color: var(--highlight-color);
+        }
+        .location-content p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            color: var(--text-color);
+        }
+        .map-container {
+            width: 80%;
+            max-width: 800px;
+            height: 450px;
+            margin-bottom: 30px;
+            border: 2px solid var(--highlight-color);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+        .map-link {
+            display: inline-block;
+            background-color: var(--highlight-color);
+            color: var(--background-color);
+            padding: 12px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        .map-link:hover {
+            background-color: var(--secondary-color);
+        }
+    </style>
+</head>
+<body>
+    <svg width="0" height="0">
+        <defs>
+            <clipPath id="rounded-hexagon-clip" clipPathUnits="objectBoundingBox">
+                <path d="M0.93,0.23 C0.97,0.25,1,0.3,1,0.35 L1,0.65 C1,0.7,0.97,0.75,0.93,0.77 Q0.5,1 0.07,0.77 C0.03,0.75,0,0.7,0,0.65 L0,0.35 C0,0.3,0.03,0.25,0.07,0.23 Q0.5,0 0.93,0.23 Z"></path>
+            </clipPath>
+        </defs>
+    </svg>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+                <li><a href="fotos.html" data-i18n="nav_photos">Fotos</a></li>
+                <li><a href="habilidades.html" data-i18n="nav_skills">Habilidades</a></li>
+                <li><a href="localizacao.html" data-i18n="nav_location">Localização</a></li>
+            </ul>
+            <div class="language-selector">
+                <select id="language-switcher">
+                    <option value="pt">Português</option>
+                    <option value="en">English</option>
+                    <option value="es">Español</option>
+                    <option value="it">Italiano</option>
+                </select>
+            </div>
+            <div class="hamburger-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-container">
+        <section class="location-content">
+            <h1 data-i18n="location_title">Nossa Localização</h1>
+            <p data-i18n="location_address">Estamos localizados na Itália, no endereço: Piazza del Colosseo, 1, 00184 Roma RM</p>
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.8546000000003!2d12.4922309!3d41.8902102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f61b6532013ad%3A0x28f1c82e9085033!2sColosseo!5e0!3m2!1spt-BR!2sit!4v1678912345678!5m2!1spt-BR!2sit"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <a href="https://www.google.com/maps/search/?api=1&query=Piazza+del+Colosseo,+1,+00184+Roma+RM,+It%C3%A1lia" target="_blank" class="map-link" data-i18n="view_on_google_maps">Ver no Google Maps</a>
+        </section>
+    </main>
+
+    <script src="script.js?v=1.1"></script>
+    <footer>
+        <p>&copy; 2025 Edney. <span data-i18n="footer_rights">Todos os direitos reservados.</span></p>
+    </footer>
+</body>
+</html>
