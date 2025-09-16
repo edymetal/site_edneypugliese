@@ -247,20 +247,34 @@ nav ul li a:hover, nav ul li a.active {
         background-color: #081b29;
         padding: 10px 0;
         text-align: center;
-        z-index: 9999;
+        z-index: 1000;
     }
 
     nav ul.active {
         display: flex; /* Show when active */
-        background-color: rgba(8, 27, 41, 0.8); /* Transparent dark background */
     }
 
-    .text-content {
-        order: 2; /* Move text content below image */
+    nav ul li {
+        margin: 10px 0;
     }
 
+    .language-selector {
+        margin-left: 0;
+    }
+
+    .hamburger-menu {
+        display: block; /* Show hamburger menu */
+    }
+
+    .main-container {
+        flex-direction: column; /* Stack content vertically */
+        padding: 40px 0;
+    }
+
+    .text-content,
     .image-content {
-        order: 1; /* Move image content above text */
+        max-width: 100%;
+        width: 100%;
     }
 
     .text-content h1 {
