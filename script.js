@@ -104,4 +104,38 @@ document.addEventListener('DOMContentLoaded', function() {
             imageContent.classList.add('is-visible');
         }, 100); // Small delay to ensure CSS is applied before adding the class
     }
+
+    // Carousel logic (moved from fotos.html)
+    const carouselSlide = document.querySelector('.carousel-slide');
+    const carouselImages = document.querySelectorAll('.carousel-slide img');
+
+    if (carouselSlide && carouselImages.length > 0) {
+        let counter = 0;
+        const totalImages = carouselImages.length;
+
+        function slideNext() {
+            counter++;
+            if (counter === totalImages) {
+                counter = 0;
+            }
+            // Ensure carouselImages[0] exists before accessing clientWidth
+            if (carouselImages[0]) {
+                carouselSlide.style.transform = 'translateX(' + (-carouselImages[0].clientWidth * counter) + 'px)';
+            }
+        }
+
+        setInterval(slideNext, 3000); // Change image every 3 seconds
+
+        // Optional: Adjust slide on window resize
+        window.addEventListener('resize', () => {
+            if (carouselImages[0]) {
+                carouselSlide.style.transition = "none"; // Disable transition during resize
+                carouselSlide.style.transform = 'translateX(' + (-carouselImages[0].clientWidth * counter) + 'px)';
+                // Re-enable transition after a short delay
+                setTimeout(() => {
+                    carouselSlide.style.transition = "transform 0.5s ease-in-out";
+                }, 50);
+            }
+        });
+    }
 });

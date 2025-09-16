@@ -4,32 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title data-i18n="page_title_photos">Fotos - Edney</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        /* Centraliza o conteúdo da seção de texto */
-        .text-content {
-            text-align: center; /* Centraliza o título */
-            /* max-width: 100%; já definido no style.css */
-        }
-
-        .carousel-container {
-            position: relative;
-            max-width: 400px; /* Diminui o tamanho do carrossel */
-            margin: 30px auto 0 auto; /* Centraliza o carrossel e adiciona espaço superior */
-            overflow: hidden;
-            border: 1px solid #ddd;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-        .carousel-slide {
-            display: flex;
-            transition: transform 0.5s ease-in-out;
-        }
-        .carousel-slide img {
-            width: 100%;
-            flex-shrink: 0;
-            display: block;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css?v=1.21">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
@@ -74,33 +50,6 @@
         <p>&copy; 2025 Edney. <span data-i18n="footer_rights">Todos os direitos reservados.</span></p>
     </footer>
 
-    <script>
-        const carouselSlide = document.querySelector('.carousel-slide');
-        const carouselImages = document.querySelectorAll('.carousel-slide img');
-
-        let counter = 0;
-        const totalImages = carouselImages.length;
-
-        function slideNext() {
-            counter++;
-            if (counter === totalImages) {
-                counter = 0;
-            }
-            carouselSlide.style.transform = 'translateX(' + (-carouselImages[0].clientWidth * counter) + 'px)';
-        }
-
-        setInterval(slideNext, 3000); // Change image every 3 seconds
-
-        // Optional: Adjust slide on window resize
-        window.addEventListener('resize', () => {
-            carouselSlide.style.transition = "none"; // Disable transition during resize
-            carouselSlide.style.transform = 'translateX(' + (-carouselImages[0].clientWidth * counter) + 'px)';
-            // Re-enable transition after a short delay
-            setTimeout(() => {
-                carouselSlide.style.transition = "transform 0.5s ease-in-out";
-            }, 50);
-        });
-    </script>
-    <script src="script.js"></script>
+    <script src="script.js?v=1.1"></script>
 </body>
 </html>
