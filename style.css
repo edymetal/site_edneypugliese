@@ -8,7 +8,7 @@ html, body {
     padding: 0; /* Remove padding from body */
     overflow-x: hidden; /* Previne scroll horizontal */
     overflow-y: auto; /* Adiciona scroll vertical apenas quando necessário */
-    min-height: 100vh; /* Garante que o body ocupe no mínimo 100% da altura da viewport */
+    height: 100%; /* Garante que o html e body ocupem 100% da altura da viewport */
 }
 
 header {
