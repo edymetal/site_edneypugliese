@@ -7,6 +7,8 @@ body {
     margin: 0;
     padding: 0 8%;
     overflow-x: hidden; /* Previne scroll horizontal */
+    overflow-y: auto; /* Adiciona scroll vertical apenas quando necessário */
+    min-height: 100vh; /* Garante que o body ocupe no mínimo 100% da altura da viewport */
 }
 
 header {
