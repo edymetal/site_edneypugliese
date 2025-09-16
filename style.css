@@ -303,6 +303,7 @@ nav ul li a:hover, nav ul li a.active {
 
     .description {
         font-size: 14px;
+        margin-bottom: 20px; /* Reduz a margem inferior da descrição */
     }
 
     .page-content {
@@ -321,6 +322,10 @@ nav ul li a:hover, nav ul li a.active {
     .hexagon-background {
         width: 220px;
         height: 250px;
+    }
+
+    body {
+        padding: 0 5% 20px; /* Adiciona padding inferior ao body para um pequeno buffer */
     }
 }
 
