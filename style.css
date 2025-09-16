@@ -475,3 +475,38 @@ nav ul li a:hover, nav ul li a.active {
         margin-left: 0; /* Alinha a descrição com o nome da linguagem */
     }
 }
+/* Styles for localizacao.html */
+.location-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+.location-content h1 {
+    margin-bottom: 20px;
+    color: #FFFFFF; /* Set h1 color to white */
+}
+.location-content p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: #FFFFFF; /* Set p color to white */
+}
+.map-container {
+    width: 80%;
+    max-width: 800px;
+    height: 450px;
+    margin-bottom: 30px;
+    border: 2px solid #00abf0; /* Using highlight color from theme */
+    border-radius: 8px;
+    overflow: hidden;
+}
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.footer-text {
+    color: #FFFFFF;
+}
