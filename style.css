@@ -84,6 +84,7 @@ nav ul li a:hover, nav ul li a.active {
     justify-content: center; /* Centraliza o conteúdo */
     padding: 70px 0;
     gap: 1rem;
+    background-color: #081b29; /* Adicionado para garantir a cor de fundo do tema */
 }
 
 .text-content {
