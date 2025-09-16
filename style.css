@@ -170,14 +170,16 @@ nav ul li a:hover, nav ul li a.active {
 .image-content::after {
     content: '';
     position: absolute;
-    width: 150%; /* Mantém a largura para um brilho espalhado horizontalmente */
-    height: 300%; /* Aumenta ainda mais a altura para o degradê se estender bem para baixo */
+    width: 200%; /* Aumenta a largura para um brilho mais espalhado horizontalmente */
+    height: 70%; /* Reduz a altura para concentrar o brilho mais perto da imagem */
     background: linear-gradient(to bottom, rgba(0, 171, 240, 0.9) 0%, rgba(0, 171, 240, 0) 100%); /* Degradê de azul para transparente, com opacidade inicial bem alta */
     /* border-radius: 50%; Removido para permitir uma forma mais elíptica com o blur */
-    filter: blur(180px); /* Aumenta o blur para um efeito ainda mais suave e difuso */
-    opacity: 0.9; /* Aumenta a opacidade geral para um brilho mais forte */
+    filter: blur(150px); /* Ajusta o blur para um efeito suave e difuso */
+    opacity: 0.9; /* Mantém a opacidade geral alta para um brilho forte */
     z-index: 0;
-    transform: translateY(120px); /* Ajusta a posição para o brilho começar mais abaixo e se espalhar */
+    bottom: -50px; /* Posiciona o brilho abaixo da imagem */
+    left: -50%; /* Centraliza o brilho horizontalmente */
+    transform: translateX(50%); /* Ajuste fino para centralização */
 }
 
 /* Hexágono de fundo */
