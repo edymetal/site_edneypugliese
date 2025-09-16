@@ -1,18 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family/Poppins:wght@300;400;500;600;700&display=swap');
 
-html, body {
+html {
+    height: 100%; /* Garante que o html ocupe 100% da altura da viewport */
+}
+
+body {
     font-family: 'Poppins', sans-serif;
     background-color: #081b29;
     color: #ededed;
     margin: 0;
-    padding: 0; /* Remove padding from body */
-    overflow-x: hidden; /* Previne scroll horizontal */
-    overflow-y: auto; /* Adiciona scroll vertical apenas quando necessário */
-    height: 100%; /* Garante que o html e body ocupem 100% da altura da viewport */
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    min-height: 100vh; /* Garante que o body ocupe no mínimo 100% da altura da viewport */
 }
 
-header {
-    padding: 20px 0;
+header, footer {
+    background-color: #081b29; /* Garante que o cabeçalho e rodapé tenham a cor de fundo do tema */
 }
 
 nav {
