@@ -457,7 +457,7 @@ nav ul li a:hover, nav ul li a.active {
     }
 
     .carousel-container {
-        max-width: 400px; /* Diminui o tamanho do carrossel */
+        max-width: 100%; /* Permite que o carrossel ocupe a largura total disponível */
         margin: 30px auto 0 auto; /* Centraliza o carrossel e adiciona espaço superior */
     }
 
