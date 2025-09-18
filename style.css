@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family/Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root {
-    --app-version: "1.29";
+    --app-version: "1.30";
 }
 
 html {
@@ -325,10 +325,9 @@ nav ul li a:hover, nav ul li a.active {
 
     .main-container {
         flex-direction: column-reverse; /* Stack content vertically, image above text */
-        padding: 20px 0 0; /* Reduz o padding vertical para diminuir o espaço vazio, removendo o padding inferior */
-        align-items: flex-start; /* Alinha o conteúdo ao topo */
-        min-height: calc(100vh - 100px); /* Garante que o main-container ocupe o espaço restante */
-        justify-content: flex-start; /* Alinha o conteúdo ao topo verticalmente */
+        padding: 80px 20px 20px; /* Ajustado: Adiciona padding superior para não sobrepor o header, e padding lateral/inferior */
+        align-items: center; /* Centraliza o conteúdo horizontalmente */
+        text-align: center; /* Centraliza o texto */
     }
 
     .text-content,
@@ -336,7 +335,7 @@ nav ul li a:hover, nav ul li a.active {
         max-width: 100%;
         width: 100%;
         box-sizing: border-box;
-        margin-bottom: 0; /* Remove any bottom margin */
+        margin-bottom: 20px; /* Adiciona um espaço entre a imagem e o texto */
     }
 
     .text-content {
@@ -359,6 +358,7 @@ nav ul li a:hover, nav ul li a.active {
 
     .social-media {
         margin-bottom: 0; /* Remove a margem inferior dos ícones sociais */
+        text-align: center; /* Garante que os ícones fiquem centralizados */
     }
 
     .page-content {
@@ -379,13 +379,10 @@ nav ul li a:hover, nav ul li a.active {
         height: 250px;
     }
 
-    /* body {
-        padding: 0 5% 0; /* Remove o padding inferior do body */
-    } */
-
     footer {
-        margin-top: 0; /* Remove margem superior padrão do footer */
+        margin-top: 20px; /* Adiciona uma margem para separar do conteúdo principal */
         padding: 10px 0; /* Adiciona um pequeno padding para o conteúdo do footer */
+        text-align: center;
     }
 }
 
