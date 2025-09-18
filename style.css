@@ -275,13 +275,18 @@ nav ul li a:hover, nav ul li a.active {
 
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
-    body {
-        /* padding: 0 5% 0; Removido para evitar margem branca */
+    header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000; /* Garante que o header fique acima de outros elementos */
     }
 
     nav {
         justify-content: space-between; /* Space out items */
     }
+
 
     nav ul {
         display: none; /* Hide nav links by default */
