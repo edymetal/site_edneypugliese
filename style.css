@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root {
-    --app-version: "1.32";
+    --app-version: "1.33";
 }
 
 html {
@@ -40,6 +40,8 @@ header {
 footer {
     text-align: center;
     padding: 20px 0;
+    /* Garante que o footer não encolha */
+    flex-shrink: 0; 
 }
 
 nav {
@@ -112,7 +114,8 @@ nav ul li a:hover, nav ul li a.active {
     padding: 70px 40px;
     gap: 2rem;
     background-color: #081b29;
-    flex: 1; /* Faz esta seção crescer para ocupar o espaço disponível */
+    /* Faz esta seção crescer para ocupar o espaço disponível */
+    flex: 1 0 auto;
     width: 100%;
 }
 
@@ -333,9 +336,8 @@ nav ul li a:hover, nav ul li a.active {
     .main-container {
         flex-direction: column-reverse;
         justify-content: center;
-        /* --- CORREÇÃO FINAL --- */
-        /* Reduzido o padding inferior para remover o pequeno espaço extra */
-        padding: 80px 20px 20px; 
+        /* Removido o padding inferior para eliminar o espaço residual */
+        padding: 80px 20px 0; 
         text-align: center;
     }
 
