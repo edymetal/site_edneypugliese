@@ -291,14 +291,3 @@ footer {
         grid-template-columns: 1fr;
     }
 }
-
-/* Estilo para o ícone do Google Maps */
-.google-maps-icon {
-    display: inline-block;
-    width: 24px; /* Ajuste o tamanho conforme necessário */
-    height: 24px; /* Ajuste o tamanho conforme necessário */
-    background-image: url('http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    vertical-align: middle;
-}
