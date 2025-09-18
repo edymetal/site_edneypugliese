@@ -327,6 +327,7 @@ nav ul li a:hover, nav ul li a.active {
         flex-direction: column-reverse; /* Stack content vertically, image above text */
         padding: 20px 0 0; /* Reduz o padding vertical para diminuir o espaço vazio, removendo o padding inferior */
         align-items: flex-start; /* Alinha o conteúdo ao topo */
+        min-height: calc(100vh - 100px); /* Garante que o main-container ocupe o espaço restante */
     }
 
     .text-content,
