@@ -5,9 +5,9 @@
 }
 
 html {
-    height: 100%;
     box-sizing: border-box;
     background-color: #081b29;
+    overflow-x: hidden;
 }
 
 *, *::before, *::after {
@@ -20,7 +20,6 @@ body {
     color: #ededed;
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
     
     /* Estrutura Flex para manter o rodapé no lugar certo */
     display: flex;
