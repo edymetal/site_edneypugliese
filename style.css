@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root {
-    --app-version: "1.31";
+    --app-version: "1.32";
 }
 
 html {
@@ -22,10 +22,10 @@ body {
     padding: 0;
     overflow-x: hidden;
     
-    /* --- CORREÇÃO PRINCIPAL (Layout Flex) --- */
+    /* Estrutura Flex para manter o rodapé no lugar certo */
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Garante que o body ocupe no mínimo 100% da altura da viewport */
+    min-height: 100vh;
 }
 
 header, footer {
@@ -34,7 +34,7 @@ header, footer {
 }
 
 header {
-    padding: 10px 40px; /* Adicionado padding para consistência */
+    padding: 10px 40px;
 }
 
 footer {
@@ -112,8 +112,6 @@ nav ul li a:hover, nav ul li a.active {
     padding: 70px 40px;
     gap: 2rem;
     background-color: #081b29;
-
-    /* --- CORREÇÃO PRINCIPAL (Layout Flex) --- */
     flex: 1; /* Faz esta seção crescer para ocupar o espaço disponível */
     width: 100%;
 }
@@ -210,7 +208,7 @@ nav ul li a:hover, nav ul li a.active {
     z-index: 0;
     bottom: -50px;
     left: 50%;
-    transform: translateX(-50%); /* Corrigido para centralizar corretamente */
+    transform: translateX(-50%);
 }
 
 .hexagon-background {
@@ -231,7 +229,7 @@ nav ul li a:hover, nav ul li a.active {
     width: 250px;
     transform: translateY(-20px);
     mask-image: linear-gradient(to top, transparent 15%, black 40%);
-    -webkit-mask-image: linear-gradient(to top, transparent 15%, black 40%); /* Corrigido o prefixo */
+    -webkit-mask-image: linear-gradient(to top, transparent 15%, black 40%);
 }
 
 .page-content {
@@ -335,7 +333,9 @@ nav ul li a:hover, nav ul li a.active {
     .main-container {
         flex-direction: column-reverse;
         justify-content: center;
-        padding: 80px 20px 40px;
+        /* --- CORREÇÃO FINAL --- */
+        /* Reduzido o padding inferior para remover o pequeno espaço extra */
+        padding: 80px 20px 20px; 
         text-align: center;
     }
 
