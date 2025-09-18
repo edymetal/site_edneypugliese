@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family/Poppins:wght@300;400;500;600;700&display=swap');
 
+:root {
+    --app-version: "1.29";
+}
+
 html {
     height: 100%; /* Garante que o html ocupe 100% da altura da viewport */
     box-sizing: border-box;
@@ -322,6 +326,7 @@ nav ul li a:hover, nav ul li a.active {
     .main-container {
         flex-direction: column-reverse; /* Stack content vertically, image above text */
         padding: 20px 0 0; /* Reduz o padding vertical para diminuir o espaço vazio, removendo o padding inferior */
+        align-items: flex-start; /* Alinha o conteúdo ao topo */
     }
 
     .text-content,
