@@ -3,6 +3,7 @@
 html {
     height: 100%; /* Garante que o html ocupe 100% da altura da viewport */
     box-sizing: border-box;
+    background-color: #081b29; /* Adicionado para garantir a cor de fundo do tema */
 }
 
 *, *::before, *::after {
