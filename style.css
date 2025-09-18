@@ -271,7 +271,7 @@ nav ul li a:hover, nav ul li a.active {
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
     body {
-        padding: 0 5% 0;
+        /* padding: 0 5% 0; Removido para evitar margem branca */
     }
 
     nav {
@@ -361,9 +361,9 @@ nav ul li a:hover, nav ul li a.active {
         height: 250px;
     }
 
-    body {
+    /* body {
         padding: 0 5% 0; /* Remove o padding inferior do body */
-    }
+    } */
 
     footer {
         margin-top: 0; /* Remove margem superior padrão do footer */
