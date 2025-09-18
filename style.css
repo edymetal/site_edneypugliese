@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root {
-    --app-version: "1.30";
+    --app-version: "1.31";
 }
 
 html {
-    height: 100%; /* Garante que o html ocupe 100% da altura da viewport */
+    height: 100%;
     box-sizing: border-box;
-    background-color: #081b29; /* Adicionado para garantir a cor de fundo do tema */
+    background-color: #081b29;
 }
 
 *, *::before, *::after {
@@ -21,24 +21,33 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    overflow-y: auto;
+    
+    /* --- CORREÇÃO PRINCIPAL (Layout Flex) --- */
+    display: flex;
+    flex-direction: column;
     min-height: 100vh; /* Garante que o body ocupe no mínimo 100% da altura da viewport */
 }
 
 header, footer {
-    background-color: #081b29; /* Garante que o cabeçalho e rodapé tenham a cor de fundo do tema */
-    margin: 0;
-    padding: 0;
+    background-color: #081b29;
+    width: 100%;
+}
+
+header {
+    padding: 10px 40px; /* Adicionado padding para consistência */
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
 }
 
 nav {
     display: flex;
-    /* Alterado para justificar os links à direita após a remoção do logo */
     justify-content: flex-end;
     align-items: center;
-    position: relative; /* Necessário para posicionar o menu mobile */
-    margin: 0;
-    padding: 0;
+    position: relative;
+    width: 100%;
 }
 
 .logo {
@@ -69,40 +78,44 @@ nav ul li a:hover, nav ul li a.active {
 }
 
 .language-selector {
-    margin-left: 35px; /* Same spacing as nav links */
+    margin-left: 35px;
 }
 
 .language-selector select {
-    background-color: #00abf0; /* Highlight color */
-    color: #ededed; /* Dark text for contrast */
+    background-color: #00abf0;
+    color: #ededed;
     border: none;
     padding: 8px 12px;
     border-radius: 5px;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     cursor: pointer;
-    appearance: none; /* Remove default select arrow */
+    appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
-    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23081b29%22%20d%3D%22M287%2C114.7L159.7%2C242c-3.2%2C3.2-8.3%2C3.2-11.5%2C0L5.4%2C114.7c-3.2-3.2-3.2-8.3%2C0-11.5l11.5-11.5c3.2-3.2%2C8.3-3.2%2C11.5%2C0l113.9%2C113.9L264%2C91.7c3.2-3.2%2C8.3-3.2%2C11.5%2C0l11.5%2C11.5C290.2%2C106.4%2C290.2%2C111.5%2C287%2C114.7z%22%2F%3E%3C%2Fsvg%3E'); /* Custom arrow */
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23081b29%22%20d%3D%22M287%2C114.7L159.7%2C242c-3.2%2C3.2-8.3%2C3.2-11.5%2C0L5.4%2C114.7c-3.2-3.2-3.2-8.3%2C0-11.5l11.5-11.5c3.2-3.2%2C8.3-3.2%2C11.5%2C0l113.9%2C113.9L264%2C91.7c3.2-3.2%2C8.3-3.2%2C11.5%2C0l11.5%2C11.5C290.2%2C106.4%2C290.2%2C111.5%2C287%2C114.7z%22%2F%3E%3C%2Fsvg%3E');
     background-repeat: no-repeat;
     background-position: right 8px center;
     background-size: 12px;
-    padding-right: 30px; /* Make space for the arrow */
+    padding-right: 30px;
 }
 
 .language-selector select:focus {
     outline: none;
-    box-shadow: 0 0 0 2px rgba(0, 171, 240, 0.5); /* Focus style */
+    box-shadow: 0 0 0 2px rgba(0, 171, 240, 0.5);
 }
 
 .main-container {
     display: flex;
     align-items: center;
-    justify-content: center; /* Centraliza o conteúdo */
-    padding: 70px 0;
-    gap: 1rem;
-    background-color: #081b29; /* Adicionado para garantir a cor de fundo do tema */
+    justify-content: center;
+    padding: 70px 40px;
+    gap: 2rem;
+    background-color: #081b29;
+
+    /* --- CORREÇÃO PRINCIPAL (Layout Flex) --- */
+    flex: 1; /* Faz esta seção crescer para ocupar o espaço disponível */
+    width: 100%;
 }
 
 .text-content {
@@ -171,44 +184,40 @@ nav ul li a:hover, nav ul li a.active {
     box-shadow: 0 0 20px #00abf0;
 }
 
-/* Container principal da imagem */
 .image-content {
     position: relative;
-    width: 280px; /* Ajustado para a nova imagem menor */
-    height: 280px; /* Ajustado para a nova imagem menor */
+    width: 280px;
+    height: 280px;
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    opacity: 0; /* Inicialmente invisível */
-    transition: opacity 1.5s ease-in-out; /* Transição suave de 1.5 segundos */
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
 }
 
 .image-content.is-visible {
-    opacity: 1; /* Torna visível */
+    opacity: 1;
 }
 
-/* O brilho suave na parte de baixo */
 .image-content::after {
     content: '';
     position: absolute;
-    width: 200%; /* Aumenta a largura para um brilho mais espalhado horizontalmente */
-    height: 70%; /* Reduz a altura para concentrar o brilho mais perto da imagem */
-    background: linear-gradient(to bottom, rgba(0, 171, 240, 0.9) 0%, rgba(0, 171, 240, 0) 100%); /* Degradê de azul para transparente, com opacidade inicial bem alta */
-    /* border-radius: 50%; Removido para permitir uma forma mais elíptica com o blur */
-    filter: blur(150px); /* Ajusta o blur para um efeito suave e difuso */
-    opacity: 0.9; /* Mantém a opacidade geral alta para um brilho forte */
+    width: 200%;
+    height: 70%;
+    background: linear-gradient(to bottom, rgba(0, 171, 240, 0.9) 0%, rgba(0, 171, 240, 0) 100%);
+    filter: blur(150px);
+    opacity: 0.9;
     z-index: 0;
-    bottom: -50px; /* Posiciona o brilho abaixo da imagem */
-    left: -50%; /* Centraliza o brilho horizontalmente */
-    transform: translateX(50%); /* Ajuste fino para centralização */
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%); /* Corrigido para centralizar corretamente */
 }
 
-/* Hexágono de fundo */
 .hexagon-background {
     position: absolute;
     bottom: 0;
-    width: 250px; /* Ajustado para a nova imagem menor */
-    height: 288px; /* Ajustado proporcionalmente */
+    width: 250px;
+    height: 288px;
     background-color: #00abf0;
     clip-path: url(#rounded-hexagon-clip);
     -webkit-clip-path: url(#rounded-hexagon-clip);
@@ -216,31 +225,29 @@ nav ul li a:hover, nav ul li a.active {
     z-index: 1;
 }
 
-/* Imagem do perfil */
 .profile-image {
     position: relative;
     z-index: 2;
-    width: 250px; /* Diminuído o tamanho */
-    transform: translateY(-20px); /* Ajustado para centralizar melhor */
+    width: 250px;
+    transform: translateY(-20px);
     mask-image: linear-gradient(to top, transparent 15%, black 40%);
-    -webkit-mask-image: linear-image: linear-gradient(to top, transparent 15%, black 40%);
+    -webkit-mask-image: linear-gradient(to top, transparent 15%, black 40%); /* Corrigido o prefixo */
 }
 
-/* Estilos para conteúdo de páginas como Habilidades e Fotos */
 .page-content {
-    max-width: 800px; /* Limita a largura do conteúdo */
-    margin: 0 auto; /* Centraliza o bloco de conteúdo */
-    padding: 20px; /* Adiciona um padding interno */
-    text-align: center; /* Centraliza o texto dentro da seção */
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
 }
 
 .page-content h1, .page-content h2 {
-    text-align: center; /* Garante que os títulos sejam centralizados */
-    margin-bottom: 20px; /* Espaçamento abaixo dos títulos */
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .page-content p, .page-content ul {
-    text-align: left; /* Alinha parágrafos e listas à esquerda dentro do bloco centralizado */
+    text-align: left;
     margin-bottom: 15px;
 }
 
@@ -249,55 +256,57 @@ nav ul li a:hover, nav ul li a.active {
     padding-left: 20px;
 }
 
-/* Hamburger menu */
 .hamburger-menu {
-    display: none; /* Hidden by default */
+    display: none;
     font-size: 24px;
     cursor: pointer;
     color: #ededed;
     margin-left: 20px;
 }
 
-/* Estilos para o carrossel (aplicam-se a desktop e mobile) */
 .carousel-container {
     position: relative;
     overflow: hidden;
     border: 1px solid #ddd;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
+
 .carousel-slide {
     display: flex;
     transition: transform 0.5s ease-in-out;
-    width: 100%; /* Garante que o slide ocupe 100% da largura do container */
+    width: 100%;
 }
+
 .carousel-slide img {
     flex-shrink: 0;
     display: block;
-    width: 100%; /* Garante que a imagem ocupe 100% da largura do container */
-    flex-basis: 100%; /* Garante que cada imagem ocupe 100% do espaço disponível */
-    height: auto; /* Garante que a altura seja ajustada proporcionalmente */
+    width: 100%;
+    flex-basis: 100%;
+    height: auto;
 }
 
-/* Media Queries for Responsiveness */
+/* ------------------------------------------- */
+/* --- MEDIA QUERIES PARA RESPONSIVIDADE --- */
+/* ------------------------------------------- */
+
 @media (max-width: 768px) {
     header {
         position: absolute;
         top: 0;
         left: 0;
-        width: 100%;
-        z-index: 1000; /* Garante que o header fique acima de outros elementos */
+        z-index: 1000;
+        padding: 10px 20px;
     }
 
     nav {
-        justify-content: space-between; /* Space out items */
+        justify-content: space-between;
     }
 
-
     nav ul {
-        display: none; /* Hide nav links by default */
+        display: none;
         flex-direction: column;
         position: absolute;
-        top: 60px; /* Below header */
+        top: 60px;
         left: 0;
         width: 100%;
         background-color: #081b29;
@@ -307,8 +316,8 @@ nav ul li a:hover, nav ul li a.active {
     }
 
     nav ul.active {
-        display: flex; /* Show when active */
-        background-color: rgba(8, 27, 41, 0.8); /* Transparent dark background */
+        display: flex;
+        background-color: rgba(8, 27, 41, 0.9);
     }
 
     nav ul li {
@@ -320,27 +329,28 @@ nav ul li a:hover, nav ul li a.active {
     }
 
     .hamburger-menu {
-        display: block; /* Show hamburger menu */
+        display: block;
     }
 
     .main-container {
-        flex-direction: column-reverse; /* Stack content vertically, image above text */
-        padding: 80px 20px 20px; /* Ajustado: Adiciona padding superior para não sobrepor o header, e padding lateral/inferior */
-        align-items: center; /* Centraliza o conteúdo horizontalmente */
-        text-align: center; /* Centraliza o texto */
+        flex-direction: column-reverse;
+        justify-content: center;
+        padding: 80px 20px 40px;
+        text-align: center;
     }
 
     .text-content,
     .image-content {
         max-width: 100%;
         width: 100%;
-        box-sizing: border-box;
-        margin-bottom: 20px; /* Adiciona um espaço entre a imagem e o texto */
     }
 
     .text-content {
-        margin-top: 20px; /* Add some space above text content */
-        margin-bottom: 0; /* Remove any bottom margin */
+        margin-top: 40px;
+    }
+
+    .image-content {
+        margin-bottom: 0;
     }
 
     .text-content h1 {
@@ -351,27 +361,12 @@ nav ul li a:hover, nav ul li a.active {
         font-size: 24px;
     }
 
-    .description {
-        font-size: 14px;
-        margin-bottom: 20px; /* Reduz a margem inferior da descrição */
-    }
-
     .social-media {
-        margin-bottom: 0; /* Remove a margem inferior dos ícones sociais */
-        text-align: center; /* Garante que os ícones fiquem centralizados */
-    }
-
-    .page-content {
-        padding: 10px;
-    }
-
-    .carousel-container {
-        max-width: 100%; /* Allow carousel to take full width */
+        justify-content: center;
     }
 
     .profile-image {
-        width: 200px; /* Adjust profile image size */
-        height: auto;
+        width: 200px;
     }
 
     .hexagon-background {
@@ -379,38 +374,36 @@ nav ul li a:hover, nav ul li a.active {
         height: 250px;
     }
 
-    footer {
-        margin-top: 20px; /* Adiciona uma margem para separar do conteúdo principal */
-        padding: 10px 0; /* Adiciona um pequeno padding para o conteúdo do footer */
-        text-align: center;
+    .carousel-container {
+        max-width: 100%;
     }
 }
 
 /* Estilos para a página de Habilidades */
 .skill-category {
-    background-color: #0a2133; /* Um fundo ligeiramente mais claro para a categoria */
+    background-color: #0a2133;
     border-radius: 10px;
     padding: 25px;
     margin-bottom: 30px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Sombra sutil */
-    text-align: left; /* Alinha o texto à esquerda dentro da categoria */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    text-align: left;
 }
 
 .skill-category .category-title {
     font-size: 28px;
     font-weight: 600;
-    color: #00abf0; /* Cor de destaque para o título da categoria */
+    color: #00abf0;
     margin-bottom: 20px;
-    border-bottom: 2px solid #00abf0; /* Linha de destaque abaixo do título */
+    border-bottom: 2px solid #00abf0;
     padding-bottom: 10px;
-    display: flex; /* Para alinhar o ícone e o texto */
+    display: flex;
     align-items: center;
-    gap: 10px; /* Espaçamento entre o ícone e o texto */
-    text-shadow: 0 0 5px #00abf0, 0 0 10px #00abf0; /* Efeito de brilho ainda mais reduzido */
+    gap: 10px;
+    text-shadow: 0 0 5px #00abf0, 0 0 10px #00abf0;
 }
 
 .skill-category ul {
-    list-style: none; /* Remove os marcadores de lista padrão */
+    list-style: none;
     padding: 0;
     margin-top: 20px;
 }
@@ -420,26 +413,25 @@ nav ul li a:hover, nav ul li a.active {
     margin-bottom: 12px;
     line-height: 1.5;
     color: #ededed;
-    display: flex; /* Para alinhar o ícone e o texto */
+    display: flex;
     align-items: flex-start;
-    gap: 10px; /* Espaçamento entre o ícone e o texto */
+    gap: 10px;
 }
 
 .skill-category ul li i {
-    font-size: 20px; /* Tamanho dos ícones da lista */
-    color: #00abf0; /* Cor de destaque para os ícones da lista */
-    margin-top: 3px; /* Ajuste vertical para alinhar com o texto */
+    font-size: 20px;
+    color: #00abf0;
+    margin-top: 3px;
 }
 
 .skill-category ul li strong {
-    color: #66d9ef; /* Um azul mais claro para destacar os nomes das linguagens */
-    text-shadow: 0 0 3px rgba(102, 217, 239, 0.5); /* Sombra sutil para o brilho */
+    color: #66d9ef;
+    text-shadow: 0 0 3px rgba(102, 217, 239, 0.5);
 }
 
-/* Ajustes para o .page-content na página de habilidades */
 .page-content {
-    max-width: 900px; /* Aumenta a largura máxima para o conteúdo das habilidades */
-    padding: 40px 20px; /* Mais padding */
+    max-width: 900px;
+    padding: 40px 20px;
     text-align: center;
 }
 
@@ -456,7 +448,6 @@ nav ul li a:hover, nav ul li a.active {
     color: #ccc;
 }
 
-/* Media Queries for Responsiveness (ajustes específicos para habilidades) */
 @media (max-width: 768px) {
     .skill-category {
         padding: 20px;
@@ -472,35 +463,26 @@ nav ul li a:hover, nav ul li a.active {
 
     .skill-category ul li {
         font-size: 16px;
-        flex-direction: column; /* Stack items vertically */
-        align-items: flex-start; /* Align content to the left */
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     .skill-category ul li i {
         font-size: 18px;
-        margin-bottom: 5px; /* Espaço entre o ícone e o nome da linguagem */
+        margin-bottom: 5px;
     }
-
-    .carousel-container {
-        max-width: 100%; /* Permite que o carrossel ocupe a largura total disponível */
-        margin: 30px auto 0 auto; /* Centraliza o carrossel e adiciona espaço superior */
-    }
-
-    .carousel-slide img {
-        width: 100%; /* Garante que a imagem ocupe 100% da largura do container */
-    }
-
+    
     .skill-category ul li strong {
-        /* Removido min-width, white-space: nowrap, margin-right */
-        margin-left: 0; /* Alinha o nome da linguagem com o ícone */
+        margin-left: 0;
     }
 
     .skill-description {
-        display: block; /* Força a descrição para uma nova linha */
-        margin-top: 5px; /* Espaço entre o nome da linguagem e a descrição */
-        margin-left: 0; /* Alinha a descrição com o nome da linguagem */
+        display: block;
+        margin-top: 5px;
+        margin-left: 0;
     }
 }
+
 /* Styles for localizacao.html */
 .location-content {
     display: flex;
@@ -508,26 +490,30 @@ nav ul li a:hover, nav ul li a.active {
     align-items: center;
     padding: 20px;
     text-align: center;
-    background-color: #081b29 !important; /* Adicionado para garantir a cor de fundo do tema */
+    background-color: #081b29 !important;
 }
+
 .location-content h1 {
     margin-bottom: 20px;
-    color: #FFFFFF; /* Set h1 color to white */
+    color: #FFFFFF;
 }
+
 .location-content p {
     font-size: 1.2em;
     margin-bottom: 30px;
-    color: #FFFFFF; /* Set p color to white */
+    color: #FFFFFF;
 }
+
 .map-container {
     width: 80%;
     max-width: 800px;
     height: 450px;
     margin-bottom: 30px;
-    border: 2px solid #00abf0; /* Using highlight color from theme */
+    border: 2px solid #00abf0;
     border-radius: 8px;
     overflow: hidden;
 }
+
 .map-container iframe {
     width: 100%;
     height: 100%;
