@@ -159,6 +159,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 const details = item.dataset.details;
 
                 modalImage.src = imgSrc;
+                modalTitle.textContent = title;
 
                 let detailsHtml = '<h3><i class="fas fa-info-circle"></i> Descrição</h3>';
                 detailsHtml += `<p>${description}</p><hr>`;
@@ -187,13 +188,12 @@ document.addEventListener('DOMContentLoaded', function() {
                             icon = '<i class="fab fa-js-square"></i> '; // Using js icon for jquery
                             break;
                     }
-                    techHtml += `<span>${icon}${tech}</span>`;
+                    techHtml += `<li>${icon}${tech}</li>`;
                 });
 
                 detailsHtml += '<h3><i class="fas fa-cogs"></i> Tecnologia</h3>';
-                detailsHtml += `<div class="technologies">${techHtml}</div>`;
+                detailsHtml += `<ul class="technologies">${techHtml}</ul>`;
 
-                modalTitle.textContent = title;
                 modalDescription.innerHTML = detailsHtml;
                 modalDetails.innerHTML = ''; // Clear the old details
 
