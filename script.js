@@ -164,12 +164,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 modalTitle.textContent = title;
                 modalDescription.textContent = description;
                 modalDetails.textContent = details;
-                modalDate.textContent = date;
-                if (url) {
-                    modalUrl.innerHTML = `<a href="${url}" target="_blank">${url}</a>`;
-                } else {
-                    modalUrl.innerHTML = '';
-                }
 
                 modal.style.display = 'block';
             });
