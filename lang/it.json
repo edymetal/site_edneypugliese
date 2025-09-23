@@ -33,5 +33,5 @@
     "nav_location": "Posizione",
     "location_title": "La Nostra Posizione",
     "location_address": "Siamo situati in Italia, all'indirizzo: Piazza del Colosseo, 1, 00184 Roma RM",
-    "view_on_google_maps": "<i class=\"fas fa-map-marker-alt me-2\"></i><i class=\"fab fa-google me-2\"></i>Visualizza su Google Maps"
+    "view_on_google_maps": "<i class=\"fas fa-map-marker-alt me-2\"></i>Visualizza su Google Maps"
 }
