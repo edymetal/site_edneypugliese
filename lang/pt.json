@@ -3,6 +3,7 @@
     "nav_home": "Home",
     "nav_photos": "Fotos",
     "nav_skills": "Habilidades",
+    "nav_portfolio": "Portfólio",
     "greeting": "Olá, sou",
     "name": "Edney Pugliese",
     "role_prefix": "E eu sou um ",
@@ -33,5 +34,7 @@
     "nav_location": "Localização",
     "location_title": "Nossa Localização",
     "location_address": "Endereço: Piazza del Colosseo, 1, 00184 Roma RM",
-    "view_on_google_maps": "<i class=\"fas fa-map-marker-alt me-2\"></i>Ver no Google Maps"
+    "view_on_google_maps": "<i class=\"fas fa-map-marker-alt me-2\"></i>Ver no Google Maps",
+    "page_title_portfolio": "Portfólio - Edney Pugliese",
+    "portfolio_title": "Meu Portfólio"
 }

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="page_title_portfolio">Portfólio - Edney Pugliese</title>
+    <link rel="stylesheet" href="style.css?v=1.33">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+                <li><a href="fotos.html" data-i18n="nav_photos">Fotos</a></li>
+                <li><a href="habilidades.html" data-i18n="nav_skills">Habilidades</a></li>
+                <li><a href="portfolio.html" data-i18n="nav_portfolio">Portfólio</a></li>
+                <li><a href="localizacao.html" data-i18n="nav_location">Localização</a></li>
+            </ul>
+            <div class="language-selector">
+                <select id="language-switcher">
+                    <option value="pt">Português</option>
+                    <option value="en">English</option>
+                    <option value="es">Español</option>
+                    <option value="it">Italiano</option>
+                </select>
+            </div>
+            <div class="hamburger-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-container">
+        <div class="page-content">
+            <h1 data-i18n="portfolio_title">Meu Portfólio</h1>
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-description="Sistema de venda/anuncios de veículos." data-details="Tecnologia: HTML5, CSS3, PHP, Laravel, jQuery, JavaScript" data-date="Data: Nov, 2020" data-url="URL: https://www.agenciaautoweb.com.br/">
+                    <img src="img/portfolio/agenciaautoweb.png" alt="Agência Auto Web">
+                    <div class="portfolio-title">Agência Auto Web</div>
+                </div>
+                <div class="portfolio-item" data-description="Site para barbearia." data-details="Tecnologia: HTML5, CSS3, JavaScript" data-date="Data: Jan, 2021" data-url="">
+                    <img src="img/portfolio/barberhouse.jpg" alt="Barber House">
+                    <div class="portfolio-title">Barber House</div>
+                </div>
+                <div class="portfolio-item" data-description="Site para cafeteria." data-details="Tecnologia: HTML5, CSS3, JavaScript" data-date="Data: Mar, 2021" data-url="">
+                    <img src="img/portfolio/cafeteria.jpg" alt="Cafeteria">
+                    <div class="portfolio-title">Cafeteria</div>
+                </div>
+                <div class="portfolio-item" data-description="Dashboard com tema Star Wars." data-details="Tecnologia: HTML5, CSS3, JavaScript" data-date="Data: May, 2021" data-url="">
+                    <img src="img/portfolio/dashboardstarwars.jpg" alt="Dashboard Star Wars">
+                    <div class="portfolio-title">Dashboard Star Wars</div>
+                </div>
+                <div class="portfolio-item" data-description="Loja de doces." data-details="Tecnologia: HTML5, CSS3, JavaScript" data-date="Data: Jul, 2021" data-url="">
+                    <img src="img/portfolio/deathcat.jpg" alt="Death Cat">
+                    <div class="portfolio-title">Death Cat</div>
+                </div>
+                <div class="portfolio-item" data-description="Site de Lingerie." data-details="Tecnologia: HTML5, CSS3, JavaScript" data-date="Data: Sep, 2021" data-url="">
+                    <img src="img/portfolio/lingerie.png" alt="Lingerie">
+                    <div class="portfolio-title">Lingerie</div>
+                </div>
+                <div class="portfolio-item" data-description="Site de relacionamento." data-details="Tecnologia: HTML5, CSS3, JavaScript" data-date="Data: Nov, 2021" data-url="">
+                    <img src="img/portfolio/relationship.jpg" alt="Relationship">
+                    <div class="portfolio-title">Relationship</div>
+                </div>
+                <div class="portfolio-item" data-description="Site para terapia online." data-details="Tecnologia: HTML5, CSS3, PHP, Laravel, jQuery, JavaScript" data-date="Data: Jan, 2022" data-url="">
+                    <img src="img/portfolio/terapiadodia.png" alt="Terapia do Dia">
+                    <div class="portfolio-title">Terapia do Dia</div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="portfolio-modal" class="modal">
+        <span class="close-button">&times;</span>
+        <div class="modal-content">
+            <div class="modal-image">
+                <img src="" alt="Projeto">
+            </div>
+            <div class="modal-info">
+                <h2 class="modal-title"></h2>
+                <p class="modal-description"></p>
+                <p class="modal-details"></p>
+                <p class="modal-date"></p>
+                <p class="modal-url"></p>
+                <div class="modal-share"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js?v=1.6"></script>
+    <footer>
+        <p>&copy; 2025 Edney. <span data-i18n="footer_rights">Todos os direitos reservados.</span></p>
+    </footer>
+</body>
+</html>
