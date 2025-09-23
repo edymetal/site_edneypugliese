@@ -602,10 +602,20 @@ nav ul li a:hover, nav ul li a.active {
     margin: 0 auto;
     padding: 20px;
     width: 80%;
-    max-width: 1200px;
+    max-width: 900px;
     background-color: #1a1a1a;
     border-radius: 10px;
     position: relative;
+}
+
+.modal-image {
+    flex: 1;
+}
+
+.modal-info {
+    flex: 1;
+    padding-left: 30px;
+    color: #fff;
 }
 
 .modal-info h3 i {
