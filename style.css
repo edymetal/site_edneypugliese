@@ -638,7 +638,7 @@ nav ul li a:hover, nav ul li a.active {
 }
 
 .modal-image {
-    flex: 1;
+    flex: 2;
 }
 
 .modal-image img {
