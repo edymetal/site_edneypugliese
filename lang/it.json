@@ -20,11 +20,11 @@
     "skills_programming_web": "<strong>HTML, CSS, JavaScript:</strong> Creazione e stilizzazione di interfacce web moderne e interattive.",
     "skills_automation_heading": "Automazione e DevOps:",
     "skills_automation_workflow": "Vasta esperienza nell'automazione del flusso di lavoro, ottimizzando i processi e migliorando l'efficienza operativa.",
-    "skills_automation_robots": "Sviluppo di robot (software di automazione) per l'installazione, la manutenzione e la raccolta dei dati.",
+    "skills_automation_robots": "Sviluppo di robot (software de automazione) para l'installazione, la manutenzione e la raccolta dei dati.",
     "skills_automation_validation": "Profonda conoscenza nell'omologazione e convalida del software in ambienti virtualizzati.",
     "skills_development_ia_heading": "Sviluppo e IA:",
     "skills_development_ia_personalization": "Conoscenza nella personalizzazione di IA locali e web, applicando l'intelligenza per ottimizzare i flussi de trabalho e creare soluzioni più intelligenti.",
-    "skills_development_ia_logic": "Solida base nella logica di programmazione, essenziale per risolvere problemi complessi e sviluppare algoritmos efficienti.",
+    "skills_development_ia_logic": "Solida base nella logica di programmazione, essenziale per risolvere problemi complessi e sviluppare algoritmi efficienti.",
     "skills_infra_support_heading": "Infrastruttura e Supporto:",
     "skills_infra_support_remote": "Supporto tecnico remoto e diagnosi dei problemi nei sistemi e nell'hardware.",
     "skills_infra_support_tools": "Esperienza con ferramentas de distribuição software como SCCM e ferramentas de desenvolvimento de installatori como InstallShield.",
@@ -32,6 +32,6 @@
     "page_title_location": "Edney Pugliese - Posizione",
     "nav_location": "Posizione",
     "location_title": "La Nostra Posizione",
-    "location_address": "Siamo situati in Italia, all'indirizzo: Piazza del Colosseo, 1, 00184 Roma RM",
+    "location_address": "Indirizzo: Piazza del Colosseo, 1, 00184 Roma RM",
     "view_on_google_maps": "<i class=\"fas fa-map-marker-alt me-2\"></i>Visualizza su Google Maps"
 }
