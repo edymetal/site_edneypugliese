@@ -138,98 +138,51 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
+
+    // Portfolio modal logic
+    const portfolioItems = document.querySelectorAll('.portfolio-item');
+    const modal = document.getElementById('portfolio-modal');
+    const closeModal = document.querySelector('.close-button');
+    const modalImage = document.querySelector('.modal-image img');
+    const modalTitle = document.querySelector('.modal-title');
+    const modalDescription = document.querySelector('.modal-description');
+    const modalDetails = document.querySelector('.modal-details');
+    const modalDate = document.querySelector('.modal-date');
+    const modalUrl = document.querySelector('.modal-url');
+
+    if (modal) {
+        portfolioItems.forEach(item => {
+            item.addEventListener('click', () => {
+                const imgSrc = item.querySelector('img').src;
+                const title = item.querySelector('.portfolio-title').textContent;
+                const description = item.dataset.description;
+                const details = item.dataset.details;
+                const date = item.dataset.date;
+                const url = item.dataset.url;
+
+                modalImage.src = imgSrc;
+                modalTitle.textContent = title;
+                modalDescription.textContent = description;
+                modalDetails.textContent = details;
+                modalDate.textContent = date;
+                if (url) {
+                    modalUrl.innerHTML = `<a href="${url}" target="_blank">${url}</a>`;
+                } else {
+                    modalUrl.innerHTML = '';
+                }
+
+                modal.style.display = 'block';
+            });
+        });
+
+        closeModal.addEventListener('click', () => {
+            modal.style.display = 'none';
+        });
+
+        window.addEventListener('click', (event) => {
+            if (event.target == modal) {
+                modal.style.display = 'none';
+            }
+        });
+    }
 });
-
-// Portfolio modal logic
-const portfolioItems = document.querySelectorAll('.portfolio-item');
-const modal = document.getElementById('portfolio-modal');
-const closeModal = document.querySelector('.close-button');
-const modalImage = document.querySelector('.modal-image img');
-const modalTitle = document.querySelector('.modal-title');
-const modalDescription = document.querySelector('.modal-description');
-const modalDetails = document.querySelector('.modal-details');
-const modalDate = document.querySelector('.modal-date');
-const modalUrl = document.querySelector('.modal-url');
-
-if (modal) {
-    portfolioItems.forEach(item => {
-        item.addEventListener('click', () => {
-            const imgSrc = item.querySelector('img').src;
-            const title = item.querySelector('.portfolio-title').textContent;
-            const description = item.dataset.description;
-            const details = item.dataset.details;
-            const date = item.dataset.date;
-            const url = item.dataset.url;
-
-            modalImage.src = imgSrc;
-            modalTitle.textContent = title;
-            modalDescription.textContent = description;
-            modalDetails.textContent = details;
-            modalDate.textContent = date;
-            if (url) {
-                modalUrl.innerHTML = `<a href="${url}" target="_blank">${url}</a>`;
-            } else {
-                modalUrl.innerHTML = '';
-            }
-
-            modal.style.display = 'block';
-        });
-    });
-
-    closeModal.addEventListener('click', () => {
-        modal.style.display = 'none';
-    });
-
-    window.addEventListener('click', (event) => {
-        if (event.target == modal) {
-            modal.style.display = 'none';
-        }
-    });
-}
-
-// Portfolio modal logic
-const portfolioItems = document.querySelectorAll('.portfolio-item');
-const modal = document.getElementById('portfolio-modal');
-const closeModal = document.querySelector('.close-button');
-const modalImage = document.querySelector('.modal-image img');
-const modalTitle = document.querySelector('.modal-title');
-const modalDescription = document.querySelector('.modal-description');
-const modalDetails = document.querySelector('.modal-details');
-const modalDate = document.querySelector('.modal-date');
-const modalUrl = document.querySelector('.modal-url');
-
-if (modal) {
-    portfolioItems.forEach(item => {
-        item.addEventListener('click', () => {
-            const imgSrc = item.querySelector('img').src;
-            const title = item.querySelector('.portfolio-title').textContent;
-            const description = item.dataset.description;
-            const details = item.dataset.details;
-            const date = item.dataset.date;
-            const url = item.dataset.url;
-
-            modalImage.src = imgSrc;
-            modalTitle.textContent = title;
-            modalDescription.textContent = description;
-            modalDetails.textContent = details;
-            modalDate.textContent = date;
-            if (url) {
-                modalUrl.innerHTML = `<a href="${url}" target="_blank">${url}</a>`;
-            } else {
-                modalUrl.innerHTML = '';
-            }
-
-            modal.style.display = 'block';
-        });
-    });
-
-    closeModal.addEventListener('click', () => {
-        modal.style.display = 'none';
-    });
-
-    window.addEventListener('click', (event) => {
-        if (event.target == modal) {
-            modal.style.display = 'none';
-        }
-    });
-}
