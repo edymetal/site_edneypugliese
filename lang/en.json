@@ -33,5 +33,21 @@
     "nav_location": "Location",
     "location_title": "Our Location",
     "location_address": "Address: Piazza del Colosseo, 1, 00184 Roma RM",
-    "view_on_google_maps": "<i class=\"fas fa-map-marker-alt me-2\"></i>View on Google Maps"
+    "view_on_google_maps": "<i class=\"fas fa-map-marker-alt me-2\"></i>View on Google Maps",
+    "nav_portfolio": "Portfolio",
+    "page_title_portfolio": "Edney Pugliese - Portfolio",
+    "portfolio_heading": "My Projects",
+    "project_info_title": "Project Information:",
+    "project_details_title": "Project Details:",
+    "project_date_label": "Date:",
+    "project_url_label": "URL:",
+    "project_share_label": "Share:",
+    "project_death_cat_grocery_store_description": "E-commerce system for a cat-themed convenience store.",
+    "project_death_cat_grocery_store_tech": "Sass, JS",
+    "project_death_cat_grocery_store_date": "2024",
+    "project_death_cat_grocery_store_url": "https://www.deathcatgrocerystore.com",
+    "project_agencia_auto_web_description": "Vehicle sales/ads system. Developed in Laravel, JavaScript, with SEO, friendly URL etc...",
+    "project_agencia_auto_web_tech": "HTML5, CSS3, PHP, Laravel, jQuery, JavaScript",
+    "project_agencia_auto_web_date": "Nov, 2020",
+    "project_agencia_auto_web_url": "https://www.agenciaautoweb.com.br/"
 }
