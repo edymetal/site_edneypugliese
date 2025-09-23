@@ -157,13 +157,45 @@ document.addEventListener('DOMContentLoaded', function() {
                 const title = item.querySelector('.portfolio-title').textContent;
                 const description = item.dataset.description;
                 const details = item.dataset.details;
-                const date = item.dataset.date;
-                const url = item.dataset.url;
 
                 modalImage.src = imgSrc;
+
+                let detailsHtml = '<h3><i class="fas fa-info-circle"></i> Descrição</h3>';
+                detailsHtml += `<p>${description}</p><hr>`;
+
+                const technologies = details.replace('Tecnologia: ', '').split(', ');
+                let techHtml = '';
+                technologies.forEach(tech => {
+                    let icon = '';
+                    switch (tech.toLowerCase()) {
+                        case 'html5':
+                            icon = '<i class="fab fa-html5"></i> ';
+                            break;
+                        case 'css3':
+                            icon = '<i class="fab fa-css3-alt"></i> ';
+                            break;
+                        case 'php':
+                            icon = '<i class="fab fa-php"></i> ';
+                            break;
+                        case 'laravel':
+                            icon = '<i class="fab fa-laravel"></i> ';
+                            break;
+                        case 'javascript':
+                            icon = '<i class="fab fa-js-square"></i> ';
+                            break;
+                        case 'jquery':
+                            icon = '<i class="fab fa-js-square"></i> '; // Using js icon for jquery
+                            break;
+                    }
+                    techHtml += `<span>${icon}${tech}</span>`;
+                });
+
+                detailsHtml += '<h3><i class="fas fa-cogs"></i> Tecnologia</h3>';
+                detailsHtml += `<div class="technologies">${techHtml}</div>`;
+
                 modalTitle.textContent = title;
-                modalDescription.textContent = description;
-                modalDetails.textContent = details;
+                modalDescription.innerHTML = detailsHtml;
+                modalDetails.innerHTML = ''; // Clear the old details
 
                 modal.style.display = 'block';
             });
