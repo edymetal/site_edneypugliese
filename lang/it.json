@@ -23,15 +23,15 @@
     "skills_automation_robots": "Sviluppo di robot (software di automazione) per l'installazione, la manutenzione e la raccolta dei dati.",
     "skills_automation_validation": "Profonda conoscenza nell'omologazione e convalida del software in ambienti virtualizzati.",
     "skills_development_ia_heading": "Sviluppo e IA:",
-    "skills_development_ia_personalization": "Conoscenza nella personalizzazione di IA locali e web, applicando l'intelligenza per ottimizzare i flussi di lavoro e creare soluzioni più intelligenti.",
-    "skills_development_ia_logic": "Solida base nella logica di programmazione, essenziale per risolvere problemi complessi e sviluppare algoritmi efficienti.",
+    "skills_development_ia_personalization": "Conoscenza nella personalizzazione di IA locali e web, applicando l'intelligenza per ottimizzare i flussi de trabalho e creare soluzioni più intelligenti.",
+    "skills_development_ia_logic": "Solida base nella logica di programmazione, essenziale per risolvere problemi complessi e sviluppare algoritmos efficienti.",
     "skills_infra_support_heading": "Infrastruttura e Supporto:",
     "skills_infra_support_remote": "Supporto tecnico remoto e diagnosi dei problemi nei sistemi e nell'hardware.",
-    "skills_infra_support_tools": "Esperienza con strumenti di distribuzione software come SCCM e strumenti di sviluppo di installatori come InstallShield.",
+    "skills_infra_support_tools": "Esperienza con ferramentas de distribuição software como SCCM e ferramentas de desenvolvimento de installatori como InstallShield.",
     "skills_infra_support_documentation": "Elaborazione di documentazione tecnica dettagliata per processi e progetti.",
     "page_title_location": "Edney Pugliese - Posizione",
     "nav_location": "Posizione",
     "location_title": "La Nostra Posizione",
     "location_address": "Siamo situati in Italia, all'indirizzo: Piazza del Colosseo, 1, 00184 Roma RM",
-    "view_on_google_maps": "Visualizza su Google Maps"
+    "view_on_google_maps": "<i class=\"fas fa-map-marker-alt me-2\"></i><i class=\"fab fa-google me-2\"></i>Visualizza su Google Maps"
 }

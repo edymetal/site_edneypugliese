@@ -20,12 +20,18 @@
     "skills_programming_web": "<strong>HTML, CSS, JavaScript:</strong> Creación y estilización de interfaces web modernas e interactivas.",
     "skills_automation_heading": "Automatización y DevOps:",
     "skills_automation_workflow": "Amplia experiencia en automatización del flujo de trabajo, optimizando procesos y mejorando la eficiencia operativa.",
-    "skills_automation_robots": "Desarrollo de robots (software de automatización) para instalación, mantenimiento y recopilación de datos.",
+    "skills_automation_robots": "Desarrollo de robots (software de automação) para instalación, mantenimiento y recopilación de datos.",
     "skills_automation_validation": "Profundo conocimiento en homologación y validación de software en entornos virtualizados.",
     "skills_development_ia_heading": "Desarrollo e IA:",
-    "skills_development_ia_personalization": "Conocimiento en personalización de IA local y web, aplicando inteligencia para optimizar flujos de trabajo y crear soluciones más inteligentes.",
+    "skills_development_ia_personalization": "Conocimiento en personalização de IA local y web, aplicando inteligencia para optimizar flujos de trabajo y crear soluciones más inteligentes.",
     "skills_development_ia_logic": "Sólida base en lógica de programación, esencial para resolver problemas complejos y desarrollar algoritmos eficientes.",
     "skills_infra_support_heading": "Infraestructura y Soporte:",
     "skills_infra_support_remote": "Soporte técnico remoto y diagnóstico de problemas en sistemas y hardware.",
     "skills_infra_support_tools": "Experiencia con herramientas de distribución de software como SCCM y herramientas de desarrollo de instaladores como InstallShield.",
-    \"skills_infra_support_documentation\": \"Elaboración de documentación técnica detallada para procesos y proyectos.\",\n    \"page_title_location\": \"Edney Pugliese - Ubicación\",\n    \"nav_location\": \"Ubicación\",\n    \"location_title\": \"Nuestra Ubicación\",\n    \"location_address\": \"Estamos ubicados en Italia, en la dirección: Piazza del Colosseo, 1, 00184 Roma RM\",\n    \"view_on_google_maps\": \"Ver en Google Maps\"\n}
+    "skills_infra_support_documentation": "Elaboración de documentación técnica detallada para procesos y proyectos.",
+    "page_title_location": "Edney Pugliese - Ubicación",
+    "nav_location": "Ubicación",
+    "location_title": "Nuestra Ubicación",
+    "location_address": "Estamos ubicados en Italia, en la dirección: Piazza del Colosseo, 1, 00184 Roma RM",
+    "view_on_google_maps": "<i class=\"fas fa-map-marker-alt me-2\"></i><i class=\"fab fa-google me-2\"></i>Ver en Google Maps"
+}
