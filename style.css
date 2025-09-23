@@ -524,3 +524,7 @@ nav ul li a:hover, nav ul li a.active {
 .footer-text {
     color: #FFFFFF;
 }
+
+.btn i {
+    color: #FFFFFF;
+}
