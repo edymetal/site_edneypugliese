@@ -629,4 +629,16 @@ nav ul li a:hover, nav ul li a.active {
 .modal-info h2 {
     margin-top: 0;
     color: #00abf0;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.modal-info p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.modal-info .modal-details {
+    font-weight: 600;
 }
