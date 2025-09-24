@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root {
-    --app-version: "1.41";
+    --app-version: "1.42";
 }
 
 html {
@@ -427,9 +427,7 @@ nav ul li a:hover, nav ul li a.active {
     font-size: 20px;
     color: #00abf0;
     margin-top: 3px;
-    display: inline-block !important;
-    background-color: red !important;
-    border: 1px solid yellow !important;
+    display: inline-block;
 }
 
 .skill-category ul li strong {
