@@ -378,6 +378,10 @@ nav ul li a:hover, nav ul li a.active {
     .carousel-container {
         max-width: 100%;
     }
+
+    .image-content::after {
+        width: 100%;
+    }
 }
 
 /* Estilos para a página de Habilidades */
