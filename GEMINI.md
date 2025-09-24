@@ -73,6 +73,7 @@ Este é um website estático e não requer etapas de construção explícitas (c
 *   **Suporte Multilíngue:** Utiliza atributos `data-i18n` em elementos HTML para texto traduzível, com as traduções armazenadas em arquivos JSON no diretório `lang`.
 *   **Versionamento de Ativos:** Arquivos CSS e JavaScript são linkados com um parâmetro de versão (ex: `style.css?v=1.38`, `script.js?v=1.7`) para gerenciar o cache do navegador e garantir que as versões mais recentes sejam carregadas.
 *   **Configuração de Redes Sociais:** Links de redes sociais são configurados em `base/redes.txt` e são carregados dinamicamente pelo `script.js`.
+*   **Versionamento Automático de CSS:** Um hook de pré-commit do Git está configurado para incrementar automaticamente o número da versão no `style.css` a cada `git commit`. Isso garante que as atualizações de estilo sejam refletidas e o cache do navegador seja gerenciado de forma eficaz.
 
 ## Inconsistências e Melhorias Potenciais
 
