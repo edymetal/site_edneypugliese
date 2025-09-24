@@ -53,5 +53,12 @@
     "portfolio_details_relationship": "Technology: HTML5, CSS3, JavaScript",
     "portfolio_desc_terapiadodia": "Online therapy website.",
     "portfolio_details_terapiadodia": "Technology: HTML5, CSS3, PHP, Laravel, jQuery, JavaScript",
-    "test_key": "test_value"
+    "portfolio_title_agenciaautoweb": "Auto Web Agency",
+    "portfolio_title_barberhouse": "Barber House",
+    "portfolio_title_cafeteria": "Cafeteria",
+    "portfolio_title_dashboardstarwars": "Star Wars Dashboard",
+    "portfolio_title_deathcat": "Death Cat",
+    "portfolio_title_lingerie": "Lingerie",
+    "portfolio_title_relationship": "Relationship",
+    "portfolio_title_terapiadodia": "Therapy of the Day"
 }
