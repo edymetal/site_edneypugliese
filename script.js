@@ -231,3 +231,4 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
+}); // Adicionado o '}' de fechamento aqui
