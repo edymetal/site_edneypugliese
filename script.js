@@ -143,13 +143,14 @@ document.addEventListener('DOMContentLoaded', function() {
     const portfolioItems = document.querySelectorAll('.portfolio-item');
     const modal = document.getElementById('portfolio-modal');
     const closeModal = document.querySelector('.close-button');
-    const modalImage = document.querySelector('.modal-image img');
+    const modalImage = document.getElementById('modal-project-image'); // Alterado para usar o ID
     const modalTitle = document.querySelector('.modal-title');
     const modalDescription = document.querySelector('.modal-description');
     const modalDetails = document.querySelector('.modal-details');
-    const modalDate = document.querySelector('.modal-date');
-    const modalUrl = document.querySelector('.modal-url');
-    const modalShare = document.querySelector('.modal-share'); // Add this line
+    // Lightbox elements
+    const imageLightbox = document.getElementById('image-lightbox');
+    const closeLightbox = document.querySelector('.close-lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
 
     if (modal) {
         portfolioItems.forEach(item => {
@@ -160,6 +161,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 const detailsKey = item.dataset.details;
                 const description = translations[descriptionKey] || descriptionKey;
                 const details = translations[detailsKey] || detailsKey;
+
+                modalImage.src = imgSrc;
+                modalTitle.textContent = title; // Keep this as it is the project title
 
                 let detailsHtml = '<h3><i class="fas fa-info-circle"></i> Descrição</h3>';
                 detailsHtml += `<p>${description}</p><hr>`;
@@ -210,5 +214,20 @@ document.addEventListener('DOMContentLoaded', function() {
                 modal.style.display = 'none';
             }
         });
+
+        // Lightbox functionality
+        modalImage.addEventListener('click', () => {
+            imageLightbox.style.display = 'block';
+            lightboxImg.src = modalImage.src;
+        });
+
+        closeLightbox.addEventListener('click', () => {
+            imageLightbox.style.display = 'none';
+        });
+
+        imageLightbox.addEventListener('click', (event) => {
+            if (event.target === imageLightbox) {
+                imageLightbox.style.display = 'none';
+            }
+        });
     }
-});
