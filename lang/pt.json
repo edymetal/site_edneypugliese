@@ -70,5 +70,9 @@
     "portfolio_date_terapiadodia": "Data: Jan, 2022",
     "portfolio_url_terapiadodia": "",
     "modal_title_project": "Detalhes do Projeto",
-    "modal_share_text": "Compartilhar"
+    "modal_share_text": "Compartilhar",
+    "modal_description_label": "Descrição",
+    "modal_technology_label": "Tecnologia",
+    "modal_date_label": "Data",
+    "modal_url_label": "URL"
 }
