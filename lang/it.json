@@ -53,22 +53,5 @@
     "portfolio_details_relationship": "Tecnologia: HTML5, CSS3, JavaScript",
     "portfolio_desc_terapiadodia": "Sito web per terapia online.",
     "portfolio_details_terapiadodia": "Tecnologia: HTML5, CSS3, PHP, Laravel, jQuery, JavaScript",
-    "portfolio_date_agenciaautoweb": "Data: Nov, 2020",
-    "portfolio_url_agenciaautoweb": "URL: https://www.agenciaautoweb.com.br/",
-    "portfolio_date_barberhouse": "Data: Gen, 2021",
-    "portfolio_url_barberhouse": "",
-    "portfolio_date_cafeteria": "Data: Mar, 2021",
-    "portfolio_url_cafeteria": "",
-    "portfolio_date_dashboardstarwars": "Data: Mag, 2021",
-    "portfolio_url_dashboardstarwars": "",
-    "portfolio_date_deathcat": "Data: Lug, 2021",
-    "portfolio_url_deathcat": "",
-    "portfolio_date_lingerie": "Data: Set, 2021",
-    "portfolio_url_lingerie": "",
-    "portfolio_date_relationship": "Data: Nov, 2021",
-    "portfolio_url_relationship": "",
-    "portfolio_date_terapiadodia": "Data: Gen, 2022",
-    "portfolio_url_terapiadodia": "",
-    "modal_title_project": "Dettagli del Progetto",
-    "modal_share_text": "Condividi"
+    "modal_title_project": "Dettagli del Progetto"
 }

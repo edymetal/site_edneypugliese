@@ -158,16 +158,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 const title = item.querySelector('.portfolio-title').textContent; // This title is not i18n, it's from the item itself
                 const descriptionKey = item.dataset.description;
                 const detailsKey = item.dataset.details;
-                const dateKey = item.dataset.date;
-                const urlKey = item.dataset.url;
-
-                modalImage.src = imgSrc;
-                modalTitle.textContent = title; // Keep this as it is the project title
-
                 const description = translations[descriptionKey] || descriptionKey;
                 const details = translations[detailsKey] || detailsKey;
-                const date = translations[dateKey] || dateKey;
-                const url = translations[urlKey] || urlKey;
 
                 let detailsHtml = '<h3><i class="fas fa-info-circle"></i> Descrição</h3>';
                 detailsHtml += `<p>${description}</p><hr>`;
@@ -202,24 +194,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 detailsHtml += '<h3><i class="fas fa-cogs"></i> Tecnologia</h3>';
                 detailsHtml += `<ul class="technologies">${techHtml}</ul>`;
 
-                if (date) {
-                    detailsHtml += `<hr><h3><i class="fas fa-calendar-alt"></i> Data</h3><p>${date}</p>`;
-                }
-                if (url && url !== "") {
-                    detailsHtml += `<hr><h3><i class="fas fa-link"></i> URL</h3><p><a href="${url}" target="_blank">${url}</a></p>`;
-                }
-
                 modalDescription.innerHTML = detailsHtml;
                 modalDetails.innerHTML = ''; // Clear the old details
-
-                // Populate modalShare with sharing options
-                modalShare.innerHTML = `
-                    <hr>
-                    <h3>${translations['modal_share_text']}</h3>
-                    <a href="https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(window.location.href)}" target="_blank" class="share-button facebook"><i class="fab fa-facebook-f"></i> Facebook</a>
-                    <a href="https://twitter.com/intent/tweet?url=${encodeURIComponent(window.location.href)}&text=${encodeURIComponent(title)}" target="_blank" class="share-button twitter"><i class="fab fa-twitter"></i> Twitter</a>
-                    <a href="https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(window.location.href)}&title=${encodeURIComponent(title)}" target="_blank" class="share-button linkedin"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
-                `;
 
                 modal.style.display = 'block';
             });
