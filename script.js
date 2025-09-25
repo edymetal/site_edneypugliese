@@ -75,5 +75,44 @@ document.addEventListener('DOMContentLoaded', function() {
         imageContent.classList.add('is-visible');
     }
 
+    async function loadSocialMediaLinks() {
+        if (!contactLinks) return;
+
+        try {
+            const response = await fetch('base/redes.txt');
+            const text = await response.text();
+            const lines = text.split('\n').filter(line => line.trim() !== '');
+
+            contactLinks.innerHTML = ''; // Clear existing content
+
+            const socialMediaMap = {
+                'Facebook': 'fab fa-facebook-f',
+                'Instagram': 'fab fa-instagram',
+                'LinkedIn': 'fab fa-linkedin-in',
+                'Email': 'fas fa-envelope'
+            };
+
+            for (let i = 0; i < lines.length; i += 2) {
+                const name = lines[i].trim();
+                const url = lines[i + 1].trim();
+
+                const iconClass = socialMediaMap[name];
+                if (iconClass) {
+                    const a = document.createElement('a');
+                    a.href = name === 'Email' ? `mailto:${url}` : url;
+                    a.target = '_blank';
+                    a.rel = 'noopener noreferrer';
+                    a.innerHTML = `<i class="${iconClass}"></i>`;
+                    contactLinks.appendChild(a);
+                }
+            }
+        } catch (error) {
+            console.error('Error loading social media links:', error);
+        }
+    }
+
+    // Call this function after translations are loaded or when DOM is ready
+    loadSocialMediaLinks();
+
     // etc...
 });
