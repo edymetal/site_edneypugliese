@@ -81,3 +81,14 @@ Este é um website estático e não requer etapas de construção explícitas (c
 *   **Traduções Incompletas/Incorretas:** Houve problemas anteriores com traduções ausentes ou incorretas em arquivos JSON, que foram corrigidos. É importante manter a consistência e a precisão das traduções em todos os idiomas.
 *   **Estrutura do Modal:** A estrutura do modal do portfólio e a lógica de preenchimento no `script.js` foram ajustadas para serem compatíveis.
 *   **Funcionalidade de Lightbox:** Adicionada funcionalidade de lightbox para visualização de imagens em tamanho maior no modal do portfólio.
+*   **Formatação de Conteúdo Dinâmico:** O `script.js` precisa usar `innerHTML` em vez de `textContent` para elementos que contêm HTML (como ícones e títulos) para garantir a renderização correta.
+
+## Resoluções Recentes
+
+*   **`SyntaxError` em `products.json`:** Corrigido o erro de sintaxe JSON causado por escape incorreto de aspas duplas (`\"` em vez de `"`) no arquivo `products.json`.
+*   **`TypeError` em `loja.js`:** Resolvido o `TypeError` relacionado a `addEventListener` em um objeto `null` em `loja.js`, causado por um ID de elemento HTML (`language-switcher`) inconsistente com o ID usado no JavaScript (`lang-select`).
+*   **Ícones de Redes Sociais Ausentes em `index.html`:** Adicionada a lógica JavaScript ausente em `script.js` para carregar dinamicamente os links de redes sociais de `base/redes.txt` e inseri-los no `div contact-links`.
+*   **Imagem de Perfil e Ícones Ausentes em `index.html`:** Resolvido o problema da imagem de perfil oculta adicionando a classe `is-visible` ao elemento `.image-content` via JavaScript. As versões de `style.css` e `script.js` em `index.html` foram atualizadas para resolver problemas de cache.
+*   **Formatação Incorreta do Modal do Portfólio:** Corrigido o problema de formatação do modal do portfólio alterando o `script.js` para usar `innerHTML` em vez de `textContent` ao preencher os elementos `modalDescription` e `modalDetails`, permitindo a renderização correta de HTML (incluindo ícones e títulos).
+*   **Remoção do Texto 'Loja' do Logo:** O texto 'Loja' foi removido da área do logo na página da loja, definindo a chave `site_logo` como uma string vazia nos arquivos de tradução `lang/*.json`.
+*   **Padronização do Seletor de Idioma:** O seletor de idioma em `loja.html` foi atualizado para corresponder ao padrão do projeto (`index.html`) em termos de classe, ID e nomes completos dos idiomas.
