@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root {
-    --app-version: "1.47";
+    --app-version: "1.48";
 }
 
 html {
@@ -773,7 +773,7 @@ nav ul li a:hover, nav ul li a.active {
 
 .google-review-card {
     background-color: #1a1a1a;
-    padding: 20px;
+    padding: 15px;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
     display: flex;
@@ -788,46 +788,88 @@ nav ul li a:hover, nav ul li a.active {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
 }
 
-.review-header {
+.review-top-section {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     margin-bottom: 10px;
+}
+
+.review-profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile-picture {
+    font-size: 35px;
+    color: #bbb;
+    margin-right: 10px;
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
 }
 
 .author-name {
     font-weight: 600;
     color: #ededed;
+    font-size: 1.1em;
 }
 
-.review-date {
-    font-size: 0.9em;
-    color: #bbb;
+.review-meta {
+    font-size: 0.8em;
+    color: #999;
+}
+
+.review-top-right-menu {
+    color: #999;
+    font-size: 1.1em;
+}
+
+.stars-and-date {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
 }
 
 .stars {
     color: #fbc02d; /* Cor amarela para as estrelas */
-    margin-bottom: 10px;
+    font-size: 0.9em;
+    margin-right: 8px;
 }
 
 .stars .far.fa-star {
     color: #555; /* Estrela vazia */
 }
 
-.review-text {
+.review-date {
+    font-size: 0.85em;
+    color: #bbb;
+    margin-right: 10px;
+}
+
+.new-badge {
+    background-color: #e6f4ea; /* Cor de fundo do selo NOVA */
+    color: #1e8e3e; /* Cor do texto do selo NOVA */
+    font-size: 0.7em;
+    font-weight: 600;
+    padding: 3px 6px;
+    border-radius: 4px;
+}
+
+.review-text-content {
     font-size: 0.95em;
     line-height: 1.5;
     color: #ccc;
-    margin-bottom: 15px;
+    margin-bottom: 0;
     flex-grow: 1; /* Permite que o texto ocupe o espaço disponível */
 }
 
-.review-link {
+.read-more {
     color: #00abf0;
     font-weight: 500;
-    text-align: right;
-    display: block;
-    margin-top: auto; /* Empurra o link para o final do card */
+    cursor: pointer;
 }
 
 @media (max-width: 768px) {
