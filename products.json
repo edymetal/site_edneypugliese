@@ -74,20 +74,20 @@
     "price": 110.00,
     "details": {
       "pt": {
-        "name": "Action Figure Edy em Embalagem de Colecionador",
+        "name": "Action Figure \"Edy\" em Embalagem de Colecionador",
         "description": "Uma action figure personalizada e colecionável chamada \"Edy\", apresentada em uma embalagem estilo blister com diversos acessórios em miniatura, como teclado, guitarra e mala."
       },
       "en": {
-        "name": \"Edy\" Action Figure in Collector's Packaging",
+        "name": "\"Edy\" Action Figure in Collector's Packaging",
         "description": "A custom and collectible action figure named \"Edy\", presented in a blister-style packaging with various miniature accessories, such as a keyboard, guitar, and suitcase."
       },
       "es": {
-        "name": "Figura de Acción \"Edy\" em Embalaje de Colecionista",
-        "description": "Una figura de acción personalizada y colecionable llamada \"Edy\", presentada en un embalaje estilo blíster con varios accesorios em miniatura, como teclado, guitarra y maleta."
+        "name": "Figura de Acción \"Edy\" en Embalaje de Coleccionista",
+        "description": "Una figura de acción personalizada y coleccionable llamada \"Edy\", presentada en un embalaje estilo blíster con varios accesorios en miniatura, como teclado, guitarra y maleta."
       },
       "it": {
         "name": "Action Figure \"Edy\" in Confezione da Collezione",
-        "description": "Un'action figure personalizzata e da collezione chiamata \"Edy\", presentata in una confezione stile blister com vari accessori in miniatura, como tastiera, chitarra e valigia."
+        "description": "Un'action figure personalizzata e da collezione chiamata \"Edy\", presentata in una confezione stile blister con vari accessori in miniatura, come tastiera, chitarra e valigia."
       }
     }
   },
