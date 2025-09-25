@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root {
-    --app-version: "1.98";
+    --app-version: "1.99";
 }
 
 html {
@@ -385,6 +385,14 @@ nav ul li a:hover, nav ul li a.active {
 
     .image-content::after {
         width: 100%;
+    }
+
+    .social-media a {
+        box-shadow: 0 0 10px #00abf0;
+    }
+
+    .social-media a:hover {
+        box-shadow: 0 0 20px #00abf0, 0 0 40px #00abf0;
     }
 }
 
