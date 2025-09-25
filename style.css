@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root {
-    --app-version: "1.111";
+    --app-version: "1.112";
 }
 
 html {
@@ -397,7 +397,8 @@ nav ul li a:hover, nav ul li a.active {
     }
 
     .carousel-container {
-        max-width: 100%;
+        max-width: 90%; /* Reduce max-width for mobile */
+        margin: 0 auto; /* Center the carousel on mobile */
     }
 
     .image-content::after {
