@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
             `;
             productGallery.appendChild(productElement);
         });
-        updateI18n(); // Atualiza textos dos botões recém-criados
+        applyTranslations(); // Atualiza textos dos botões recém-criados
     }
 
     // Adiciona um item ao carrinho
@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (Object.keys(cart).length === 0) {
             cartItemsContainer.innerHTML = `<p data-i18n="emptyCart">Seu carrinho está vazio.</p>`;
-            updateI18n();
+            applyTranslations();
         } else {
             for (const productId in cart) {
                 const product = products.find(p => p.id == productId);

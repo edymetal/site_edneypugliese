@@ -1,70 +1,70 @@
 [
   {
     "id": 1,
-    "image": "img/loja/product1.jpg",
+    "image": "img/loja/edy_boneco.png",
     "price": 79.90,
     "details": {
       "pt": {
-        "name": "Camiseta Clássica",
-        "description": "Uma camiseta de algodão macio, perfeita para o dia a dia."
+        "name": "Action Figure Edy",
+        "description": "Um boneco customizado e de alta qualidade."
       },
       "en": {
-        "name": "Classic T-Shirt",
-        "description": "A soft cotton t-shirt, perfect for everyday wear."
+        "name": "Edy Action Figure",
+        "description": "A high-quality custom action figure."
       },
       "es": {
-        "name": "Camiseta Clásica",
-        "description": "Una camiseta de algodón suave, perfecta para el día a día."
+        "name": "Figura de Acción Edy",
+        "description": "Una figura de acción personalizada de alta calidad."
       },
       "it": {
-        "name": "Maglietta Classica",
-        "description": "Una maglietta in morbido cotone, perfetta per tutti i giorni."
+        "name": "Action Figure di Edy",
+        "description": "Una action figure personalizzata di alta qualità."
       }
     }
   },
   {
     "id": 2,
-    "image": "img/loja/product2.jpg",
+    "image": "img/loja/edy_fusca.png",
     "price": 129.90,
     "details": {
       "pt": {
-        "name": "Calça Jeans",
-        "description": "Calça jeans com corte moderno e confortável."
+        "name": "Miniatura Fusca",
+        "description": "Miniatura de um fusca clássico, rica em detalhes."
       },
       "en": {
-        "name": "Jeans",
-        "description": "Jeans with a modern and comfortable cut."
+        "name": "Beetle Miniature",
+        "description": "A classic beetle miniature, rich in detail."
       },
       "es": {
-        "name": "Pantalones Vaqueros",
-        "description": "Vaqueros con un corte moderno y cómodo."
+        "name": "Miniatura de Escarabajo",
+        "description": "Una miniatura de escarabajo clásico, rica en detalles."
       },
       "it": {
-        "name": "Jeans",
-        "description": "Jeans dal taglio moderno e confortevole."
+        "name": "Miniatura di Maggiolino",
+        "description": "Una miniatura di un maggiolino classico, ricca di dettagli."
       }
     }
   },
   {
     "id": 3,
-    "image": "img/loja/product3.jpg",
+    "image": "img/loja/edy_opel.png",
     "price": 249.90,
     "details": {
       "pt": {
-        "name": "Jaqueta de Couro",
-        "description": "Jaqueta de couro sintético com design elegante."
+        "name": "Miniatura Opel",
+        "description": "Réplica detalhada de um carro de corrida Opel."
       },
       "en": {
-        "name": "Leather Jacket",
-        "description": "Faux leather jacket with an elegant design."
+        "name": "Opel Miniature",
+        "description": "Detailed replica of an Opel racing car."
       },
       "es": {
-        "name": "Chaqueta de Cuero",
-        "description": "Chaqueta de cuero sintético con un diseño elegante."
+        "name": "Miniatura de Opel",
+        "description": "Réplica detallada de un coche de carreras Opel."
       },
       "it": {
-        "name": "Giacca di Pelle",
-        "description": "Giacca in ecopelle dal design elegante."
+        "name": "Miniatura di Opel",
+        "description": "Replica dettagliata di un'auto da corsa Opel."
       }
     }
   }
