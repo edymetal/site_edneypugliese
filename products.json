@@ -2,115 +2,115 @@
   {
     "id": 1,
     "image": "img/loja/edy_boneco.png",
-    "price": 79.90,
+    "price": 95.00,
     "details": {
       "pt": {
-        "name": "Action Figure Edy",
-        "description": "Um boneco customizado e de alta qualidade."
+        "name": "Action Figure Personalizada - Estilo Verão",
+        "description": "Uma action figure detalhada e personalizada, capturando um momento de descontração. Perfeita para colecionadores e como um presente único."
       },
       "en": {
-        "name": "Edy Action Figure",
-        "description": "A high-quality custom action figure."
+        "name": "Custom Action Figure - Summer Style",
+        "description": "A detailed and custom action figure, capturing a moment of relaxation. Perfect for collectors and as a unique gift."
       },
       "es": {
-        "name": "Figura de Acción Edy",
-        "description": "Una figura de acción personalizada de alta calidad."
+        "name": "Figura de Acción Personalizada - Estilo Verano",
+        "description": "Una figura de acción detallada y personalizada, capturando un momento de relajación. Perfecta para coleccionistas y como un regalo único."
       },
       "it": {
-        "name": "Action Figure di Edy",
-        "description": "Una action figure personalizzata di alta qualità."
+        "name": "Action Figure Personalizzata - Stile Estivo",
+        "description": "Un'action figure dettagliata e personalizzata, che cattura un momento di relax. Perfetta per collezionisti e come regalo unico."
       }
     }
   },
   {
     "id": 2,
     "image": "img/loja/edy_fusca.png",
-    "price": 129.90,
+    "price": 180.00,
     "details": {
       "pt": {
-        "name": "Miniatura Fusca",
-        "description": "Miniatura de um fusca clássico, rica em detalhes."
+        "name": "Diorama Personalizado com Miniatura de Fusca Clássico",
+        "description": "Uma peça de exibição única, apresentando uma miniatura de um Volkswagen Fusca amarelo com uma figura personalizada. Ideal para entusiastas de carros clássicos e colecionáveis."
       },
       "en": {
-        "name": "Beetle Miniature",
-        "description": "A classic beetle miniature, rich in detail."
+        "name": "Custom Diorama with Classic Beetle Miniature",
+        "description": "A unique display piece, featuring a miniature of a yellow Volkswagen Beetle with a custom figure. Ideal for classic car enthusiasts and collectors."
       },
       "es": {
-        "name": "Miniatura de Escarabajo",
-        "description": "Una miniatura de escarabajo clásico, rica en detalles."
+        "name": "Diorama Personalizado con Miniatura de Escarabajo Clásico",
+        "description": "Una pieza de exhibición única, con una miniatura de un Volkswagen Escarabajo amarillo y una figura personalizada. Ideal para entusiastas de los coches clásicos y coleccionables."
       },
       "it": {
-        "name": "Miniatura di Maggiolino",
-        "description": "Una miniatura di un maggiolino classico, ricca di dettagli."
+        "name": "Diorama Personalizzato con Miniatura di Maggiolino Classico",
+        "description": "Un pezzo da esposizione unico, con una miniatura di un Maggiolino Volkswagen giallo e una figura personalizzata. Ideale per gli appassionati di auto d'epoca e da collezione."
       }
     }
   },
   {
     "id": 3,
     "image": "img/loja/edy_opel.png",
-    "price": 249.90,
+    "price": 175.00,
     "details": {
       "pt": {
-        "name": "Miniatura Opel",
-        "description": "Réplica detalhada de um carro de corrida Opel."
+        "name": "Diorama Personalizado com Miniatura de Opel Corsa",
+        "description": "Um diorama moderno que inclui a miniatura de um Opel Corsa prateado e uma figura personalizada, criando uma cena casual e estilosa."
       },
       "en": {
-        "name": "Opel Miniature",
-        "description": "Detailed replica of an Opel racing car."
+        "name": "Custom Diorama with Opel Corsa Miniature",
+        "description": "A modern diorama that includes a miniature of a silver Opel Corsa and a custom figure, creating a casual and stylish scene."
       },
       "es": {
-        "name": "Miniatura de Opel",
-        "description": "Réplica detallada de un coche de carreras Opel."
+        "name": "Diorama Personalizado con Miniatura de Opel Corsa",
+        "description": "Un diorama moderno que incluye la miniatura de un Opel Corsa plateado y una figura personalizada, creando una escena casual y elegante."
       },
       "it": {
-        "name": "Miniatura di Opel",
-        "description": "Replica dettagliata di un'auto da corsa Opel."
+        "name": "Diorama Personalizzato con Miniatura di Opel Corsa",
+        "description": "Un diorama moderno che include la miniatura di un'Opel Corsa argentata e una figura personalizzata, creando una scena casual e stilosa."
       }
     }
   },
   {
     "id": 4,
     "image": "img/loja/edy_boneco_caixa.PNG",
-    "price": 99.90,
+    "price": 110.00,
     "details": {
       "pt": {
-        "name": "Edy Figure (Box)",
-        "description": "Edição de colecionador na caixa original."
+        "name": "Action Figure \"Edy\" em Embalagem de Colecionador",
+        "description": "Uma action figure personalizada e colecionável chamada \"Edy\", apresentada em uma embalagem estilo blister com diversos acessórios em miniatura, como teclado, guitarra e mala."
       },
       "en": {
-        "name": "Edy Figure (Box)",
-        "description": "Collector's edition in original box."
+        "name": \"Edy\" Action Figure in Collector's Packaging",
+        "description": "A custom and collectible action figure named \"Edy\", presented in a blister-style packaging with various miniature accessories, such as a keyboard, guitar, and suitcase."
       },
       "es": {
-        "name": "Figura Edy (Caja)",
-        "description": "Edición de coleccionista en su caja original."
+        "name": "Figura de Acción \"Edy\" en Embalaje de Coleccionista",
+        "description": "Una figura de acción personalizada y coleccionable llamada \"Edy\", presentada en un embalaje estilo blíster con varios accesorios en miniatura, como teclado, guitarra y maleta."
       },
       "it": {
-        "name": "Figura Edy (Scatola)",
-        "description": "Edizione da collezione in scatola originale."
+        "name": "Action Figure \"Edy\" in Confezione da Collezione",
+        "description": "Un'action figure personalizzata e da collezione chiamata \"Edy\", presentata in una confezione stile blister con vari accessori in miniatura, come tastiera, chitarra e valigia."
       }
     }
   },
   {
     "id": 5,
     "image": "img/loja/edy_poste.png",
-    "price": 49.90,
+    "price": 25.00,
     "details": {
       "pt": {
-        "name": "Diorama Poste",
-        "description": "Poste de luz para compor cenários e dioramas."
+        "name": "Cartão Postal Personalizado \"Férias em Palermo\"",
+        "description": "Um cartão postal com design exclusivo, perfeito para recordar ou compartilhar as memórias de uma viagem de verão a Palermo."
       },
       "en": {
-        "name": "Lamppost Diorama",
-        "description": "Lamppost to compose scenes and dioramas."
+        "name": "Custom Postcard \"Holidays in Palermo\"",
+        "description": "An exclusively designed postcard, perfect for remembering or sharing memories of a summer trip to Palermo."
       },
       "es": {
-        "name": "Diorama Poste de Luz",
-        "description": "Poste de luz para componer escenas y dioramas."
+        "name": "Postal Personalizada \"Vacaciones en Palermo\"",
+        "description": "Una postal con un diseño exclusivo, perfecta para recordar o compartir los recuerdos de un viaje de verano a Palermo."
       },
       "it": {
-        "name": "Diorama Lampione",
-        "description": "Lampione per comporre scene e diorami."
+        "name": "Cartolina Personalizzata \"Vacanze a Palermo\"",
+        "description": "Una cartolina dal design esclusivo, perfetta per ricordare o condividere i ricordi di un viaggio estivo a Palermo."
       }
     }
   }

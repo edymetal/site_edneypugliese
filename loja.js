@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <img src="${product.image}" alt="${productDetails.name}">
                 <h3>${productDetails.name}</h3>
                 <p>${productDetails.description}</p>
-                <p class="price">R$ ${product.price.toFixed(2)}</p>
+                <p class="price">€ ${product.price.toFixed(2)}</p>
                 <button class="add-to-cart-btn" data-id="${product.id}" data-i18n="addToCart">Adicionar ao Carrinho</button>
             `;
             productGallery.appendChild(productElement);
@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     cartItemElement.classList.add('cart-item');
                     cartItemElement.innerHTML = `
                         <span>${product.details[currentLang].name} (x${quantity})</span>
-                        <span>R$ ${itemTotal.toFixed(2)}</span>
+                        <span>€ ${itemTotal.toFixed(2)}</span>
                         <button class="remove-from-cart-btn" data-id="${productId}">X</button>
                     `;
                     cartItemsContainer.appendChild(cartItemElement);
@@ -93,7 +93,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
 
-        subtotalPriceElement.textContent = `R$ ${subtotal.toFixed(2)}`;
+        subtotalPriceElement.textContent = `€ ${subtotal.toFixed(2)}`;
         renderPayPalButton(subtotal);
     }
     
@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         purchase_units: [{
                             amount: {
                                 value: total.toFixed(2),
-                                currency_code: 'BRL'
+                                currency_code: 'EUR'
                             }
                         }]
                     });
