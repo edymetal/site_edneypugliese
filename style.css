@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root {
-    --app-version: "1.97";
+    --app-version: "1.98";
 }
 
 html {
@@ -340,7 +340,7 @@ nav ul li a:hover, nav ul li a.active {
         flex-direction: column-reverse;
         justify-content: center;
         /* Removido o padding inferior para eliminar o espaço residual */
-        padding: 80px 20px 0; 
+        padding: 80px 40px 0; 
         text-align: center;
     }
 
