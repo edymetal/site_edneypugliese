@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root {
-    --app-version: "1.93";
+    --app-version: "1.94";
 }
 
 html {
@@ -155,7 +155,7 @@ nav ul li a:hover, nav ul li a.active {
     font-size: 20px;
     color: #00abf0;
     text-decoration: none;
-    margin-right: 15px;
+    margin-right: 20px;
     transition: 0.5s;
     box-shadow: 0 0 5px #00abf0;
 }
@@ -163,7 +163,7 @@ nav ul li a:hover, nav ul li a.active {
 .social-media a:hover {
     background: #00abf0;
     color: #081b29;
-    box-shadow: 0 0 20px #00abf0, 0 0 40px #00abf0;
+    box-shadow: 0 0 30px #00abf0, 0 0 60px #00abf0;
 }
 
 .cv-button {
