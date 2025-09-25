@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root {
-    --app-version: "1.48";
+    --app-version: "1.49";
 }
 
 html {
@@ -772,14 +772,14 @@ nav ul li a:hover, nav ul li a.active {
 }
 
 .google-review-card {
-    background-color: #1a1a1a;
+    background-color: #FFFFFF;
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
     display: flex;
     flex-direction: column;
     text-decoration: none;
-    color: inherit;
+    color: #333333;
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 
@@ -813,13 +813,14 @@ nav ul li a:hover, nav ul li a.active {
 
 .author-name {
     font-weight: 600;
-    color: #ededed;
+    color: #333333;
     font-size: 1.1em;
 }
 
 .review-meta {
     font-size: 0.8em;
     color: #999;
+    display: none;
 }
 
 .review-top-right-menu {
@@ -847,6 +848,7 @@ nav ul li a:hover, nav ul li a.active {
     font-size: 0.85em;
     color: #bbb;
     margin-right: 10px;
+    display: none;
 }
 
 .new-badge {
@@ -856,6 +858,7 @@ nav ul li a:hover, nav ul li a.active {
     font-weight: 600;
     padding: 3px 6px;
     border-radius: 4px;
+    display: none;
 }
 
 .review-text-content {
