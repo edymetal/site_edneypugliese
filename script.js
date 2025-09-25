@@ -154,6 +154,9 @@ document.addEventListener('DOMContentLoaded', function() {
     const prevBtn = document.querySelector('.carousel-control.prev');
     const nextBtn = document.querySelector('.carousel-control.next');
 
+    console.log('carouselSlide:', carouselSlide);
+    console.log('carouselImages:', carouselImages);
+
     if (carouselSlide && carouselImages.length > 0) {
         let counter = 0;
         const totalImages = carouselImages.length;
