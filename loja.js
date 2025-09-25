@@ -145,7 +145,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Observador para mudança de idioma
-    const langSelect = document.getElementById('lang-select');
+    const langSelect = document.getElementById('language-switcher');
     langSelect.addEventListener('change', (e) => {
         currentLang = e.target.value;
         renderProducts();
