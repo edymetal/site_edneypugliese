@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root {
-    --app-version: "1.52";
+    --app-version: "1.53";
 }
 
 html {
@@ -801,9 +801,17 @@ nav ul li a:hover, nav ul li a.active {
 }
 
 .profile-picture {
-    font-size: 35px;
-    color: #bbb;
+    font-size: 24px;
+    color: #70757a;
     margin-right: 10px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #fbbc04;
 }
 
 .profile-info {
@@ -813,18 +821,17 @@ nav ul li a:hover, nav ul li a.active {
 
 .author-name {
     font-weight: 600;
-    color: #ededed;
+    color: #000000;
     font-size: 1.1em;
 }
 
 .review-meta {
     font-size: 0.8em;
-    color: #999;
-    display: none;
+    color: #70757a;
 }
 
 .review-top-right-menu {
-    color: #999;
+    color: #70757a;
     font-size: 1.1em;
 }
 
@@ -846,9 +853,8 @@ nav ul li a:hover, nav ul li a.active {
 
 .review-date {
     font-size: 0.85em;
-    color: #bbb;
+    color: #70757a;
     margin-right: 10px;
-    display: none;
 }
 
 .new-badge {
@@ -858,7 +864,6 @@ nav ul li a:hover, nav ul li a.active {
     font-weight: 600;
     padding: 3px 6px;
     border-radius: 4px;
-    display: none;
 }
 
 .review-text-content {
@@ -870,7 +875,7 @@ nav ul li a:hover, nav ul li a.active {
 }
 
 .read-more {
-    color: #007bff;
+    color: #00abf0;
     font-weight: 500;
     cursor: pointer;
 }
