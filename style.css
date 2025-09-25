@@ -809,22 +809,6 @@ nav ul li a:hover, nav ul li a.active {
     border: 1px solid #fbbc04; /* Manter a borda amarela */
 }
 
-.profile-icon-placeholder {
-    width: 32px;
-    height: 32px;
-    margin-right: 10px;
-    border: 1px solid #fbbc04; /* Manter a borda amarela */
-    border-radius: 50%; /* Para torná-lo circular */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5em; /* Ajuste o tamanho do ícone conforme necessário */
-    color: #70757a; /* Cor cinza para o ícone */
-    background-color: #e0e0e0; /* Fundo cinza claro */
-    line-height: 1; /* Reset line-height */
-    text-align: center; /* Center text for older browsers */
-}
-
 .profile-info {
     display: flex;
     flex-direction: column;
