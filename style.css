@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root {
-    --app-version: "1.60";
+    --app-version: "1.61";
 }
 
 html {
@@ -801,17 +801,12 @@ nav ul li a:hover, nav ul li a.active {
 }
 
 .profile-picture {
-    font-size: 24px;
-    color: #70757a;
-    margin-right: 10px;
     width: 32px;
     height: 32px;
-    border-radius: 50%;
-    background-color: #e0e0e0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #fbbc04;
+    border-radius: 50%; /* Para torná-lo circular */
+    margin-right: 10px;
+    object-fit: cover; /* Para garantir que a imagem preencha o círculo */
+    border: 1px solid #fbbc04; /* Manter a borda amarela */
 }
 
 .profile-info {

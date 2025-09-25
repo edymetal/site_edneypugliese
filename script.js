@@ -26,8 +26,51 @@ document.addEventListener('DOMContentLoaded', function() {
                 if (element.tagName === 'TITLE') {
                     document.title = translations[key];
                                     } else if (element.classList.contains('review-text-content')) {
-                                        element.innerHTML = translations[key];
-                                    }
+                                        const fullText = translations[key];
+                                        const maxLength = 150; // Define o limite de caracteres
+                                        let displayedText = fullText;
+                                        let needsReadMore = false;
+
+                                        // Remove o span class="read-more" do texto completo para evitar duplicação
+                                        const cleanFullText = fullText.replace(/<span class="read-more">.*?<\/span>/g, '').trim();
+
+                                        if (cleanFullText.length > maxLength) {
+                                            displayedText = cleanFullText.substring(0, maxLength) + '... <span class="read-more" data-i18n="read_more_text">Mais</span>';
+                                            needsReadMore = true;
+                                        }
+
+                                        element.innerHTML = displayedText;
+                                        element.setAttribute('data-full-text', cleanFullText); // Armazena o texto completo
+
+                                        if (needsReadMore) {
+                                            const readMoreSpan = element.querySelector('.read-more');
+                                            if (readMoreSpan) {
+                                                readMoreSpan.addEventListener('click', (event) => {
+                                                    event.preventDefault();
+                                                    if (element.classList.contains('expanded')) {
+                                                        element.innerHTML = displayedText; // Volta para o texto truncado
+                                                        element.classList.remove('expanded');
+                                                    } else {
+                                                        element.innerHTML = cleanFullText + ' <span class="read-more" data-i18n="read_less_text">Menos</span>'; // Mostra o texto completo
+                                                        element.classList.add('expanded');
+                                                    }
+                                                    // Re-adiciona o event listener ao novo span "Mais/Menos"
+                                                    const newReadMoreSpan = element.querySelector('.read-more');
+                                                    if (newReadMoreSpan) {
+                                                        newReadMoreSpan.addEventListener('click', (e) => {
+                                                            e.preventDefault();
+                                                            if (element.classList.contains('expanded')) {
+                                                                element.innerHTML = displayedText;
+                                                                element.classList.remove('expanded');
+                                                            } else {
+                                                                element.innerHTML = cleanFullText + ' <span class="read-more" data-i18n="read_less_text">Menos</span>';
+                                                                element.classList.add('expanded');
+                                                            }
+                                                        });
+                                                    }
+                                                });
+                                            }
+                                        }
                                     else {
                                         // Check if the translation contains HTML tags
                                         if (/<[a-z][\s\S]*>/i.test(translations[key])) {
