@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root {
-    --app-version: "1.124";
+    --app-version: "1.125";
 }
 
 html {
@@ -303,6 +303,34 @@ nav ul li a:hover, nav ul li a.active {
     object-fit: contain; /* Ensure entire image is visible */
     margin: 0 auto; /* Center the image */
     flex-basis: 100%; /* Keep for carousel functionality */
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 24px;
+    z-index: 100;
+    transition: background-color 0.3s ease;
+}
+
+.carousel-control:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.carousel-control.prev {
+    left: 0;
+    border-radius: 0 5px 5px 0;
+}
+
+.carousel-control.next {
+    right: 0;
+    border-radius: 5px 0 0 5px;
 }
 
 /* ------------------------------------------- */

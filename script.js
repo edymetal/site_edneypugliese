@@ -166,23 +166,63 @@ document.addEventListener('DOMContentLoaded', function() {
     // Carousel logic (moved from fotos.html)
     const carouselSlide = document.querySelector('.carousel-slide');
     const carouselImages = document.querySelectorAll('.carousel-slide img');
+    const prevBtn = document.querySelector('.carousel-control.prev');
+    const nextBtn = document.querySelector('.carousel-control.next');
 
     if (carouselSlide && carouselImages.length > 0) {
         let counter = 0;
         const totalImages = carouselImages.length;
+        let slideInterval;
 
-        function slideNext() {
-            counter++;
-            if (counter === totalImages) {
-                counter = 0;
-            }
-            // Ensure carouselImages[0] exists before accessing clientWidth
+        function updateSlide() {
             if (carouselImages[0]) {
                 carouselSlide.style.transform = 'translateX(' + (-carouselImages[0].clientWidth * counter) + 'px)';
             }
         }
 
-        setInterval(slideNext, 3000); // Change image every 3 seconds
+        function startSlideShow() {
+            slideInterval = setInterval(() => {
+                counter++;
+                if (counter === totalImages) {
+                    counter = 0;
+                }
+                updateSlide();
+            }, 3000);
+        }
+
+        function stopSlideShow() {
+            clearInterval(slideInterval);
+        }
+
+        function slideNext() {
+            stopSlideShow();
+            counter++;
+            if (counter === totalImages) {
+                counter = 0;
+            }
+            updateSlide();
+            startSlideShow();
+        }
+
+        function slidePrev() {
+            stopSlideShow();
+            counter--;
+            if (counter < 0) {
+                counter = totalImages - 1;
+            }
+            updateSlide();
+            startSlideShow();
+        }
+
+        // Event listeners for manual controls
+        if (prevBtn) {
+            prevBtn.addEventListener('click', slidePrev);
+        }
+        if (nextBtn) {
+            nextBtn.addEventListener('click', slideNext);
+        }
+
+        startSlideShow(); // Start automatic slideshow
 
         // Optional: Adjust slide on window resize
         window.addEventListener('resize', () => {
