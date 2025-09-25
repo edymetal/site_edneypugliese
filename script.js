@@ -114,5 +114,39 @@ document.addEventListener('DOMContentLoaded', function() {
     // Call this function after translations are loaded or when DOM is ready
     loadSocialMediaLinks();
 
+    // Portfolio Modal Logic
+    const portfolioModal = document.getElementById('portfolio-modal');
+    const modalTitle = portfolioModal.querySelector('.modal-title');
+    const modalProjectImage = document.getElementById('modal-project-image');
+    const modalDescription = portfolioModal.querySelector('.modal-description');
+    const modalDetails = portfolioModal.querySelector('.modal-details');
+    const closeButton = portfolioModal.querySelector('.close-button');
+
+    document.querySelectorAll('.portfolio-item').forEach(item => {
+        item.addEventListener('click', () => {
+            const descriptionKey = item.getAttribute('data-description');
+            const detailsKey = item.getAttribute('data-details');
+            const titleKey = item.querySelector('.portfolio-title').getAttribute('data-i18n');
+            const imageUrl = item.querySelector('img').src;
+
+            modalTitle.textContent = translations[titleKey] || item.querySelector('.portfolio-title').textContent;
+            modalProjectImage.src = imageUrl;
+            modalDescription.textContent = translations[descriptionKey] || '';
+            modalDetails.textContent = translations[detailsKey] || '';
+
+            portfolioModal.style.display = 'block';
+        });
+    });
+
+    closeButton.addEventListener('click', () => {
+        portfolioModal.style.display = 'none';
+    });
+
+    window.addEventListener('click', (event) => {
+        if (event.target === portfolioModal) {
+            portfolioModal.style.display = 'none';
+        }
+    });
+
     // etc...
 });
