@@ -5,8 +5,8 @@
     "price": 95.00,
     "details": {
       "pt": {
-        "name": "Action Figure Personalizada - Estilo Verão",
-        "description": "Uma action figure detalhada e personalizada, capturando um momento de descontração. Perfeita para colecionadores e como um presente único."
+        "name": "Action Figure Estilo Verão",
+        "description": "Action figure personalizada e detalhada, ideal para colecionadores."
       },
       "en": {
         "name": "Custom Action Figure - Summer Style",
@@ -28,8 +28,8 @@
     "price": 180.00,
     "details": {
       "pt": {
-        "name": "Diorama Personalizado com Miniatura de Fusca Clássico",
-        "description": "Uma peça de exibição única, apresentando uma miniatura de um Volkswagen Fusca amarelo com uma figura personalizada. Ideal para entusiastas de carros clássicos e colecionáveis."
+        "name": "Diorama com Miniatura de Fusca Clássico",
+        "description": "Diorama com miniatura de Fusca amarelo e figura personalizada."
       },
       "en": {
         "name": "Custom Diorama with Classic Beetle Miniature",
@@ -51,8 +51,8 @@
     "price": 175.00,
     "details": {
       "pt": {
-        "name": "Diorama Personalizado com Miniatura de Opel Corsa",
-        "description": "Um diorama moderno que inclui a miniatura de um Opel Corsa prateado e uma figura personalizada, criando uma cena casual e estilosa."
+        "name": "Diorama com Miniatura de Opel Corsa",
+        "description": "Diorama com miniatura de Opel Corsa prateado e figura personalizada."
       },
       "en": {
         "name": "Custom Diorama with Opel Corsa Miniature",
@@ -75,7 +75,7 @@
     "details": {
       "pt": {
         "name": "Action Figure \"Edy\" em Embalagem de Colecionador",
-        "description": "Uma action figure personalizada e colecionável chamada \"Edy\", apresentada em uma embalagem estilo blister com diversos acessórios em miniatura, como teclado, guitarra e mala."
+        "description": "Action figure \"Edy\" em embalagem de colecionador com acessórios."
       },
       "en": {
         "name": "\"Edy\" Action Figure in Collector's Packaging",
@@ -98,7 +98,7 @@
     "details": {
       "pt": {
         "name": "Cartão Postal Personalizado \"Férias em Palermo\"",
-        "description": "Um cartão postal com design exclusivo, perfeito para recordar ou compartilhar as memórias de uma viagem de verão a Palermo."
+        "description": "Cartão postal com design exclusivo de uma viagem a Palermo."
       },
       "en": {
         "name": "Custom Postcard \"Holidays in Palermo\"",
