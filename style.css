@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root {
-    --app-version: "1.75";
+    --app-version: "1.76";
 }
 
 html {
@@ -867,7 +867,7 @@ nav ul li a:hover, nav ul li a.active {
     color: #000000 !important;
     margin-bottom: 0;
     flex-grow: 1;
-    min-height: 50px; /* Adicionado para garantir espaço para o texto */
+    min-height: 100px; /* Aumentado para dar mais espaço para o texto */
 }
 
 .read-more {
