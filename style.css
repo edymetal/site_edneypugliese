@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root {
-    --app-version: "1.107";
+    --app-version: "1.108";
 }
 
 html {
@@ -245,9 +245,17 @@ nav ul li a:hover, nav ul li a.active {
     text-align: center;
 }
 
-.page-content h1, .page-content h2 {
+.page-content h1 {
+    font-size: 48px;
+    margin-bottom: 40px;
+    color: #ededed;
+}
+
+.page-content h2 { /* Specific rule for h2 within page-content */
+    font-size: 48px; /* Match h1 font size */
     text-align: center;
     margin-bottom: 20px;
+    color: #ededed; /* Ensure color is consistent */
 }
 
 .page-content p, .page-content ul {
