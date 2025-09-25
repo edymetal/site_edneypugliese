@@ -63,8 +63,7 @@
     "portfolio_title_terapiadodia": "Terapia del Día",
     "google_reviews_title": "Lo que dicen de nosotros en Google Maps",
     "view_review_on_google": "Ver en Google Maps",
-    "review_text_1_main": "Fue una gran experiencia, una estructura verdaderamente increíble, ya no construyen así. Visita obligada, si estás en Roma, asegúrate de comprar las entradas con antelación, y",
-    "review_text_2_main": "Qué experiencia tan absolutamente increíble, retrocede en el tiempo de los gladiadores, carros y esclavos, el tamaño del lugar es impresionante considerando hace cuánto tiempo fue construido. Cuando cierras los ojos, casi puedes escuchar el rugido del",
-    "review_text_3_main": "Visitar el Coliseo es como retroceder en el tiempo a la antigua Roma. Este anfiteatro icónico, con su estructura masiva y significado histórico, es uno de los monumentos más impresionantes que he visto. Caminar por los pasillos",
-    "read_more_link": "... Más"
+    "review_text_1": "Fue una gran experiencia, una estructura verdaderamente increíble, ya no construyen así. Visita obligada, si estás en Roma, asegúrate de comprar las entradas con antelación, y <span class=\"read-more\">... Más</span>",
+    "review_text_2": "Qué experiencia tan absolutamente increíble, retrocede en el tiempo de los gladiadores, carros y esclavos, el tamaño del lugar es impresionante considerando hace cuánto tempo fue construido. Cuando cierras los ojos, casi puedes escuchar el rugido del <span class=\"read-more\">... Más</span>",
+    "review_text_3": "Visitar el Coliseo es como retroceder en el tiempo a la antigua Roma. Este anfiteatro icónico, con su estructura masiva y significado histórico, es uno de los monumentos más impresionantes que he visto. Caminar por los pasillos <span class=\"read-more\">... Más</span>"
 }

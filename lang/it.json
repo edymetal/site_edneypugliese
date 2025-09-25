@@ -63,8 +63,7 @@
     "portfolio_title_terapiadodia": "Terapia del Giorno",
     "google_reviews_title": "Cosa dicono di noi su Google Maps",
     "view_review_on_google": "Visualizza su Google Maps",
-    "review_text_1_main": "È stata un'ottima esperienza, una struttura davvero incredibile, non costruiscono più così. Visita obbligatoria, se sei a Roma, assicurati di comprare i biglietti in anticipo, e",
-    "review_text_2_main": "Che esperienza assolutamente incredibile, torna indietro nel tempo dei gladiatori, dei carri e degli schiavi, la grandezza del luogo è sbalorditiva considerando quanto tempo fa è stato costruito. Quando chiudi gli occhi, puoi quasi sentire il ruggito del",
-    "review_text_3_main": "Visitare il Colosseo è come tornare indietro nel tempo nell'antica Roma. Questo iconico anfiteatro, con la sua struttura massiccia e il suo significato storico, è uno dei monumenti più impressionanti che abbia mai visto. Camminare per i corridoi",
-    "read_more_link": "... Altro"
+    "review_text_1": "È stata un'ottima esperienza, una struttura davvero incredibile, non costruiscono più così. Visita obbligatoria, se sei a Roma, assicurati di comprare i biglietti in anticipo, e <span class=\"read-more\">... Altro</span>",
+    "review_text_2": "Che esperienza assolutamente incredibile, torna indietro nel tempo dei gladiatori, dei carri e degli schiavi, la grandezza del luogo è sbalorditiva considerando quanto tempo fa è stato costruito. Quando chiudi gli occhi, puoi quasi sentire il ruggito del <span class=\"read-more\">... Altro</span>",
+    "review_text_3": "Visitare il Colosseo è come tornare indietro nel tempo nell'antica Roma. Questo iconico anfiteatro, con la sua struttura massiccia e il suo significato storico, è uno dei monumenti più impressionanti che abbia mai visto. Camminare per i corridoi <span class=\"read-more\">... Altro</span>"
 }
