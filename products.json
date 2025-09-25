@@ -67,5 +67,51 @@
         "description": "Replica dettagliata di un'auto da corsa Opel."
       }
     }
+  },
+  {
+    "id": 4,
+    "image": "img/loja/edy_boneco_caixa.PNG",
+    "price": 99.90,
+    "details": {
+      "pt": {
+        "name": "Edy Figure (Box)",
+        "description": "Edição de colecionador na caixa original."
+      },
+      "en": {
+        "name": "Edy Figure (Box)",
+        "description": "Collector's edition in original box."
+      },
+      "es": {
+        "name": "Figura Edy (Caja)",
+        "description": "Edición de coleccionista en su caja original."
+      },
+      "it": {
+        "name": "Figura Edy (Scatola)",
+        "description": "Edizione da collezione in scatola originale."
+      }
+    }
+  },
+  {
+    "id": 5,
+    "image": "img/loja/edy_poste.png",
+    "price": 49.90,
+    "details": {
+      "pt": {
+        "name": "Diorama Poste",
+        "description": "Poste de luz para compor cenários e dioramas."
+      },
+      "en": {
+        "name": "Lamppost Diorama",
+        "description": "Lamppost to compose scenes and dioramas."
+      },
+      "es": {
+        "name": "Diorama Poste de Luz",
+        "description": "Poste de luz para componer escenas y dioramas."
+      },
+      "it": {
+        "name": "Diorama Lampione",
+        "description": "Lampione per comporre scene e diorami."
+      }
+    }
   }
 ]
