@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root {
-    --app-version: "1.113";
+    --app-version: "1.114";
 }
 
 html {
@@ -380,6 +380,10 @@ nav ul li a:hover, nav ul li a.active {
 
     .text-content h2 {
         font-size: 24px;
+    }
+
+    .page-content h1, .page-content h2 {
+        font-size: 32px; /* Smaller font size for titles on mobile */
     }
 
     .social-media {
