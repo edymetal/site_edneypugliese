@@ -30,6 +30,7 @@ function applyTranslations() {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
+    console.log('DOMContentLoaded fired!');
     const contactLinks = document.getElementById('contact-links');
     const languageSwitcher = document.getElementById('language-switcher');
 
@@ -149,6 +150,8 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Carousel Logic for fotos.html
+    console.log('Attempting to query for .carousel-slide');
+    console.log('document.body:', document.body);
     const carouselSlide = document.querySelector('.carousel-slide');
     const carouselImages = document.querySelectorAll('.carousel-slide img');
     const prevBtn = document.querySelector('.carousel-control.prev');
