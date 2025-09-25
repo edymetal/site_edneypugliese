@@ -131,8 +131,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
             modalTitle.textContent = translations[titleKey] || item.querySelector('.portfolio-title').textContent;
             modalProjectImage.src = imageUrl;
-            modalDescription.textContent = translations[descriptionKey] || '';
-            modalDetails.textContent = translations[detailsKey] || '';
+            modalDescription.innerHTML = translations[descriptionKey] || '';
+            modalDetails.innerHTML = translations[detailsKey] || '';
 
             portfolioModal.style.display = 'block';
         });
