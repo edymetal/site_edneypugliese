@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root {
-    --app-version: "1.78";
+    --app-version: "1.79";
 }
 
 html {
@@ -868,7 +868,6 @@ nav ul li a:hover, nav ul li a.active {
     margin-bottom: 0;
     flex-grow: 1;
     min-height: 100px; /* Aumentado para dar mais espaço para o texto */
-    text-align: center; /* Alinhar o texto ao centro */
 }
 
 .read-more {
