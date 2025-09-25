@@ -12,7 +12,7 @@ function applyTranslations() {
             if (element.tagName === 'TITLE') {
                 document.title = translations[key];
             } else if (element.classList.contains('review-text-content')) {
-                // Lógica específica para reviews (mantida)
+                element.innerHTML = translations[key];
             } else if (element.classList.contains('review-meta')) {
                 // Lógica específica para meta de reviews (mantida)
             } else {
