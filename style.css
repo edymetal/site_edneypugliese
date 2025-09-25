@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root {
-    --app-version: "1.79";
+    --app-version: "1.80";
 }
 
 html {
@@ -781,6 +781,7 @@ nav ul li a:hover, nav ul li a.active {
     text-decoration: none;
     color: #333333;
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    text-align: left; /* Alinhar todo o texto do card à esquerda */
 }
 
 .google-review-card:hover {
