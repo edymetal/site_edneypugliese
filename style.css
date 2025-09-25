@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root {
-    --app-version: "1.45";
+    --app-version: "1.46";
 }
 
 html {
@@ -739,9 +739,107 @@ nav ul li a:hover, nav ul li a.active {
     transition: 0.3s;
 }
 
-.close-lightbox:hover,
+    .close-lightbox:hover,
 .close-lightbox:focus {
     color: #bbb;
     text-decoration: none;
     cursor: pointer;
+}
+
+/* Styles for Google Reviews Section */
+.google-reviews-section {
+    width: 100%;
+    max-width: 900px;
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #0a2133;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.google-reviews-section h2 {
+    color: #00abf0;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2em;
+    text-shadow: 0 0 5px #00abf0;
+}
+
+.review-cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.google-review-card {
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.google-review-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+}
+
+.review-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.author-name {
+    font-weight: 600;
+    color: #ededed;
+}
+
+.review-date {
+    font-size: 0.9em;
+    color: #bbb;
+}
+
+.stars {
+    color: #fbc02d; /* Cor amarela para as estrelas */
+    margin-bottom: 10px;
+}
+
+.stars .far.fa-star {
+    color: #555; /* Estrela vazia */
+}
+
+.review-text {
+    font-size: 0.95em;
+    line-height: 1.5;
+    color: #ccc;
+    margin-bottom: 15px;
+    flex-grow: 1; /* Permite que o texto ocupe o espaço disponível */
+}
+
+.review-link {
+    color: #00abf0;
+    font-weight: 500;
+    text-align: right;
+    display: block;
+    margin-top: auto; /* Empurra o link para o final do card */
+}
+
+@media (max-width: 768px) {
+    .google-reviews-section {
+        padding: 15px;
+    }
+
+    .google-reviews-section h2 {
+        font-size: 1.5em;
+    }
+
+    .review-cards-container {
+        grid-template-columns: 1fr;
+    }
 }
