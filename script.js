@@ -70,5 +70,10 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
+    const imageContent = document.querySelector('.image-content');
+    if (imageContent) {
+        imageContent.classList.add('is-visible');
+    }
+
     // etc...
 });
