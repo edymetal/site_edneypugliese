@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root {
-    --app-version: "1.104";
+    --app-version: "1.105";
 }
 
 html {
@@ -273,7 +273,7 @@ nav ul li a:hover, nav ul li a.active {
     overflow: hidden;
     border: 1px solid #ddd;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    max-height: 500px; /* Limit the height of the carousel container */
+    max-height: 600px; /* Increased limit for the height of the carousel container */
     display: flex; /* Use flexbox to center content vertically if needed */
     align-items: center; /* Center content vertically */
     justify-content: center; /* Center content horizontally */
