@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root {
-    --app-version: "1.103";
+    --app-version: "1.104";
 }
 
 html {
@@ -273,6 +273,10 @@ nav ul li a:hover, nav ul li a.active {
     overflow: hidden;
     border: 1px solid #ddd;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    max-height: 500px; /* Limit the height of the carousel container */
+    display: flex; /* Use flexbox to center content vertically if needed */
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
 }
 
 .carousel-slide {
@@ -284,9 +288,11 @@ nav ul li a:hover, nav ul li a.active {
 .carousel-slide img {
     flex-shrink: 0;
     display: block;
-    width: 100%;
-    flex-basis: 100%;
-    height: auto;
+    max-width: 100%; /* Ensure image doesn't exceed container width */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Ensure entire image is visible */
+    margin: 0 auto; /* Center the image */
+    flex-basis: 100%; /* Keep for carousel functionality */
 }
 
 /* ------------------------------------------- */
