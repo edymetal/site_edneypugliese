@@ -150,6 +150,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Carousel Logic for fotos.html
+    console.log('Attempting to get element with id "carousel-slide":', document.getElementById('carousel-slide'));
     const carouselSlide = document.getElementById('carousel-slide');
     const carouselImages = document.querySelectorAll('.carousel-slide img');
     const prevBtn = document.querySelector('.carousel-control.prev');
