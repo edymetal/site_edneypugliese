@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root {
-    --app-version: "1.50";
+    --app-version: "1.51";
 }
 
 html {
@@ -779,7 +779,7 @@ nav ul li a:hover, nav ul li a.active {
     display: flex;
     flex-direction: column;
     text-decoration: none;
-    color: #333333;
+    color: #000000;
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 
@@ -802,7 +802,7 @@ nav ul li a:hover, nav ul li a.active {
 
 .profile-picture {
     font-size: 35px;
-    color: #bbb;
+    color: #000000;
     margin-right: 10px;
 }
 
@@ -813,7 +813,7 @@ nav ul li a:hover, nav ul li a.active {
 
 .author-name {
     font-weight: 600;
-    color: #333333;
+    color: #000000;
     font-size: 1.1em;
 }
 
@@ -824,7 +824,7 @@ nav ul li a:hover, nav ul li a.active {
 }
 
 .review-top-right-menu {
-    color: #999;
+    color: #000000;
     font-size: 1.1em;
 }
 
@@ -864,7 +864,7 @@ nav ul li a:hover, nav ul li a.active {
 .review-text-content {
     font-size: 0.95em;
     line-height: 1.5;
-    color: #333333;
+    color: #000000;
     margin-bottom: 0;
     flex-grow: 1; /* Permite que o texto ocupe o espaço disponível */
 }
