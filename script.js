@@ -71,6 +71,17 @@ document.addEventListener('DOMContentLoaded', function() {
                                                 });
                                             }
                                         }
+                                    } else if (element.classList.contains('review-meta')) {
+                                        let translatedText = translations[key];
+                                        const reviews = element.getAttribute('data-reviews');
+                                        const photos = element.getAttribute('data-photos');
+                                        if (reviews) {
+                                            translatedText = translatedText.replace('{reviews}', reviews);
+                                        }
+                                        if (photos) {
+                                            translatedText = translatedText.replace('{photos}', photos);
+                                        }
+                                        element.innerHTML = translatedText;
                                     } else {
                                         // Check if the translation contains HTML tags
                                         if (/<[a-z][\s\S]*>/i.test(translations[key])) {
