@@ -25,15 +25,17 @@ document.addEventListener('DOMContentLoaded', function() {
             if (translations[key]) {
                 if (element.tagName === 'TITLE') {
                     document.title = translations[key];
-                } else {
-                    // Check if the translation contains HTML tags
-                    if (/<[a-z][\s\S]*>/i.test(translations[key])) {
-                        element.innerHTML = translations[key];
-                    } else {
-                        element.textContent = translations[key];
-                    }
-                }
-            } else {
+                                    } else if (element.classList.contains('review-text-content')) {
+                                        element.innerHTML = translations[key];
+                                    }
+                                    else {
+                                        // Check if the translation contains HTML tags
+                                        if (/<[a-z][\s\S]*>/i.test(translations[key])) {
+                                            element.innerHTML = translations[key];
+                                        } else {
+                                            element.textContent = translations[key];
+                                        }
+                                    }            } else {
                 console.warn('Missing translation for key:', key, 'on element:', element);
             }
         });
