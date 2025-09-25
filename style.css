@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root {
-    --app-version: "1.76";
+    --app-version: "1.77";
 }
 
 html {
@@ -749,7 +749,7 @@ nav ul li a:hover, nav ul li a.active {
 /* Styles for Google Reviews Section */
 .google-reviews-section {
     width: 100%;
-    max-width: 900px;
+    max-width: 1200px; /* Aumentado para aproveitar melhor o espaço */
     margin-top: 50px;
     padding: 20px;
     background-color: #0a2133;
@@ -767,7 +767,7 @@ nav ul li a:hover, nav ul li a.active {
 
 .review-cards-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Ajustado para permitir 3 cards menores */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Ajustado para cards maiores */
     gap: 20px;
 }
 
