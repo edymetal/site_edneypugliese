@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', function() {
                                                 });
                                             }
                                         }
-                                    else {
+                                    } else {
                                         // Check if the translation contains HTML tags
                                         if (/<[a-z][\s\S]*>/i.test(translations[key])) {
                                             element.innerHTML = translations[key];
