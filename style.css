@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root {
-    --app-version: "1.116";
+    --app-version: "1.117";
 }
 
 html {
@@ -383,11 +383,11 @@ nav ul li a:hover, nav ul li a.active {
     }
 
     .page-content h1 {
-        font-size: 28px; /* Smaller font size for h1 on mobile */
+        font-size: 28px !important; /* Smaller font size for h1 on mobile */
     }
 
     .page-content h2 {
-        font-size: 28px; /* Match h1 font size on mobile */
+        font-size: 28px !important; /* Match h1 font size on mobile */
     }
 
     .social-media {
