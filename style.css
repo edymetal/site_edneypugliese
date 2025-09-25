@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root {
-    --app-version: "1.96";
+    --app-version: "1.97";
 }
 
 html {
@@ -41,6 +41,10 @@ footer {
     padding: 20px 0;
     /* Garante que o footer não encolha */
     flex-shrink: 0; 
+}
+
+footer .social-media {
+    margin-bottom: 20px;
 }
 
 nav {
