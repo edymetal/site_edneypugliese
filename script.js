@@ -148,5 +148,58 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
+    // Carousel Logic for fotos.html
+    const carouselSlide = document.querySelector('.carousel-slide');
+    const carouselImages = document.querySelectorAll('.carousel-slide img');
+    const prevBtn = document.querySelector('.carousel-control.prev');
+    const nextBtn = document.querySelector('.carousel-control.next');
+
+    if (carouselSlide && carouselImages.length > 0) {
+        let counter = 0;
+        const totalImages = carouselImages.length;
+        const size = carouselImages[0].clientWidth; // Assuming all images have the same width
+
+        // Function to update carousel position
+        function updateCarousel() {
+            carouselSlide.style.transition = 'transform 0.5s ease-in-out';
+            carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+        }
+
+        // Manual Navigation
+        if (nextBtn) {
+            nextBtn.addEventListener('click', () => {
+                if (counter < totalImages - 1) {
+                    counter++;
+                    updateCarousel();
+                } else {
+                    counter = 0; // Loop back to the first image
+                    updateCarousel();
+                }
+            });
+        }
+
+        if (prevBtn) {
+            prevBtn.addEventListener('click', () => {
+                if (counter > 0) {
+                    counter--;
+                    updateCarousel();
+                } else {
+                    counter = totalImages - 1; // Loop back to the last image
+                    updateCarousel();
+                }
+            });
+        }
+
+        // Automatic sliding
+        setInterval(() => {
+            if (counter < totalImages - 1) {
+                counter++;
+            } else {
+                counter = 0; // Loop back to the first image
+            }
+            updateCarousel();
+        }, 3000); // Change image every 3 seconds
+    }
+
     // etc...
 });
