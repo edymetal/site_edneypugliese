@@ -22,74 +22,76 @@ document.addEventListener('DOMContentLoaded', function() {
         console.log('Applying translations...');
         document.querySelectorAll('[data-i18n]').forEach(element => {
             const key = element.getAttribute('data-i18n');
+            console.log('Processing element with key:', key, 'Element:', element); // Log para cada elemento
             if (translations[key]) {
                 if (element.tagName === 'TITLE') {
                     document.title = translations[key];
-                                    } else if (element.classList.contains('review-text-content')) {
-                                        const fullText = translations[key];
-                                        const maxLength = 150; // Define o limite de caracteres
-                                        let displayedText = fullText;
-                                        let needsReadMore = false;
+                } else if (element.classList.contains('review-text-content')) {
+                    const fullText = translations[key];
+                    const maxLength = 150; // Define o limite de caracteres
+                    let displayedText = fullText;
+                    let needsReadMore = false;
 
-                                        // Remove o span class="read-more" do texto completo para evitar duplicação
-                                        const cleanFullText = fullText.replace(/<span class="read-more">.*?<\/span>/g, '').trim();
+                    // Remove o span class="read-more" do texto completo para evitar duplicação
+                    const cleanFullText = fullText.replace(/<span class="read-more">.*?<\/span>/g, '').trim();
 
-                                        if (cleanFullText.length > maxLength) {
-                                            displayedText = cleanFullText.substring(0, maxLength) + '... <span class="read-more" data-i18n="read_more_text">Mais</span>';
-                                            needsReadMore = true;
-                                        }
+                    if (cleanFullText.length > maxLength) {
+                        displayedText = cleanFullText.substring(0, maxLength) + '... <span class="read-more" data-i18n="read_more_text">Mais</span>';
+                        needsReadMore = true;
+                    }
 
-                                        element.innerHTML = displayedText;
-                                        element.setAttribute('data-full-text', cleanFullText); // Armazena o texto completo
+                    element.innerHTML = displayedText;
+                    element.setAttribute('data-full-text', cleanFullText); // Armazena o texto completo
 
-                                        if (needsReadMore) {
-                                            const readMoreSpan = element.querySelector('.read-more');
-                                            if (readMoreSpan) {
-                                                readMoreSpan.addEventListener('click', (event) => {
-                                                    event.preventDefault();
-                                                    if (element.classList.contains('expanded')) {
-                                                        element.innerHTML = displayedText; // Volta para o texto truncado
-                                                        element.classList.remove('expanded');
-                                                    } else {
-                                                        element.innerHTML = cleanFullText + ' <span class="read-more" data-i18n="read_less_text">Menos</span>'; // Mostra o texto completo
-                                                        element.classList.add('expanded');
-                                                    }
-                                                    // Re-adiciona o event listener ao novo span "Mais/Menos"
-                                                    const newReadMoreSpan = element.querySelector('.read-more');
-                                                    if (newReadMoreSpan) {
-                                                        newReadMoreSpan.addEventListener('click', (e) => {
-                                                            e.preventDefault();
-                                                            if (element.classList.contains('expanded')) {
-                                                                element.innerHTML = displayedText;
-                                                                element.classList.remove('expanded');
-                                                            } else {
-                                                                element.innerHTML = cleanFullText + ' <span class="read-more" data-i18n="read_less_text">Menos</span>';
-                                                                element.classList.add('expanded');
-                                                            }
-                                                        });
-                                                    }
-                                                });
-                                            }
-                                        }
-                                    } else if (element.classList.contains('review-meta')) {
-                                        let translatedText = translations[key];
-                                        const reviews = element.getAttribute('data-reviews');
-                                        const photos = element.getAttribute('data-photos');
-                                        if (reviews) {
-                                            translatedText = translatedText.replace('{reviews}', reviews);
-                                        }
-                                        if (photos) {
-                                            translatedText = translatedText.replace('{photos}', photos);
-                                        }
-                                        element.innerHTML = translatedText;
-                                    } else {
-                                        // Check if the translation contains HTML tags
-                                        if (/<[a-z][\s\S]*>/i.test(translations[key])) {
-                                            element.innerHTML = translations[key];
+                    if (needsReadMore) {
+                        const readMoreSpan = element.querySelector('.read-more');
+                        if (readMoreSpan) {
+                            readMoreSpan.addEventListener('click', (event) => {
+                                event.preventDefault();
+                                if (element.classList.contains('expanded')) {
+                                    element.innerHTML = displayedText; // Volta para o texto truncado
+                                    element.classList.remove('expanded');
+                                } else {
+                                    element.innerHTML = cleanFullText + ' <span class="read-more" data-i18n="read_less_text">Menos</span>'; // Mostra o texto completo
+                                    element.classList.add('expanded');
+                                }
+                                // Re-adiciona o event listener ao novo span "Mais/Menos"
+                                const newReadMoreSpan = element.querySelector('.read-more');
+                                if (newReadMoreSpan) {
+                                    newReadMoreSpan.addEventListener('click', (e) => {
+                                        e.preventDefault();
+                                        if (element.classList.contains('expanded')) {
+                                            element.innerHTML = displayedText;
+                                            element.classList.remove('expanded');
                                         } else {
-                                            element.textContent = translations[key];
+                                            element.innerHTML = cleanFullText + ' <span class="read-more" data-i18n="read_less_text">Menos</span>';
+                                            element.classList.add('expanded');
                                         }
-                                    }            } else {
+                                    });
+                                }
+                            });
+                        }
+                    }
+                } else if (element.classList.contains('review-meta')) {
+                    let translatedText = translations[key];
+                    const reviews = element.getAttribute('data-reviews');
+                    const photos = element.getAttribute('data-photos');
+                    if (reviews) {
+                        translatedText = translatedText.replace('{reviews}', reviews);
+                    }
+                    if (photos) {
+                        translatedText = translatedText.replace('{photos}', photos);
+                    }
+                    element.innerHTML = translatedText;
+                } else {
+                    // Check if the translation contains HTML tags
+                    if (/<[a-z][\s\S]*>/i.test(translations[key])) {
+                        element.innerHTML = translations[key];
+                    } else {
+                        element.textContent = translations[key];
+                    }
+                }
+            } else {
                 console.warn('Missing translation for key:', key, 'on element:', element);
             }
         });
