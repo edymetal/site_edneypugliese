@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root {
-    --app-version: "1.61";
+    --app-version: "1.62";
 }
 
 html {
@@ -767,7 +767,7 @@ nav ul li a:hover, nav ul li a.active {
 
 .review-cards-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Reduzido o minmax para permitir 3 cards */
     gap: 20px;
 }
 
