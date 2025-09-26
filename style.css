@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root {
-    --app-version: "1.189";
+    --app-version: "1.191";
 }
 
 html {
@@ -1070,6 +1070,12 @@ nav ul li a:hover, nav ul li a.active {
     white-space: nowrap;
 }
 
+.cart-item-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
 .remove-from-cart-btn {
     background: #dc3545;
     color: white;
@@ -1080,7 +1086,6 @@ nav ul li a:hover, nav ul li a.active {
     font-weight: bold;
     transition: background-color 0.3s;
     font-size: 0.9em;
-    margin-left: 10px;
 }
 
 .remove-from-cart-btn:hover {
