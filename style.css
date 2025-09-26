@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root {
-    --app-version: "1.160";
+    --app-version: "1.161";
 }
 
 html {
@@ -713,6 +713,13 @@ nav ul li a:hover, nav ul li a.active {
 
 .modal-info .modal-details {
     font-weight: 600;
+}
+
+.modal-separator {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 171, 240, 0.75), rgba(0, 0, 0, 0));
+    margin: 20px 0;
 }
 
 @media (max-width: 768px) {
