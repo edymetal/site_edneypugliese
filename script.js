@@ -7,20 +7,13 @@ function applyTranslations() {
     console.log('Applying translations...');
     document.querySelectorAll('[data-i18n]').forEach(element => {
         const key = element.getAttribute('data-i18n');
-        // console.log('Processing element with key:', key, 'Element:', element); // Log para cada elemento
         if (translations[key]) {
             if (element.tagName === 'TITLE') {
                 document.title = translations[key];
-            } else if (element.classList.contains('review-text-content')) {
+            } else if (element.tagName === 'A' || element.classList.contains('logo') || /<[a-z][\s\S]*>/i.test(translations[key])) {
                 element.innerHTML = translations[key];
-            } else if (element.classList.contains('review-meta')) {
-                // Lógica específica para meta de reviews (mantida)
             } else {
-                if (/<[a-z][\s\S]*>/i.test(translations[key])) {
-                    element.innerHTML = translations[key];
-                } else {
-                    element.textContent = translations[key];
-                }
+                element.textContent = translations[key];
             }
         } else {
             console.warn('Missing translation for key:', key, 'on element:', element);
