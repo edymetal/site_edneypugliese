@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root {
-    --app-version: "1.195";
+    --app-version: "1.197";
 }
 
 html {
@@ -1091,6 +1091,62 @@ nav ul li a:hover, nav ul li a.active {
 .filters-container button:hover {
     background-color: #007bff;
     box-shadow: 0 0 10px rgba(0, 171, 240, 0.5);
+}
+
+/* Price Range Slider Styles */
+.price-range-slider {
+    position: relative;
+    width: 200px; /* Adjust width as needed */
+    height: 5px;
+    background: #ddd;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.price-range-slider .slider-track {
+    position: absolute;
+    height: 100%;
+    background: #00abf0;
+    border-radius: 5px;
+    left: 0;
+    right: 0;
+}
+
+.price-range-slider input[type="range"] {
+    position: absolute;
+    width: 100%;
+    -webkit-appearance: none;
+    background: transparent;
+    pointer-events: none; /* Allow clicks to pass through to the track */
+}
+
+.price-range-slider input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background: #00abf0;
+    cursor: pointer;
+    pointer-events: all; /* Make thumb clickable */
+    margin-top: -5px; /* Adjust to center thumb on track */
+    box-shadow: 0 0 5px rgba(0, 171, 240, 0.5);
+}
+
+.price-range-slider input[type="range"]::-moz-range-thumb {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background: #00abf0;
+    cursor: pointer;
+    pointer-events: all;
+    box-shadow: 0 0 5px rgba(0, 171, 240, 0.5);
+}
+
+.price-display {
+    text-align: center;
+    color: #ededed;
+    font-weight: 500;
+    margin-top: 5px;
 }
 
 @media (max-width: 768px) {

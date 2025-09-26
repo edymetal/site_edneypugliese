@@ -5,17 +5,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const SHIPPING_COST = 14.30; // Fixed shipping cost
 
     // Filter elements
-    const filterCategorySelect = document.getElementById('filter-category'); // New category filter
-    const clearFiltersBtn = document.getElementById('clear-filters-btn'); // Only clear filters button remains
+    const filterCategorySelect = document.getElementById('filter-category');
+    const clearFiltersBtn = document.getElementById('clear-filters-btn');
 
-    // Price filter modal elements
-    const priceFilterButton = document.getElementById('filter-price-button'); // Button to open price filter
-    const priceFilterModal = document.getElementById('price-filter-modal');
-    const priceFilterMinInput = document.getElementById('price-filter-min');
-    const priceFilterMaxInput = document.getElementById('price-filter-max');
-    const applyPriceFilterBtn = document.getElementById('apply-price-filter-btn');
-    const closePriceFilterModalBtn = document.getElementById('close-price-filter-modal');
-    const clearPriceFilterBtn = document.getElementById('clear-price-filter-btn'); // New clear price filter button
+    // Price range slider elements
+    const priceMinSlider = document.getElementById('price-min-slider');
+    const priceMaxSlider = document.getElementById('price-max-slider');
+    const minPriceDisplay = document.getElementById('min-price-display');
+    const maxPriceDisplay = document.getElementById('max-price-display');
 
     let products = [];
     let cart = JSON.parse(localStorage.getItem('shoppingCart')) || {};
@@ -26,9 +23,10 @@ document.addEventListener('DOMContentLoaded', () => {
         try {
             const response = await fetch('products.json');
             products = await response.json();
-            populateCategories(); // Populate categories after loading products
+            populateCategories();
             renderProducts(products); // Render all products initially
             updateCartDisplay();
+            initializePriceSliders(); // Initialize sliders after products are loaded
         } catch (error) {
             console.error('Erro ao carregar produtos:', error);
         }
@@ -44,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
             option.textContent = category; // For now, category name is text content
             filterCategorySelect.appendChild(option);
         });
-        applyTranslations(); // Apply translations to new options
+        applyTranslations();
     }
 
     // Renderiza os produtos na galeria
@@ -63,7 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
             `;
             productGallery.appendChild(productElement);
         });
-        applyTranslations(); // Atualiza textos dos botões recém-criados
+        applyTranslations();
     }
 
     // Adiciona um item ao carrinho
@@ -101,9 +99,9 @@ document.addEventListener('DOMContentLoaded', () => {
         if (Object.keys(cart).length === 0) {
             cartItemsContainer.innerHTML = `<p data-i18n="emptyCart">Seu carrinho está vazio.</p>`;
             applyTranslations();
-            subtotalPriceElement.textContent = `€ 0.00`; // Reset total if cart is empty
-            renderPayPalButton(0); // Reset PayPal button
-            return; // Exit early if cart is empty
+            subtotalPriceElement.textContent = `€ 0.00`;
+            renderPayPalButton(0);
+            return;
         } else {
             for (const productId in cart) {
                 const product = products.find(p => p.id == productId);
@@ -140,7 +138,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Renderiza o botão do PayPal
     function renderPayPalButton(total) {
         const paypalContainer = document.getElementById('paypal-button-container');
-        paypalContainer.innerHTML = ''; // Limpa o botão antigo
+        paypalContainer.innerHTML = '';
         if (total > 0) {
             paypal.Buttons({
                 createOrder: function(data, actions) {
@@ -171,61 +169,62 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Filter products function
     function filterProducts() {
-        const selectedCategory = filterCategorySelect.value; // Get selected category
-        const priceMin = parseFloat(priceFilterMinInput.value); // Get from modal inputs
-        const priceMax = parseFloat(priceFilterMaxInput.value); // Get from modal inputs
+        const selectedCategory = filterCategorySelect.value;
+        const priceMin = parseFloat(priceMinSlider.value); // Get from slider
+        const priceMax = parseFloat(priceMaxSlider.value); // Get from slider
 
         let filtered = products.filter(product => {
             const productCategory = product.category;
             const productPrice = product.price;
 
             const matchesCategory = (selectedCategory === 'all' || productCategory === selectedCategory);
-            const matchesPrice = (!isNaN(priceMin) ? productPrice >= priceMin : true) &&
-                                 (!isNaN(priceMax) ? productPrice <= priceMax : true);
+            const matchesPrice = (productPrice >= priceMin && productPrice <= priceMax);
 
             return matchesCategory && matchesPrice;
         });
         renderProducts(filtered);
     }
 
+    // Initialize price sliders
+    function initializePriceSliders() {
+        // Set initial display values
+        minPriceDisplay.textContent = `€ ${priceMinSlider.value}`;
+        maxPriceDisplay.textContent = `€ ${priceMaxSlider.value}`;
+
+        // Event listeners for sliders
+        priceMinSlider.addEventListener('input', () => {
+            if (parseFloat(priceMinSlider.value) > parseFloat(priceMaxSlider.value)) {
+                priceMinSlider.value = priceMaxSlider.value;
+            }
+            minPriceDisplay.textContent = `€ ${priceMinSlider.value}`;
+            filterProducts();
+        });
+
+        priceMaxSlider.addEventListener('input', () => {
+            if (parseFloat(priceMaxSlider.value) < parseFloat(priceMinSlider.value)) {
+                priceMaxSlider.value = priceMinSlider.value;
+            }
+            maxPriceDisplay.textContent = `€ ${priceMaxSlider.value}`;
+            filterProducts();
+        });
+    }
+
     // Clear filters function
     function clearFilters() {
-        filterCategorySelect.value = 'all'; // Reset category filter
-        priceFilterMinInput.value = ''; // Clear modal inputs
-        priceFilterMaxInput.value = ''; // Clear modal inputs
+        filterCategorySelect.value = 'all';
+        priceMinSlider.value = priceMinSlider.min; // Reset slider to min
+        priceMaxSlider.value = priceMaxSlider.max; // Reset slider to max
+        minPriceDisplay.textContent = `€ ${priceMinSlider.min}`;
+        maxPriceDisplay.textContent = `€ ${priceMaxSlider.max}`;
         renderProducts(products); // Render all products
-        priceFilterModal.style.display = 'none'; // Close modal
     }
 
     // Event Listeners for filters
     clearFiltersBtn.addEventListener('click', clearFilters);
-    filterCategorySelect.addEventListener('change', filterProducts); // Filter by category on change
+    filterCategorySelect.addEventListener('change', filterProducts);
 
     // Event Listeners for price filter modal
-    priceFilterButton.addEventListener('click', () => {
-        priceFilterModal.style.display = 'block';
-    });
-
-    closePriceFilterModalBtn.addEventListener('click', () => {
-        priceFilterModal.style.display = 'none';
-    });
-
-    applyPriceFilterBtn.addEventListener('click', () => {
-        filterProducts();
-        priceFilterModal.style.display = 'none';
-    });
-
-    clearPriceFilterBtn.addEventListener('click', () => { // New clear price filter button listener
-        priceFilterMinInput.value = '';
-        priceFilterMaxInput.value = '';
-        filterProducts(); // Re-apply filters to clear price filter
-    });
-
-    window.addEventListener('click', (event) => {
-        if (event.target === priceFilterModal) {
-            priceFilterModal.style.display = 'none';
-        }
-    });
+    // Removed price filter modal event listeners as it's replaced by slider
 
     productGallery.addEventListener('click', (e) => {
         if (e.target.classList.contains('add-to-cart-btn')) {
