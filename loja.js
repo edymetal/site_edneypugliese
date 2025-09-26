@@ -6,10 +6,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Filter elements
     const filterNameInput = document.getElementById('filter-name');
-    const filterPriceMinInput = document.getElementById('filter-price-min');
-    const filterPriceMaxInput = document.getElementById('filter-price-max');
+    const filterCategorySelect = document.getElementById('filter-category'); // New category filter
     const applyFiltersBtn = document.getElementById('apply-filters-btn');
     const clearFiltersBtn = document.getElementById('clear-filters-btn');
+
+    // Price filter modal elements
+    const priceFilterButton = document.getElementById('filter-price-button'); // New button to open price filter
+    const priceFilterModal = document.getElementById('price-filter-modal');
+    const priceFilterMinInput = document.getElementById('price-filter-min');
+    const priceFilterMaxInput = document.getElementById('price-filter-max');
+    const applyPriceFilterBtn = document.getElementById('apply-price-filter-btn');
+    const closePriceFilterModalBtn = document.getElementById('close-price-filter-modal');
 
     let products = [];
     let cart = JSON.parse(localStorage.getItem('shoppingCart')) || {};
@@ -20,11 +27,25 @@ document.addEventListener('DOMContentLoaded', () => {
         try {
             const response = await fetch('products.json');
             products = await response.json();
+            populateCategories(); // Populate categories after loading products
             renderProducts(products); // Render all products initially
             updateCartDisplay();
         } catch (error) {
             console.error('Erro ao carregar produtos:', error);
         }
+    }
+
+    // Popula o dropdown de categorias
+    function populateCategories() {
+        const categories = [...new Set(products.map(product => product.category))];
+        filterCategorySelect.innerHTML = '<option value="all" data-i18n="all_categories">Todas</option>'; // Keep "Todas" option
+        categories.forEach(category => {
+            const option = document.createElement('option');
+            option.value = category;
+            option.textContent = category; // For now, category name is text content
+            filterCategorySelect.appendChild(option);
+        });
+        applyTranslations(); // Apply translations to new options
     }
 
     // Renderiza os produtos na galeria
@@ -152,18 +173,21 @@ document.addEventListener('DOMContentLoaded', () => {
     // Filter products function
     function filterProducts() {
         const nameFilter = filterNameInput.value.toLowerCase();
-        const priceMin = parseFloat(filterPriceMinInput.value);
-        const priceMax = parseFloat(filterPriceMaxInput.value);
+        const selectedCategory = filterCategorySelect.value; // Get selected category
+        const priceMin = parseFloat(priceFilterMinInput.value); // Get from modal inputs
+        const priceMax = parseFloat(priceFilterMaxInput.value); // Get from modal inputs
 
         let filtered = products.filter(product => {
             const productName = product.details[currentLang].name.toLowerCase();
+            const productCategory = product.category;
             const productPrice = product.price;
 
             const matchesName = productName.includes(nameFilter);
+            const matchesCategory = (selectedCategory === 'all' || productCategory === selectedCategory);
             const matchesPrice = (!isNaN(priceMin) ? productPrice >= priceMin : true) &&
                                  (!isNaN(priceMax) ? productPrice <= priceMax : true);
 
-            return matchesName && matchesPrice;
+            return matchesName && matchesCategory && matchesPrice;
         });
         renderProducts(filtered);
     }
@@ -171,15 +195,38 @@ document.addEventListener('DOMContentLoaded', () => {
     // Clear filters function
     function clearFilters() {
         filterNameInput.value = '';
-        filterPriceMinInput.value = '';
-        filterPriceMaxInput.value = '';
+        filterCategorySelect.value = 'all'; // Reset category filter
+        priceFilterMinInput.value = ''; // Clear modal inputs
+        priceFilterMaxInput.value = ''; // Clear modal inputs
         renderProducts(products); // Render all products
+        priceFilterModal.style.display = 'none'; // Close modal
     }
 
     // Event Listeners for filters
     applyFiltersBtn.addEventListener('click', filterProducts);
     clearFiltersBtn.addEventListener('click', clearFilters);
     filterNameInput.addEventListener('input', filterProducts); // Live filter by name
+    filterCategorySelect.addEventListener('change', filterProducts); // Filter by category on change
+
+    // Event Listeners for price filter modal
+    priceFilterButton.addEventListener('click', () => {
+        priceFilterModal.style.display = 'block';
+    });
+
+    closePriceFilterModalBtn.addEventListener('click', () => {
+        priceFilterModal.style.display = 'none';
+    });
+
+    applyPriceFilterBtn.addEventListener('click', () => {
+        filterProducts();
+        priceFilterModal.style.display = 'none';
+    });
+
+    window.addEventListener('click', (event) => {
+        if (event.target === priceFilterModal) {
+            priceFilterModal.style.display = 'none';
+        }
+    });
 
     productGallery.addEventListener('click', (e) => {
         if (e.target.classList.contains('add-to-cart-btn')) {

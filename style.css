@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root {
-    --app-version: "1.193";
+    --app-version: "1.194";
 }
 
 html {
@@ -735,6 +735,80 @@ nav ul li a:hover, nav ul li a.active {
     height: 1px;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 171, 240, 0.75), rgba(0, 0, 0, 0));
     margin: 20px 0;
+}
+
+/* Price Filter Modal Styles */
+#price-filter-modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+    justify-content: center;
+    align-items: center;
+}
+
+#price-filter-modal .modal-content {
+    background-color: #1a1a1a;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #00abf0;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#price-filter-modal .modal-content h3 {
+    color: #00abf0;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#price-filter-modal .filter-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#price-filter-modal .filter-group label {
+    color: #ededed;
+    font-weight: 500;
+}
+
+#price-filter-modal input[type="number"] {
+    padding: 8px 12px;
+    border: 1px solid #00abf0;
+    border-radius: 5px;
+    background-color: #081b29;
+    color: #ededed;
+    font-size: 1em;
+    outline: none;
+    width: 100%;
+}
+
+#price-filter-modal button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #00abf0;
+    color: #081b29;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    margin-top: 10px;
+}
+
+#price-filter-modal button:hover {
+    background-color: #007bff;
+    box-shadow: 0 0 10px rgba(0, 171, 240, 0.5);
 }
 
 @media (max-width: 768px) {

@@ -3,6 +3,7 @@
     "id": 1,
     "image": "img/loja/edy_boneco.png",
     "price": 95.00,
+    "category": "Action Figures",
     "details": {
       "pt": {
         "name": "Action Figure Estilo Verão",
@@ -26,6 +27,7 @@
     "id": 2,
     "image": "img/loja/edy_fusca.png",
     "price": 180.00,
+    "category": "Dioramas",
     "details": {
       "pt": {
         "name": "Diorama com Miniatura de Fusca Clássico",
@@ -49,6 +51,7 @@
     "id": 3,
     "image": "img/loja/edy_opel.png",
     "price": 175.00,
+    "category": "Dioramas",
     "details": {
       "pt": {
         "name": "Diorama com Miniatura de Opel Corsa",
@@ -72,6 +75,7 @@
     "id": 4,
     "image": "img/loja/edy_boneco_caixa.PNG",
     "price": 110.00,
+    "category": "Action Figures",
     "details": {
       "pt": {
         "name": "Action Figure \"Edy\" em Embalagem de Colecionador",
@@ -95,6 +99,7 @@
     "id": 5,
     "image": "img/loja/edy_poste.png",
     "price": 25.00,
+    "category": "Postcards",
     "details": {
       "pt": {
         "name": "Cartão Postal Personalizado \"Férias em Palermo\"",
@@ -118,6 +123,7 @@
     "id": 6,
     "image": "img/loja/edy_calendario.png",
     "price": 25.00,
+    "category": "Calendars",
     "details": {
       "pt": {
         "name": "Calendário Tropical",

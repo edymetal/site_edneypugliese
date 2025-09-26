@@ -82,5 +82,7 @@
     "filter_by_name": "Filtrar por Nome:",
     "filter_by_price": "Filtrar por Preço:",
     "apply_filters": "Aplicar Filtros",
-    "clear_filters": "Limpar Filtros"
+    "clear_filters": "Limpar Filtros",
+    "filter_by_category": "Filtrar por Categoria:",
+    "all_categories": "Todas"
 }
