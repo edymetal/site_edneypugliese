@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     cartItemElement.classList.add('cart-item');
                     cartItemElement.innerHTML = `
                         <span>${product.details[currentLang].name} (x${quantity})</span>
-                        <span>€ ${itemTotal.toFixed(2)}</span>
+                        <span class="cart-item-price">€ ${itemTotal.toFixed(2)}</span>
                         <button class="remove-from-cart-btn" data-id="${productId}"><i class="fas fa-trash"></i></button>
                     `;
                     cartItemsContainer.appendChild(cartItemElement);
