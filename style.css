@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root {
-    --app-version: "1.228";
+    --app-version: "1.229";
 }
 
 html {
@@ -770,13 +770,14 @@ nav ul li a:hover, nav ul li a.active {
     grid-template-columns: 2fr 1fr; /* 2 parts for description, 1 for technology */
     gap: 20px;
     width: 100%;
-    max-width: 900px; /* To align with the image max-width or slightly less */
+    max-width: 700px; /* To align with the image max-width */
     text-align: left;
     color: #fff;
 }
 
 .modal-description-wrapper {
-    /* No specific styling needed for the wrapper itself, its children will flow naturally */
+    border-right: 1px solid #00abf0; /* Divider */
+    padding-right: 20px; /* Space from the divider */
 }
 
 .modal-description-col,
