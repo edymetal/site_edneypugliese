@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root {
-    --app-version: "1.215";
+    --app-version: "1.216";
 }
 
 html {
@@ -347,7 +347,12 @@ nav ul li a:hover, nav ul li a.active {
     }
 
     nav {
-        justify-content: space-between;
+        justify-content: flex-start; /* Alinha os itens à esquerda */
+    }
+
+    .language-selector {
+        margin-left: 0;
+        margin-right: auto; /* Empurra para a esquerda */
     }
 
     nav ul {
@@ -462,6 +467,11 @@ nav ul li a:hover, nav ul li a.active {
 
     .social-media a:hover {
         box-shadow: 0 0 20px #00abf0, 0 0 40px #00abf0;
+    }
+
+    .loja-container h1 {
+        margin-top: 2rem; /* Adiciona espaço acima do título */
+        margin-bottom: 1rem; /* Ajusta o espaço abaixo do título */
     }
 }
 
