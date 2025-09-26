@@ -1,4 +1,4 @@
-console.log('script.js version: ' + '1.152' + ' loaded at ' + new Date().toLocaleTimeString());
+console.log('script.js version: ' + '1.153' + ' loaded at ' + new Date().toLocaleTimeString());
 
 // Variáveis e funções globais para tradução
 let translations = {};
@@ -117,37 +117,39 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Portfolio Modal Logic
     const portfolioModal = document.getElementById('portfolio-modal');
-    const modalTitle = portfolioModal.querySelector('.modal-title');
-    const modalProjectImage = document.getElementById('modal-project-image');
-    const modalDescription = portfolioModal.querySelector('.modal-description');
-    const modalDetails = portfolioModal.querySelector('.modal-details');
-    const closeButton = portfolioModal.querySelector('.close-button');
+    if (portfolioModal) {
+        const modalTitle = portfolioModal.querySelector('.modal-title');
+        const modalProjectImage = document.getElementById('modal-project-image');
+        const modalDescription = portfolioModal.querySelector('.modal-description');
+        const modalDetails = portfolioModal.querySelector('.modal-details');
+        const closeButton = portfolioModal.querySelector('.close-button');
 
-    document.querySelectorAll('.portfolio-item').forEach(item => {
-        item.addEventListener('click', () => {
-            const descriptionKey = item.getAttribute('data-description');
-            const detailsKey = item.getAttribute('data-details');
-            const titleKey = item.querySelector('.portfolio-title').getAttribute('data-i18n');
-            const imageUrl = item.querySelector('img').src;
+        document.querySelectorAll('.portfolio-item').forEach(item => {
+            item.addEventListener('click', () => {
+                const descriptionKey = item.getAttribute('data-description');
+                const detailsKey = item.getAttribute('data-details');
+                const titleKey = item.querySelector('.portfolio-title').getAttribute('data-i18n');
+                const imageUrl = item.querySelector('img').src;
 
-            modalTitle.textContent = translations[titleKey] || item.querySelector('.portfolio-title').textContent;
-            modalProjectImage.src = imageUrl;
-            modalDescription.innerHTML = translations[descriptionKey] || '';
-            modalDetails.innerHTML = translations[detailsKey] || '';
+                modalTitle.textContent = translations[titleKey] || item.querySelector('.portfolio-title').textContent;
+                modalProjectImage.src = imageUrl;
+                modalDescription.innerHTML = translations[descriptionKey] || '';
+                modalDetails.innerHTML = translations[detailsKey] || '';
 
-            portfolioModal.style.display = 'block';
+                portfolioModal.style.display = 'block';
+            });
         });
-    });
 
-    closeButton.addEventListener('click', () => {
-        portfolioModal.style.display = 'none';
-    });
-
-    window.addEventListener('click', (event) => {
-        if (event.target === portfolioModal) {
+        closeButton.addEventListener('click', () => {
             portfolioModal.style.display = 'none';
-        }
-    });
+        });
+
+        window.addEventListener('click', (event) => {
+            if (event.target === portfolioModal) {
+                portfolioModal.style.display = 'none';
+            }
+        });
+    }
 
     // Carousel Logic for fotos.html
     console.log('Attempting to get element with id "carousel-slide":', document.getElementById('carousel-slide'));
