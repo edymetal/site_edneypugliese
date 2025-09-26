@@ -39,44 +39,28 @@
     "view_on_google_maps": "<i class=\"fas fa-map-marker-alt me-2\"></i>Ver en Google Maps",
     "page_title_portfolio": "Portafolio - Edney Pugliese",
     "portfolio_title": "Mi Portafolio",
-    "portfolio_desc_agenciaautoweb": "<h3><i class=\"fas fa-info-circle\"></i> Descripción:</h3><p>Plataforma de clasificados de vehículos, desarrollada para facilitar la compra y venta entre particulares y agencias. Cuenta con un sistema de búsqueda avanzado para una experiencia de usuario ágil y eficiente.</p><hr class=\"modal-separator\">
-",
-    "portfolio_details_agenciaautoweb": "<h3><i class=\"fas fa-code\"></i> Tecnología:</h3><div class=\"technologies\"><ul><li><i class=\"fab fa-html5\"></i> HTML5</li><li><i class=\"fab fa-css3-alt\"></i> CSS3</li><li><i class=\"fab fa-php\"></i> PHP</li><li><i class=\"fab fa-laravel\"></i> Laravel</li><li><i class=\"fab fa-js\"></i> jQuery, JavaScript</li></ul></div><hr class=\"modal-separator\">
-",
-    "portfolio_desc_barberhouse": "<h3><i class=\"fas fa-info-circle\"></i> Descripción:</h3><p>Sitio web institucional para una barbería, centrado en una galería visual que destaca el trabajo de los profesionales. El diseño moderno y limpio fue creado para atraer y fidelizar nuevos clientes.</p><hr class=\"modal-separator\">
-",
-    "portfolio_details_barberhouse": "<h3><i class=\"fas fa-code\"></i> Tecnología:</h3><div class=\"technologies\"><ul><li><i class=\"fab fa-html5\"></i> HTML5</li><li><i class=\"fab fa-css3-alt\"></i> CSS3</li><li><i class=\"fab fa-js\"></i> JavaScript</li></ul></div><hr class=\"modal-separator\">
-",
-    "portfolio_desc_cafeteria": "<h3><i class=\"fas fa-info-circle\"></i> Descripción:</h3><p>E-commerce para una cafetería con un diseño sofisticado y enfocado en la experiencia del usuario. La interfaz intuitiva facilita la exploración de productos y la finalización de la compra de forma rápida.</p><hr class=\"modal-separator\">
-",
-    "portfolio_details_cafeteria": "<h3><i class=\"fas fa-code\"></i> Tecnología:</h3><div class=\"technologies\"><ul><li><i class=\"fab fa-html5\"></i> HTML5</li><li><i class=\"fab fa-css3-alt\"></i> CSS3</li><li><i class=\"fab fa-js\"></i> JavaScript</li></ul></div><hr class=\"modal-separator\">
-",
-    "portfolio_desc_dashboardstarwars": "<h3><i class=\"fas fa-info-circle\"></i> Descripción:</h3><p>Panel de control interactivo que organiza y visualiza datos del universo Star Wars. Presenta información compleja de forma clara a través de gráficos y listas, ideal para los fans de la saga.</p><hr class=\"modal-separator\">
-",
-    "portfolio_details_dashboardstarwars": "<h3><i class=\"fas fa-code\"></i> Tecnología:</h3><div class=\"technologies\"><ul><li><i class=\"fab fa-html5\"></i> HTML5</li><li><i class=\"fab fa-css3-alt\"></i> CSS3</li><li><i class=\"fab fa-js\"></i> JavaScript</li></ul></div><hr class=\"modal-separator\">
-",
-    "portfolio_desc_deathcat": "<h3><i class=\"fas fa-info-circle\"></i> Descripción:</h3><p>E-commerce para una dulcería con una identidad visual única y divertida. El diseño en cuadrícula y la funcionalidad de compra simplificada ofrecen una experiencia de compra online práctica y agradable.</p><hr class=\"modal-separator\">
-",
-    "portfolio_details_deathcat": "<h3><i class=\"fas fa-code\"></i> Tecnología:</h3><div class=\"technologies\"><ul><li><i class=\"fab fa-html5\"></i> HTML5</li><li><i class=\"fab fa-css3-alt\"></i> CSS3</li><li><i class=\"fab fa-js\"></i> JavaScript</li></ul></div><hr class=\"modal-separator\">
-",
-    "portfolio_desc_lingerie": "<h3><i class=\"fas fa-info-circle\"></i> Descripción:</h3><p>E-commerce de lencería con un diseño elegante y femenino. El sitio web valora los productos con fotos de alta calidad y ofrece una navegación intuitiva para una experiencia de compra sofisticada.</p><hr class=\"modal-separator\">
-",
-    "portfolio_details_lingerie": "<h3><i class=\"fas fa-code\"></i> Tecnología:</h3><div class=\"technologies\"><ul><li><i class=\"fab fa-html5\"></i> HTML5</li><li><i class=\"fab fa-css3-alt\"></i> CSS3</li><li><i class=\"fab fa-js\"></i> JavaScript</li></ul></div><hr class=\"modal-separator\">
-",
-    "portfolio_desc_relationship": "<h3><i class=\"fas fa-info-circle\"></i> Descripción:</h3><p>Landing page y pantalla de inicio de sesión para una aplicación exclusiva para miembros. El diseño moderno y vibrante se centra en la usabilidad, garantizando un acceso rápido y seguro a la plataforma.</p><hr class=\"modal-separator\">
-",
-    "portfolio_details_relationship": "<h3><i class=\"fas fa-code\"></i> Tecnología:</h3><div class=\"technologies\"><ul><li><i class=\"fab fa-html5\"></i> HTML5</li><li><i class=\"fab fa-css3-alt\"></i> CSS3</li><li><i class=\"fab fa-js\"></i> JavaScript</li></ul></div><hr class=\"modal-separator\">
-",
-    "portfolio_desc_terapiadodia": "<h3><i class=\"fas fa-info-circle\"></i> Descripción:</h3><p>Sitio web institucional para una plataforma de terapia en línea. El diseño limpio y acogedor fue creado para transmitir confianza y facilitar la programación de citas remotas.</p><hr class=\"modal-separator\">
-",
-    "portfolio_details_terapiadodia": "<h3><i class=\"fas fa-code\"></i> Tecnología:</h3><div class=\"technologies\"><ul><li><i class=\"fab fa-html5\"></i> HTML5</li><li><i class=\"fab fa-css3-alt\"></i> CSS3</li><li><i class=\"fab fa-php\"></i> PHP</li><li><i class=\"fab fa-laravel\"></i> Laravel</li><li><i class=\"fab fa-js\"></i> jQuery, JavaScript</li></ul></div><hr class=\"modal-separator\">
-",
+    "portfolio_desc_agenciaautoweb": "<h3><i class=\"fas fa-info-circle\"></i> Descripción:</h3><p>Plataforma de clasificados de vehículos, desarrollada para facilitar la compra y venta entre particulares y agencias. Cuenta con un sistema de búsqueda avanzado para una experiencia de usuario ágil y eficiente.</p><hr class=\"modal-separator\">\n",
+    "portfolio_details_agenciaautoweb": "<h3><i class=\"fas fa-code\"></i> Tecnología:</h3><div class=\"technologies\"><ul><li><i class=\"fab fa-html5\"></i> HTML5</li><li><i class=\"fab fa-css3-alt\"></i> CSS3</li><li><i class=\"fab fa-php\"></i> PHP</li><li><i class=\"fab fa-laravel\"></i> Laravel</li><li><i class=\"fab fa-js\"></i> jQuery, JavaScript</li></ul></div><hr class=\"modal-separator\">\n",
+    "portfolio_desc_barberhouse": "<h3><i class=\"fas fa-info-circle\"></i> Descripción:</h3><p>Sitio web institucional para una barbería, centrado en una galería visual que destaca el trabajo de los profesionales. El diseño moderno y limpio fue creado para atraer y fidelizar nuevos clientes.</p><hr class=\"modal-separator\">\n",
+    "portfolio_details_barberhouse": "<h3><i class=\"fas fa-code\"></i> Tecnología:</h3><div class=\"technologies\"><ul><li><i class=\"fab fa-html5\"></i> HTML5</li><li><i class=\"fab fa-css3-alt\"></i> CSS3</li><li><i class=\"fab fa-js\"></i> JavaScript</li></ul></div><hr class=\"modal-separator\">\n",
+    "portfolio_desc_cafeteria": "<h3><i class=\"fas fa-info-circle\"></i> Descripción:</h3><p>E-commerce para una cafetería con un diseño sofisticado y enfocado en la experiencia del usuario. La interfaz intuitiva facilita la exploración de productos y la finalización de la compra de forma rápida.</p><hr class=\"modal-separator\">\n",
+    "portfolio_details_cafeteria": "<h3><i class=\"fas fa-code\"></i> Tecnología:</h3><div class=\"technologies\"><ul><li><i class=\"fab fa-html5\"></i> HTML5</li><li><i class=\"fab fa-css3-alt\"></i> CSS3</li><li><i class=\"fab fa-js\"></i> JavaScript</li></ul></div><hr class=\"modal-separator\">\n",
+    "portfolio_desc_dashboardstarwars": "<h3><i class=\"fas fa-info-circle\"></i> Descripción:</h3><p>Panel de control interactivo que organiza y visualiza datos del universo Star Wars. Presenta información compleja de forma clara a través de gráficos y listas, ideal para los fans de la saga.</p><hr class=\"modal-separator\">\n",
+    "portfolio_details_dashboardstarwars": "<h3><i class=\"fas fa-code\"></i> Tecnología:</h3><div class=\"technologies\"><ul><li><i class=\"fab fa-html5\"></i> HTML5</li><li><i class=\"fab fa-css3-alt\"></i> CSS3</li><li><i class=\"fab fa-js\"></i> JavaScript</li></ul></div><hr class=\"modal-separator\">\n",
+    "portfolio_desc_deathcat": "<h3><i class=\"fas fa-info-circle\"></i> Descripción:</h3><p>E-commerce para una dulcería con una identidad visual única y divertida. El diseño en cuadrícula y la funcionalidad de compra simplificada ofrecen una experiencia de compra online práctica y agradable.</p><hr class=\"modal-separator\">\n",
+    "portfolio_details_deathcat": "<h3><i class=\"fas fa-code\"></i> Tecnología:</h3><div class=\"technologies\"><ul><li><i class=\"fab fa-html5\"></i> HTML5</li><li><i class=\"fab fa-css3-alt\"></i> CSS3</li><li><i class=\"fab fa-js\"></i> JavaScript</li></ul></div><hr class=\"modal-separator\">\n",
+    "portfolio_desc_lingerie": "<h3><i class=\"fas fa-info-circle\"></i> Descripción:</h3><p>E-commerce de lencería con un diseño elegante y femenino. El sitio web valora los productos con fotos de alta calidad y ofrece una navegación intuitiva para una experiencia de compra sofisticada.</p><hr class=\"modal-separator\">\n",
+    "portfolio_details_lingerie": "<h3><i class=\"fas fa-code\"></i> Tecnología:</h3><div class=\"technologies\"><ul><li><i class=\"fab fa-html5\"></i> HTML5</li><li><i class=\"fab fa-css3-alt\"></i> CSS3</li><li><i class=\"fab fa-js\"></i> JavaScript</li></ul></div><hr class=\"modal-separator\">\n",
+    "portfolio_desc_relationship": "<h3><i class=\"fas fa-info-circle\"></i> Descripción:</h3><p>Landing page y pantalla de inicio de sesión para una aplicación exclusiva para miembros. El diseño moderno y vibrante se centra en la usabilidad, garantizando un acceso rápido y seguro a la plataforma.</p><hr class=\"modal-separator\">\n",
+    "portfolio_details_relationship": "<h3><i class=\"fas fa-code\"></i> Tecnología:</h3><div class=\"technologies\"><ul><li><i class=\"fab fa-html5\"></i> HTML5</li><li><i class=\"fab fa-css3-alt\"></i> CSS3</li><li><i class=\"fab fa-js\"></i> JavaScript</li></ul></div><hr class=\"modal-separator\">\n",
+    "portfolio_desc_terapiadodia": "<h3><i class=\"fas fa-info-circle\"></i> Descripción:</h3><p>Sitio web institucional para una plataforma de terapia en línea. El diseño limpio y acogedor fue creado para transmitir confianza y facilitar la programación de citas remotas.</p><hr class=\"modal-separator\">\n",
+    "portfolio_details_terapiadodia": "<h3><i class=\"fas fa-code\"></i> Tecnología:</h3><div class=\"technologies\"><ul><li><i class=\"fab fa-html5\"></i> HTML5</li><li><i class=\"fab fa-css3-alt\"></i> CSS3</li><li><i class=\"fab fa-php\"></i> PHP</li><li><i class=\"fab fa-laravel\"></i> Laravel</li><li><i class=\"fab fa-js\"></i> jQuery, JavaScript</li></ul></div><hr class=\"modal-separator\">\n",
     "portfolio_tech_agenciaautoweb": "Tecnologías: HTML5, CSS3, PHP, Laravel, jQuery, JavaScript",
     "portfolio_tech_barberhouse": "Tecnologías: HTML5, CSS3, JavaScript",
     "portfolio_tech_cafeteria": "Tecnologías: HTML5, CSS3, JavaScript",
     "portfolio_tech_dashboardstarwars": "Tecnologías: HTML5, CSS3, JavaScript",
     "portfolio_tech_deathcat": "Tecnologías: HTML5, CSS3, JavaScript",
-    "portfolio_tech_lingerie": "Tecnologías: HTML5, CSS3, JavaScript",
+    "portfolio_tech_lingerie": "Tecnologias: HTML5, CSS3, JavaScript",
     "portfolio_tech_relationship": "Tecnologías: HTML5, CSS3, JavaScript",
     "portfolio_tech_terapiadodia": "Tecnologías: HTML5, CSS3, PHP, Laravel, jQuery, JavaScript",
     "portfolio_title_agenciaautoweb": "Agencia Auto Web",
