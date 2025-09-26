@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root {
-    --app-version: "1.226";
+    --app-version: "1.227";
 }
 
 html {
@@ -751,6 +751,9 @@ nav ul li a:hover, nav ul li a.active {
 
 .modal-image {
     flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .modal-image img {
@@ -758,27 +761,30 @@ nav ul li a:hover, nav ul li a.active {
     border-radius: 10px;
 }
 
-.modal-info {
-    flex: 1;
+.modal-info-grid {
+    display: flex;
+    flex-wrap: wrap; /* Permite que as colunas quebrem em telas menores */
+    gap: 20px; /* Espaçamento entre as colunas */
     padding-left: 30px;
     color: #fff;
+    flex: 1; /* Ocupa o espaço restante */
 }
 
-.modal-info h3 {
-    margin-top: 0;
-    color: #00abf0;
-    font-size: 1.2em;
-    margin-bottom: 20px;
+.modal-description-col,
+.modal-details-col,
+.modal-technology-col {
+    flex: 1 1 30%; /* Permite que cada coluna ocupe cerca de 30% da largura, com flexibilidade */
+    min-width: 200px; /* Garante que as colunas não fiquem muito pequenas */
 }
 
-.modal-info p {
+.modal-info-grid p {
     font-size: 1.1em;
     line-height: 1.4;
     margin-bottom: 10px;
     text-align: left;
 }
 
-.modal-info .modal-details {
+.modal-info-grid .modal-details {
     font-weight: 600;
 }
 
