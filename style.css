@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root {
-    --app-version: "1.227";
+    --app-version: "1.228";
 }
 
 html {
@@ -740,20 +740,24 @@ nav ul li a:hover, nav ul li a.active {
 
 .modal-content {
     display: flex;
-    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto; /* Center vertically and horizontally, add some top/bottom margin */
     padding: 20px;
-    width: 80%;
-    max-width: 900px;
+    width: 90%; /* Adjusting to take more width */
+    max-width: 1000px; /* Increasing max-width */
     background-color: #1a1a1a;
     border-radius: 10px;
     position: relative;
 }
 
 .modal-image {
-    flex: 2;
+    width: 100%;
+    max-width: 700px; /* Suitable max-width for the image */
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 20px; /* Space from the info grid */
 }
 
 .modal-image img {
@@ -762,19 +766,23 @@ nav ul li a:hover, nav ul li a.active {
 }
 
 .modal-info-grid {
-    display: flex;
-    flex-wrap: wrap; /* Permite que as colunas quebrem em telas menores */
-    gap: 20px; /* Espaçamento entre as colunas */
-    padding-left: 30px;
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* 2 parts for description, 1 for technology */
+    gap: 20px;
+    width: 100%;
+    max-width: 900px; /* To align with the image max-width or slightly less */
+    text-align: left;
     color: #fff;
-    flex: 1; /* Ocupa o espaço restante */
+}
+
+.modal-description-wrapper {
+    /* No specific styling needed for the wrapper itself, its children will flow naturally */
 }
 
 .modal-description-col,
 .modal-details-col,
 .modal-technology-col {
-    flex: 1 1 30%; /* Permite que cada coluna ocupe cerca de 30% da largura, com flexibilidade */
-    min-width: 200px; /* Garante que as colunas não fiquem muito pequenas */
+    /* Removed flex properties as grid is now handling layout */
 }
 
 .modal-info-grid p {
@@ -875,10 +883,11 @@ nav ul li a:hover, nav ul li a.active {
     }
 
     .modal-content {
-        flex-direction: column;
+        /* flex-direction: column; - Removed as it's now default */
     }
 
-    .modal-info {
+    .modal-info-grid {
+        grid-template-columns: 1fr; /* Stack columns on mobile */
         padding-left: 0;
         padding-top: 20px;
     }
