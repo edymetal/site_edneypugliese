@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root {
-    --app-version: "1.184";
+    --app-version: "1.186";
 }
 
 html {
@@ -1091,6 +1091,15 @@ nav ul li a:hover, nav ul li a.active {
     font-size: 1.2rem;
     font-weight: bold;
     color: #ededed;
+}
+
+.cart-summary-shipping {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #1c3a50;
+    font-size: 1.1rem;
+    color: #ededed;
+    text-align: right;
 }
 
 #paypal-button-container {

@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const productGallery = document.getElementById('product-gallery');
     const cartItemsContainer = document.getElementById('cart-items');
     const subtotalPriceElement = document.getElementById('subtotal-price');
+    const SHIPPING_COST = 14.30; // Fixed shipping cost
 
     let products = [];
     let cart = JSON.parse(localStorage.getItem('shoppingCart')) || {};
@@ -73,6 +74,9 @@ document.addEventListener('DOMContentLoaded', () => {
         if (Object.keys(cart).length === 0) {
             cartItemsContainer.innerHTML = `<p data-i18n="emptyCart">Seu carrinho está vazio.</p>`;
             applyTranslations();
+            subtotalPriceElement.textContent = `€ 0.00`; // Reset total if cart is empty
+            renderPayPalButton(0); // Reset PayPal button
+            return; // Exit early if cart is empty
         } else {
             for (const productId in cart) {
                 const product = products.find(p => p.id == productId);
@@ -93,8 +97,15 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
 
-        subtotalPriceElement.textContent = `€ ${subtotal.toFixed(2)}`;
-        renderPayPalButton(subtotal);
+        // Display shipping cost
+        const shippingElement = document.createElement('div');
+        shippingElement.classList.add('cart-summary-shipping');
+        shippingElement.innerHTML = `<p>Envio: <span id="shipping-price">€ ${SHIPPING_COST.toFixed(2)}</span></p>`;
+        cartItemsContainer.appendChild(shippingElement);
+
+        let total = subtotal + SHIPPING_COST;
+        subtotalPriceElement.textContent = `€ ${total.toFixed(2)}`;
+        renderPayPalButton(total);
     }
     
     // Renderiza o botão do PayPal
