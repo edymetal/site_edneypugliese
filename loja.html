@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title data-i18n="shop_title">Loja - Edney Pugliese</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="style.css?v=1.198">
+    <link rel="stylesheet" href="style.css?v=1.200">
 </head>
 <body>
     <header>
@@ -60,20 +60,22 @@
             <button id="clear-filters-btn" data-i18n="clear_filters">Limpar Filtros</button>
         </div>
 
-        <section id="product-gallery" class="product-gallery">
-            <!-- Produtos serão inseridos aqui via JavaScript -->
-        </section>
+        <div class="store-content">
+            <section id="product-gallery" class="product-gallery">
+                <!-- Produtos serão inseridos aqui via JavaScript -->
+            </section>
 
-        <aside id="shopping-cart" class="shopping-cart">
-            <h2 data-i18n="shoppingCart">Carrinho de Compras</h2>
-            <div id="cart-items">
-                <!-- Itens do carrinho serão inseridos aqui -->
-            </div>
-            <div class="cart-summary">
-                <p><span data-i18n="subtotal">Subtotal</span>: <span id="subtotal-price">R$ 0,00</span></p>
-                <div id="paypal-button-container"></div>
-            </div>
-        </aside>
+            <aside id="shopping-cart" class="shopping-cart">
+                <h2 data-i18n="shoppingCart">Carrinho de Compras</h2>
+                <div id="cart-items">
+                    <!-- Itens do carrinho serão inseridos aqui -->
+                </div>
+                <div class="cart-summary">
+                    <p><span data-i18n="subtotal">Subtotal</span>: <span id="subtotal-price">R$ 0,00</span></p>
+                    <div id="paypal-button-container"></div>
+                </div>
+            </aside>
+        </div>
     </main>
 
 
