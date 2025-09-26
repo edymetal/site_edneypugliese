@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root {
-    --app-version: "1.181";
+    --app-version: "1.184";
 }
 
 html {
@@ -1039,9 +1039,22 @@ nav ul li a:hover, nav ul li a.active {
 }
 
 .shopping-cart h2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
     margin-bottom: 1.5rem;
     color: #ededed;
+}
+
+.cart-title-icon {
+    font-size: 2em; /* Adjust as needed */
+    margin-bottom: 0.5rem;
+    color: #00abf0; /* Icon color */
+}
+
+.cart-title-text {
+    font-size: 1em; /* Adjust as needed */
 }
 
 .cart-item {
@@ -1057,12 +1070,16 @@ nav ul li a:hover, nav ul li a.active {
     background: #dc3545;
     color: white;
     border: none;
-    border-radius: 50%;
-    width: 25px;
-    height: 25px;
+    border-radius: 5px;
+    padding: 5px 10px;
     cursor: pointer;
     font-weight: bold;
     transition: background-color 0.3s;
+    font-size: 0.9em;
+}
+
+.remove-from-cart-btn:hover {
+    background: #c82333;
 }
 
 .remove-from-cart-btn:hover {

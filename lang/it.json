@@ -72,7 +72,7 @@
     "review_text_3": "Visitare il Colosseo è come fare un salto indietro nel tempo all'antica Roma. Questo iconico anfiteatro, con la sua massiccia struttura e il suo significato storico, è uno dei monumenti più impressionanti che abbia mai visto. Camminare per i corridoi <span class=\"read-more\">... Altro</span>",
     "shop": "Negozio",
     "onlineStore": "Negozio Online",
-    "shoppingCart": "<i class=\"fas fa-shopping-cart\"></i> Carrello",
+    "shoppingCart": "<div class=\"cart-title-icon\"><i class=\"fas fa-shopping-cart\"></i></div><div class=\"cart-title-text\">Carrello</div>",
     "subtotal": "Subtotale",
     "addToCart": "Aggiungi al Carrello",
     "emptyCart": "Il tuo carrello è vuoto.",
