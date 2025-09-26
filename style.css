@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root {
-    --app-version: "1.168";
+    --app-version: "1.170";
 }
 
 html {
@@ -782,14 +782,15 @@ nav ul li a:hover, nav ul li a.active {
     to {transform: scale(1)}
 }
 
-.close-lightbox {
+.close-button {
     position: absolute;
     top: 15px;
-    right: 35px;
-    color: #f1f1f1;
-    font-size: 40px;
+    right: 15px;
+    color: #fff;
+    font-size: 35px;
     font-weight: bold;
-    transition: 0.3s;
+    cursor: pointer;
+    z-index: 1001;
 }
 
     .close-lightbox:hover,
