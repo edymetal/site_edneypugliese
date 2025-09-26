@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root {
-    --app-version: "1.202";
+    --app-version: "1.201";
 }
 
 html {
@@ -1027,8 +1027,6 @@ nav ul li a:hover, nav ul li a.active {
     padding: 2rem;
     gap: 2rem;
     flex: 1 0 auto; /* Faz a loja ocupar o espaço principal */
-    max-width: 1200px; /* Definir um tamanho máximo para a caixa */
-    margin: 0 auto; /* Centralizar a caixa na página */
 }
 
 .store-content {
