@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root {
-    --app-version: "1.203";
+    --app-version: "1.204";
 }
 
 html {
@@ -1234,7 +1234,7 @@ nav ul li a:hover, nav ul li a.active {
 .product-card img {
     max-width: 100%;
     height: 200px;
-    object-fit: cover;
+    object-fit: contain; /* Alterado de cover para contain */
     border-radius: 4px;
     margin-bottom: 1rem;
 }
