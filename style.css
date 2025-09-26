@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root {
-    --app-version: "1.245";
+    --app-version: "1.246";
 }
 
 html {
@@ -745,7 +745,7 @@ nav ul li a:hover, nav ul li a.active {
     margin: 20px auto; /* Center vertically and horizontally, add some top/bottom margin */
     padding: 20px;
     width: 90%; /* Adjusting to take more width */
-    max-width: 1000px; /* Increasing max-width */
+    max-width: 700px; /* Adjusted max-width to match image and info grid */
     background-color: #1a1a1a;
     border-radius: 10px;
     position: relative;
