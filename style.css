@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root {
-    --app-version: "1.238";
+    --app-version: "1.239";
 }
 
 html {
@@ -766,24 +766,26 @@ nav ul li a:hover, nav ul li a.active {
 }
 
 .modal-info-grid {
-    display: grid;
-    grid-template-columns: 2fr 1fr; /* 2 parts for description, 1 for technology */
-    gap: 20px;
+    display: flex; /* Use flexbox for side-by-side layout */
+    gap: 20px; /* Space between columns */
     width: 100%;
     max-width: 700px; /* To align with the image max-width */
     text-align: left;
     color: #fff;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
 }
 
 .modal-description-wrapper {
+    flex: 2; /* Take 2 parts of available space */
+    min-width: 300px; /* Ensure it doesn't shrink too much */
     border-right: 1px solid #00abf0; /* Divider */
     padding-right: 20px; /* Space from the divider */
 }
 
-.modal-description-col,
-.modal-details-col,
 .modal-technology-col {
-    /* Removed flex properties as grid is now handling layout */
+    flex: 1; /* Take 1 part of available space */
+    min-width: 150px; /* Ensure it doesn't shrink too much */
+    padding-left: 20px; /* Add padding to separate from description */
 }
 
 .modal-info-grid p {
