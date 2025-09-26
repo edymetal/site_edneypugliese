@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root {
-    --app-version: "1.205";
+    --app-version: "1.206";
 }
 
 html {
@@ -1352,16 +1352,20 @@ nav ul li a:hover, nav ul li a.active {
 }
 
 .remove-from-cart-btn {
-    background-color: transparent;
-    color: #ff6b6b; /* Cor do ícone de lixeira */
+    background-color: #1a1a1a; /* Fundo cinza escuro */
+    color: #ededed; /* Cor do ícone branca */
     border: none;
-    padding: 0.5rem;
+    padding: 0.5rem 0.8rem; /* Ajustar padding para melhor visual */
     border-radius: 5px;
     cursor: pointer;
-    font-size: 1.2rem;
-    transition: color 0.3s;
+    font-size: 1rem; /* Tamanho do ícone um pouco menor */
+    transition: background-color 0.3s, color 0.3s;
+    display: flex; /* Para centralizar o ícone */
+    align-items: center;
+    justify-content: center;
 }
 
 .remove-from-cart-btn:hover {
-    color: #ff4757;
+    background-color: #333333; /* Fundo mais escuro no hover */
+    color: #00abf0; /* Cor do ícone azul no hover */
 }
