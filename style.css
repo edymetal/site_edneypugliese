@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root {
-    --app-version: "1.211";
+    --app-version: "1.212";
 }
 
 html {
@@ -1251,7 +1251,13 @@ nav ul li a:hover, nav ul li a.active {
 
 .cart-item-price {
     white-space: nowrap;
-    color: #007bff;
+    color: #00abf0; /* Cor azul padrão */
+    font-weight: bold; /* Negrito para ênfase */
+}
+
+.product-card .price {
+    color: #00abf0; /* Cor azul padrão */
+    font-weight: bold; /* Negrito para ênfase */
 }
 
 .add-to-cart-btn {
