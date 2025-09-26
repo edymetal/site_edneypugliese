@@ -39,22 +39,38 @@
     "view_on_google_maps": "<i class=\"fas fa-map-marker-alt me-2\"></i>View on Google Maps",
     "page_title_portfolio": "Portfolio - Edney Pugliese",
     "portfolio_title": "My Portfolio",
-    "portfolio_desc_agenciaautoweb": "<h3><i class=\"fas fa-info-circle\"></i> Description:</h3><p>Vehicle classifieds platform, developed to facilitate buying and selling between individuals and agencies. Features an advanced search system for an agile and efficient user experience.</p><hr class=\"modal-separator\">",
-    "portfolio_details_agenciaautoweb": "<h3><i class=\"fas fa-code\"></i> Technology:</h3><div class=\"technologies\"><ul><li><i class=\"fab fa-html5\"></i> HTML5</li><li><i class=\"fab fa-css3-alt\"></i> CSS3</li><li><i class=\"fab fa-php\"></i> PHP</li><li><i class=\"fab fa-laravel\"></i> Laravel</li><li><i class=\"fab fa-js\"></i> jQuery, JavaScript</li></ul></div><hr class=\"modal-separator\">",
-    "portfolio_desc_barberhouse": "<h3><i class=\"fas fa-info-circle\"></i> Description:</h3><p>Institutional website for a barbershop, focusing on a visual gallery that highlights the professionals' work. The modern and clean design was created to attract and engage new clients.</p><hr class=\"modal-separator\">",
-    "portfolio_details_barberhouse": "<h3><i class=\"fas fa-code\"></i> Technology:</h3><div class=\"technologies\"><ul><li><i class=\"fab fa-html5\"></i> HTML5</li><li><i class=\"fab fa-css3-alt\"></i> CSS3</li><li><i class=\"fab fa-js\"></i> JavaScript</li></ul></div><hr class=\"modal-separator\">",
-    "portfolio_desc_cafeteria": "<h3><i class=\"fas fa-info-circle\"></i> Description:</h3><p>E-commerce for a coffee shop with a sophisticated design focused on user experience. The intuitive interface facilitates product exploration and quick checkout.</p><hr class=\"modal-separator\">",
-    "portfolio_details_cafeteria": "<h3><i class=\"fas fa-code\"></i> Technology:</h3><div class=\"technologies\"><ul><li><i class=\"fab fa-html5\"></i> HTML5</li><li><i class=\"fab fa-css3-alt\"></i> CSS3</li><li><i class=\"fab fa-js\"></i> JavaScript</li></ul></div><hr class=\"modal-separator\">",
-    "portfolio_desc_dashboardstarwars": "<h3><i class=\"fas fa-info-circle\"></i> Description:</h3><p>Interactive dashboard that organizes and visualizes data from the Star Wars universe. Presents complex information clearly through graphs and lists, ideal for fans of the saga.</p><hr class=\"modal-separator\">",
-    "portfolio_details_dashboardstarwars": "<h3><i class=\"fas fa-code\"></i> Technology:</h3><div class=\"technologies\"><ul><li><i class=\"fab fa-html5\"></i> HTML5</li><li><i class=\"fab fa-css3-alt\"></i> CSS3</li><li><i class=\"fab fa-js\"></i> JavaScript</li></ul></div><hr class=\"modal-separator\">",
-    "portfolio_desc_deathcat": "<h3><i class=\"fas fa-info-circle\"></i> Description:</h3><p>E-commerce for a candy store with a unique and fun visual identity. The grid layout and simplified purchasing functionality offer a practical and pleasant online shopping experience.</p><hr class=\"modal-separator\">",
-    "portfolio_details_deathcat": "<h3><i class=\"fas fa-code\"></i> Technology:</h3><div class=\"technologies\"><ul><li><i class=\"fab fa-html5\"></i> HTML5</li><li><i class=\"fab fa-css3-alt\"></i> CSS3</li><li><i class=\"fab fa-js\"></i> JavaScript</li></ul></div><hr class=\"modal-separator\">",
-    "portfolio_desc_lingerie": "<h3><i class=\"fas fa-info-circle\"></i> Description:</h3><p>Lingerie e-commerce with an elegant and feminine design. The website highlights products with high-quality photos and offers intuitive navigation for a sophisticated shopping experience.</p><hr class=\"modal-separator\">",
-    "portfolio_details_lingerie": "<h3><i class=\"fas fa-code\"></i> Technology:</h3><div class=\"technologies\"><ul><li><i class=\"fab fa-html5\"></i> HTML5</li><li><i class=\"fab fa-css3-alt\"></i> CSS3</li><li><i class=\"fab fa-js\"></i> JavaScript</li></ul></div><hr class=\"modal-separator\">",
-    "portfolio_desc_relationship": "<h3><i class=\"fas fa-info-circle\"></i> Description:</h3><p>Landing page and login screen for an exclusive members-only application. The modern and vibrant design focuses on usability, ensuring quick and secure access to the platform.</p><hr class=\"modal-separator\">",
-    "portfolio_details_relationship": "<h3><i class=\"fas fa-code\"></i> Technology:</h3><div class=\"technologies\"><ul><li><i class=\"fab fa-html5\"></i> HTML5</li><li><i class=\"fab fa-css3-alt\"></i> CSS3</li><li><i class=\"fab fa-js\"></i> JavaScript</li></ul></div><hr class=\"modal-separator\">",
-    "portfolio_desc_terapiadodia": "<h3><i class=\"fas fa-info-circle\"></i> Description:</h3><p>Institutional website for an online therapy platform. The clean and welcoming design was created to convey trust and facilitate remote appointment scheduling.</p><hr class=\"modal-separator\">",
-    "portfolio_details_terapiadodia": "<h3><i class=\"fas fa-code\"></i> Technology:</h3><div class=\"technologies\"><ul><li><i class=\"fab fa-html5\"></i> HTML5</li><li><i class=\"fab fa-css3-alt\"></i> CSS3</li><li><i class=\"fab fa-php\"></i> PHP</li><li><i class=\"fab fa-laravel\"></i> Laravel</li><li><i class=\"fab fa-js\"></i> jQuery, JavaScript</li></ul></div><hr class=\"modal-separator\">",
+    "portfolio_desc_agenciaautoweb": "<h3><i class=\"fas fa-info-circle\"></i> Description:</h3><p>Vehicle classifieds platform, developed to facilitate buying and selling between individuals and agencies. Features an advanced search system for an agile and efficient user experience.</p><hr class=\"modal-separator\">
+",
+    "portfolio_details_agenciaautoweb": "<h3><i class=\"fas fa-code\"></i> Technology:</h3><div class=\"technologies\"><ul><li><i class=\"fab fa-html5\"></i> HTML5</li><li><i class=\"fab fa-css3-alt\"></i> CSS3</li><li><i class=\"fab fa-php\"></i> PHP</li><li><i class=\"fab fa-laravel\"></i> Laravel</li><li><i class=\"fab fa-js\"></i> jQuery, JavaScript</li></ul></div><hr class=\"modal-separator\">
+",
+    "portfolio_desc_barberhouse": "<h3><i class=\"fas fa-info-circle\"></i> Description:</h3><p>Institutional website for a barbershop, focusing on a visual gallery that highlights the professionals' work. The modern and clean design was created to attract and engage new clients.</p><hr class=\"modal-separator\">
+",
+    "portfolio_details_barberhouse": "<h3><i class=\"fas fa-code\"></i> Technology:</h3><div class=\"technologies\"><ul><li><i class=\"fab fa-html5\"></i> HTML5</li><li><i class=\"fab fa-css3-alt\"></i> CSS3</li><li><i class=\"fab fa-js\"></i> JavaScript</li></ul></div><hr class=\"modal-separator\">
+",
+    "portfolio_desc_cafeteria": "<h3><i class=\"fas fa-info-circle\"></i> Description:</h3><p>E-commerce for a coffee shop with a sophisticated design focused on user experience. The intuitive interface facilitates product exploration and quick checkout.</p><hr class=\"modal-separator\">
+",
+    "portfolio_details_cafeteria": "<h3><i class=\"fas fa-code\"></i> Technology:</h3><div class=\"technologies\"><ul><li><i class=\"fab fa-html5\"></i> HTML5</li><li><i class=\"fab fa-css3-alt\"></i> CSS3</li><li><i class=\"fab fa-js\"></i> JavaScript</li></ul></div><hr class=\"modal-separator\">
+",
+    "portfolio_desc_dashboardstarwars": "<h3><i class=\"fas fa-info-circle\"></i> Description:</h3><p>Interactive dashboard that organizes and visualizes data from the Star Wars universe. Presents complex information clearly through graphs and lists, ideal for fans of the saga.</p><hr class=\"modal-separator\">
+",
+    "portfolio_details_dashboardstarwars": "<h3><i class=\"fas fa-code\"></i> Technology:</h3><div class=\"technologies\"><ul><li><i class=\"fab fa-html5\"></i> HTML5</li><li><i class=\"fab fa-css3-alt\"></i> CSS3</li><li><i class=\"fab fa-js\"></i> JavaScript</li></ul></div><hr class=\"modal-separator\">
+",
+    "portfolio_desc_deathcat": "<h3><i class=\"fas fa-info-circle\"></i> Description:</h3><p>E-commerce for a candy store with a unique and fun visual identity. The grid layout and simplified purchasing functionality offer a practical and pleasant online shopping experience.</p><hr class=\"modal-separator\">
+",
+    "portfolio_details_deathcat": "<h3><i class=\"fas fa-code\"></i> Technology:</h3><div class=\"technologies\"><ul><li><i class=\"fab fa-html5\"></i> HTML5</li><li><i class=\"fab fa-css3-alt\"></i> CSS3</li><li><i class=\"fab fa-js\"></i> JavaScript</li></ul></div><hr class=\"modal-separator\">
+",
+    "portfolio_desc_lingerie": "<h3><i class=\"fas fa-info-circle\"></i> Description:</h3><p>Lingerie e-commerce with an elegant and feminine design. The website highlights products with high-quality photos and offers intuitive navigation for a sophisticated shopping experience.</p><hr class=\"modal-separator\">
+",
+    "portfolio_details_lingerie": "<h3><i class=\"fas fa-code\"></i> Technology:</h3><div class=\"technologies\"><ul><li><i class=\"fab fa-html5\"></i> HTML5</li><li><i class=\"fab fa-css3-alt\"></i> CSS3</li><li><i class=\"fab fa-js\"></i> JavaScript</li></ul></div><hr class=\"modal-separator\">
+",
+    "portfolio_desc_relationship": "<h3><i class=\"fas fa-info-circle\"></i> Description:</h3><p>Landing page and login screen for an exclusive members-only application. The modern and vibrant design focuses on usability, ensuring quick and secure access to the platform.</p><hr class=\"modal-separator\">
+",
+    "portfolio_details_relationship": "<h3><i class=\"fas fa-code\"></i> Technology:</h3><div class=\"technologies\"><ul><li><i class=\"fab fa-html5\"></i> HTML5</li><li><i class=\"fab fa-css3-alt\"></i> CSS3</li><li><i class=\"fab fa-js\"></i> JavaScript</li></ul></div><hr class=\"modal-separator\">
+",
+    "portfolio_desc_terapiadodia": "<h3><i class=\"fas fa-info-circle\"></i> Description:</h3><p>Institutional website for an online therapy platform. The clean and welcoming design was created to convey trust and facilitate remote appointment scheduling.</p><hr class=\"modal-separator\">
+",
+    "portfolio_details_terapiadodia": "<h3><i class=\"fas fa-code\"></i> Technology:</h3><div class=\"technologies\"><ul><li><i class=\"fab fa-html5\"></i> HTML5</li><li><i class=\"fab fa-css3-alt\"></i> CSS3</li><li><i class=\"fab fa-php\"></i> PHP</li><li><i class=\"fab fa-laravel\"></i> Laravel</li><li><i class=\"fab fa-js\"></i> jQuery, JavaScript</li></ul></div><hr class=\"modal-separator\">
+",
     "portfolio_tech_agenciaautoweb": "Technologies: HTML5, CSS3, PHP, Laravel, jQuery, JavaScript",
     "portfolio_tech_barberhouse": "Technologies: HTML5, CSS3, JavaScript",
     "portfolio_tech_cafeteria": "Technologies: HTML5, CSS3, JavaScript",
@@ -71,6 +87,12 @@
     "portfolio_title_lingerie": "Lingerie",
     "portfolio_title_relationship": "Relationship",
     "portfolio_title_terapiadodia": "Therapy of the Day",
+    "portfolio_title_form_contato": "Contact Form",
+    "portfolio_desc_form_contato": "A responsive and functional contact form for websites.",
+    "portfolio_details_form_contato": "<h4><i class=\"fas fa-info-circle\"></i> Details</h4><p>A complete contact form with fields for name, email, subject, and message, including data validation and user feedback.</p>",
+    "portfolio_date_form_contato": "<h4><i class=\"fas fa-calendar-alt\"></i> Date</h4><p>2024</p>",
+    "portfolio_url_form_contato": "<h4><i class=\"fas fa-link\"></i> URL</h4><p><a href=\"#\" target=\"_blank\">Coming soon</a></p>",
+    "portfolio_tech_form_contato": "<h4><i class=\"fas fa-cog\"></i> Technology</h4><p>HTML, CSS, JavaScript</p>",
     "read_more_text": "More",
     "read_less_text": "Less",
     "google_reviews_title": "Reviews",
