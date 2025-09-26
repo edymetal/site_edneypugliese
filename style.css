@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root {
-    --app-version: "1.178";
+    --app-version: "1.180";
 }
 
 html {
@@ -1032,9 +1032,10 @@ nav ul li a:hover, nav ul li a.active {
     background: #0a2133;
     padding: 1.5rem;
     border-radius: 8px;
-    border: 1px solid #00abf0;
+    border: 2px solid #00abf0;
     min-width: 300px;
     align-self: flex-start;
+    box-shadow: 0 0 20px rgba(0, 171, 240, 0.5);
 }
 
 .shopping-cart h2 {
