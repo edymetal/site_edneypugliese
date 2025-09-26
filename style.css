@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root {
-    --app-version: "1.260";
+    --app-version: "1.261";
 }
 
 html {
@@ -793,12 +793,6 @@ nav ul li a:hover, nav ul li a.active {
     flex-wrap: wrap; /* Allow items to wrap on smaller screens */
 }
 
-.modal-technology-col {
-    flex: 1; /* Take 1 part of available space */
-    min-width: 200px; /* Adjusted min-width */
-    border-right: 1px solid #00abf0; /* Divider */
-    padding-right: 20px; /* Space from the divider */
-}
 
 .modal-description-wrapper {
     flex: 2; /* Take 2 parts of available space */

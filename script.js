@@ -117,14 +117,12 @@ document.addEventListener('DOMContentLoaded', function() {
         const modalProjectImage = document.getElementById('modal-project-image');
         const modalDescription = portfolioModal.querySelector('.modal-description');
         const modalDetails = portfolioModal.querySelector('.modal-details');
-        const modalTechnology = portfolioModal.querySelector('.modal-technology');
         const closeButton = portfolioModal.querySelector('.close-button');
 
         document.querySelectorAll('.portfolio-item').forEach(item => {
             item.addEventListener('click', () => {
                 const descriptionKey = item.getAttribute('data-description');
                 const detailsKey = item.getAttribute('data-details');
-                const technologyKey = item.getAttribute('data-technology'); // Adicionado
                 const titleKey = item.querySelector('.portfolio-title').getAttribute('data-i18n');
                 const imageUrl = item.querySelector('img').src;
 
@@ -132,7 +130,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 modalProjectImage.src = imageUrl;
                 modalDescription.innerHTML = translations[descriptionKey] || '';
                 modalDetails.innerHTML = translations[detailsKey] || '';
-                modalTechnology.innerHTML = translations[technologyKey] || ''; // Adicionado
 
                 portfolioModal.style.display = 'block';
             });
