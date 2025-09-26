@@ -1,4 +1,4 @@
-console.log('script.js version: ' + '1.153' + ' loaded at ' + new Date().toLocaleTimeString());
+console.log('script.js version: ' + '1.155' + ' loaded at ' + new Date().toLocaleTimeString());
 
 // Variáveis e funções globais para tradução
 let translations = {};
