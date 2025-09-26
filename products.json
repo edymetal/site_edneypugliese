@@ -113,5 +113,28 @@
         "description": "Una cartolina dal design esclusivo, perfetta per ricordare o condividere i ricordi di un viaggio estivo a Palermo."
       }
     }
+  },
+  {
+    "id": 6,
+    "image": "img/loja/edy_calendario.png",
+    "price": 25.00,
+    "details": {
+      "pt": {
+        "name": "Calendário Tropical",
+        "description": "Página de calendário de Julho com tema de verão e praia paradisíaca."
+      },
+      "en": {
+        "name": "Tropical Calendar",
+        "description": "July calendar page with a summer and paradisiacal beach theme."
+      },
+      "es": {
+        "name": "Calendario Tropical",
+        "description": "Página de calendario de Julio con tema de verano y playa paradisíaca."
+      },
+      "it": {
+        "name": "Calendario Tropicale",
+        "description": "Pagina del calendario di Luglio con tema estivo e spiaggia paradisiaca."
+      }
+    }
   }
 ]
