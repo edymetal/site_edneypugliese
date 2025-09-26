@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title data-i18n="shop_title">Loja - Edney Pugliese</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="style.css?v=1.193">
+    <link rel="stylesheet" href="style.css?v=1.194">
 </head>
 <body>
     <header>
@@ -40,21 +40,16 @@
         
         <div class="filters-container">
             <div class="filter-group">
-                <label for="filter-name" data-i18n="filter_by_name">Filtrar por Nome:</label>
-                <input type="text" id="filter-name" placeholder="Nome do produto">
-            </div>
-            <div class="filter-group">
-                <label for="filter-category" data-i18n="filter_by_category">Filtrar por Categoria:</label>
+                <label for="filter-category" data-i18n="filter_by_category">Categoria:</label>
                 <select id="filter-category">
                     <option value="all" data-i18n="all_categories">Todas</option>
                     <!-- Options will be populated by JavaScript -->
                 </select>
             </div>
             <div class="filter-group">
-                <label data-i18n="filter_by_price">Filtrar por Preço:</label>
-                <button id="filter-price-button">Definir Intervalo</button>
+                <label data-i18n="filter_by_price">Preço:</label>
+                <button id="filter-price-button" data-i18n="value_button">Valor</button>
             </div>
-            <button id="apply-filters-btn" data-i18n="apply_filters">Aplicar Filtros</button>
             <button id="clear-filters-btn" data-i18n="clear_filters">Limpar Filtros</button>
         </div>
 
@@ -80,14 +75,15 @@
             <span class="close-button" id="close-price-filter-modal">&times;</span>
             <h3 data-i18n="filter_by_price">Filtrar por Preço</h3>
             <div class="filter-group">
-                <label for="price-filter-min">Mínimo:</label>
+                <label for="price-filter-min" data-i18n="min_price">Mínimo:</label>
                 <input type="number" id="price-filter-min" placeholder="0" min="0">
             </div>
             <div class="filter-group">
-                <label for="price-filter-max">Máximo:</label>
+                <label for="price-filter-max" data-i18n="max_price">Máximo:</label>
                 <input type="number" id="price-filter-max" placeholder="Qualquer" min="0">
             </div>
-            <button id="apply-price-filter-btn" data-i18n="apply_filters">Aplicar</button>
+            <button id="apply-price-filter-btn" data-i18n="apply_price_filter">Aplicar</button>
+            <button id="clear-price-filter-btn" data-i18n="clear_price_filter">Limpar</button>
         </div>
     </div>
 

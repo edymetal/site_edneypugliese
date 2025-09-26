@@ -5,18 +5,17 @@ document.addEventListener('DOMContentLoaded', () => {
     const SHIPPING_COST = 14.30; // Fixed shipping cost
 
     // Filter elements
-    const filterNameInput = document.getElementById('filter-name');
     const filterCategorySelect = document.getElementById('filter-category'); // New category filter
-    const applyFiltersBtn = document.getElementById('apply-filters-btn');
-    const clearFiltersBtn = document.getElementById('clear-filters-btn');
+    const clearFiltersBtn = document.getElementById('clear-filters-btn'); // Only clear filters button remains
 
     // Price filter modal elements
-    const priceFilterButton = document.getElementById('filter-price-button'); // New button to open price filter
+    const priceFilterButton = document.getElementById('filter-price-button'); // Button to open price filter
     const priceFilterModal = document.getElementById('price-filter-modal');
     const priceFilterMinInput = document.getElementById('price-filter-min');
     const priceFilterMaxInput = document.getElementById('price-filter-max');
     const applyPriceFilterBtn = document.getElementById('apply-price-filter-btn');
     const closePriceFilterModalBtn = document.getElementById('close-price-filter-modal');
+    const clearPriceFilterBtn = document.getElementById('clear-price-filter-btn'); // New clear price filter button
 
     let products = [];
     let cart = JSON.parse(localStorage.getItem('shoppingCart')) || {};
@@ -172,29 +171,25 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Filter products function
     function filterProducts() {
-        const nameFilter = filterNameInput.value.toLowerCase();
         const selectedCategory = filterCategorySelect.value; // Get selected category
         const priceMin = parseFloat(priceFilterMinInput.value); // Get from modal inputs
         const priceMax = parseFloat(priceFilterMaxInput.value); // Get from modal inputs
 
         let filtered = products.filter(product => {
-            const productName = product.details[currentLang].name.toLowerCase();
             const productCategory = product.category;
             const productPrice = product.price;
 
-            const matchesName = productName.includes(nameFilter);
             const matchesCategory = (selectedCategory === 'all' || productCategory === selectedCategory);
             const matchesPrice = (!isNaN(priceMin) ? productPrice >= priceMin : true) &&
                                  (!isNaN(priceMax) ? productPrice <= priceMax : true);
 
-            return matchesName && matchesCategory && matchesPrice;
+            return matchesCategory && matchesPrice;
         });
         renderProducts(filtered);
     }
 
     // Clear filters function
     function clearFilters() {
-        filterNameInput.value = '';
         filterCategorySelect.value = 'all'; // Reset category filter
         priceFilterMinInput.value = ''; // Clear modal inputs
         priceFilterMaxInput.value = ''; // Clear modal inputs
@@ -203,9 +198,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Event Listeners for filters
-    applyFiltersBtn.addEventListener('click', filterProducts);
     clearFiltersBtn.addEventListener('click', clearFilters);
-    filterNameInput.addEventListener('input', filterProducts); // Live filter by name
     filterCategorySelect.addEventListener('change', filterProducts); // Filter by category on change
 
     // Event Listeners for price filter modal
@@ -220,6 +213,12 @@ document.addEventListener('DOMContentLoaded', () => {
     applyPriceFilterBtn.addEventListener('click', () => {
         filterProducts();
         priceFilterModal.style.display = 'none';
+    });
+
+    clearPriceFilterBtn.addEventListener('click', () => { // New clear price filter button listener
+        priceFilterMinInput.value = '';
+        priceFilterMaxInput.value = '';
+        filterProducts(); // Re-apply filters to clear price filter
     });
 
     window.addEventListener('click', (event) => {

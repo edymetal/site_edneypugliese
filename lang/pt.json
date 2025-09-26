@@ -79,10 +79,14 @@
     "emptyCart": "Seu carrinho está vazio.",
     "shop_title": "Loja - Edney Pugliese",
     "site_logo": "",
-    "filter_by_name": "Filtrar por Nome:",
-    "filter_by_price": "Filtrar por Preço:",
-    "apply_filters": "Aplicar Filtros",
+    "filter_by_name": "Nome:",
+    "filter_by_price": "Preço:",
+    "value_button": "Valor",
     "clear_filters": "Limpar Filtros",
-    "filter_by_category": "Filtrar por Categoria:",
-    "all_categories": "Todas"
+    "filter_by_category": "Categoria:",
+    "all_categories": "Todas",
+    "min_price": "Mínimo:",
+    "max_price": "Máximo:",
+    "apply_price_filter": "Aplicar",
+    "clear_price_filter": "Limpar"
 }
