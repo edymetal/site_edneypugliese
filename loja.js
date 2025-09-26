@@ -149,8 +149,9 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     cartItemsContainer.addEventListener('click', (e) => {
-        if (e.target.classList.contains('remove-from-cart-btn')) {
-            const productId = e.target.getAttribute('data-id');
+        const removeButton = e.target.closest('.remove-from-cart-btn');
+        if (removeButton) {
+            const productId = removeButton.getAttribute('data-id');
             removeFromCart(productId);
         }
     });
