@@ -73,7 +73,7 @@
     "review_text_3": "Visiting the Colosseum is like stepping back in time to ancient Rome. This iconic amphitheater, with its massive structure and historical significance, is one of the most impressive landmarks I have ever seen. Walking through the corridors <span class=\"read-more\">... More</span>",
     "shop": "Shop",
     "onlineStore": "Online Store",
-    "shoppingCart": "Shopping Cart",
+    "shoppingCart": "<i class=\"fas fa-shopping-cart\"></i> Shopping Cart",
     "subtotal": "Subtotal",
     "addToCart": "Add to Cart",
     "emptyCart": "Your cart is empty.",

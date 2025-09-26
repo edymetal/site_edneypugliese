@@ -73,7 +73,7 @@
     "review_text_3": "Visitar o Coliseu é como voltar no tempo para a Roma antiga. Este anfiteatro icônico, com sua estrutura massiva e significado histórico, é um dos marcos mais impressionantes que já vi. Caminhar pelos corredores <span class=\"read-more\">... Mais</span>",
     "shop": "Loja",
     "onlineStore": "Loja Online",
-    "shoppingCart": "Carrinho de Compras",
+    "shoppingCart": "<i class=\"fas fa-shopping-cart\"></i> Carrinho de Compras",
     "subtotal": "Subtotal",
     "addToCart": "Adicionar ao Carrinho",
     "emptyCart": "Seu carrinho está vazio.",

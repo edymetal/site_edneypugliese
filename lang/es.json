@@ -72,7 +72,7 @@
     "review_text_3": "Visitar el Coliseo es como retroceder en el tiempo a la antigua Roma. Este icónico anfiteatro, con su enorme estructura y significado histórico, es uno de los monumentos más impresionantes que he visto. Caminar por los pasillos <span class=\"read-more\">... Más</span>",
     "shop": "Tienda",
     "onlineStore": "Tienda Online",
-    "shoppingCart": "Carrito de Compras",
+    "shoppingCart": "<i class=\"fas fa-shopping-cart\"></i> Carrito de Compras",
     "subtotal": "Subtotal",
     "addToCart": "Añadir al Carrito",
     "emptyCart": "Tu carrito está vacío.",
