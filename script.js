@@ -45,14 +45,12 @@ document.addEventListener('DOMContentLoaded', function() {
         languageSwitcher.value = savedLang;
     }
     loadTranslations(savedLang);
-    applyTranslations(); // Adicionar chamada explícita para aplicar traduções ao menu após o carregamento inicial
 
     if (languageSwitcher) {
         languageSwitcher.addEventListener('change', (event) => {
             const newLang = event.target.value;
             localStorage.setItem('lang', newLang);
             loadTranslations(newLang);
-            applyTranslations(); // Adicionar chamada explícita para aplicar traduções ao menu após a mudança de idioma
         });
     }
 
