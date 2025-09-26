@@ -130,9 +130,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 modalProjectImage.src = imageUrl;
                 modalDescription.innerHTML = translations[descriptionKey] || '';
                 modalDetails.innerHTML = translations[detailsKey] || '';
-                if (modalTechnology) { // Adicionado: Verificação de nulidade
-                    modalTechnology.innerHTML = translations[technologyKey] || ''; // Adicionado
-                }
+                modalTechnology.innerHTML = translations[technologyKey] || ''; // Adicionado
 
                 portfolioModal.style.display = 'block';
             });
