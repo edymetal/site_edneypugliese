@@ -56,8 +56,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 <img src="${product.image}" alt="${productDetails.name}">
                 <h3>${productDetails.name}</h3>
                 <p>${productDetails.description}</p>
-                <p class="price">€ ${product.price.toFixed(2)}</p>
-                <button class="add-to-cart-btn" data-id="${product.id}" data-i18n="addToCart">Adicionar ao Carrinho</button>
+                <div class="product-actions">
+                    <p class="price">€ ${product.price.toFixed(2)}</p>
+                    <button class="add-to-cart-btn" data-id="${product.id}" data-i18n="addToCart">Adicionar ao Carrinho</button>
+                </div>
             `;
             productGallery.appendChild(productElement);
         });
