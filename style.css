@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root {
-    --app-version: "1.214";
+    --app-version: "1.215";
 }
 
 html {
@@ -378,6 +378,16 @@ nav ul li a:hover, nav ul li a.active {
 
     .hamburger-menu {
         display: block;
+    }
+
+    .hamburger-menu .line1,
+    .hamburger-menu .line2,
+    .hamburger-menu .line3 {
+        width: 25px;
+        height: 3px;
+        background-color: #ededed;
+        margin: 5px;
+        transition: all 0.3s ease;
     }
 
     .main-container {
