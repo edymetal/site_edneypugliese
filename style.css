@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root {
-    --app-version: "1.161";
+    --app-version: "1.163";
 }
 
 html {
@@ -498,6 +498,20 @@ nav ul li a:hover, nav ul li a.active {
     color: #00abf0;
     margin-top: 3px;
     display: inline-block;
+}
+
+.technologies li {
+    background-color: #0a2133;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.technologies li i {
+    color: #add8e6;
 }
 
 .skill-category ul li strong {
