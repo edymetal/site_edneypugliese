@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root {
-    --app-version: "1.209";
+    --app-version: "1.210";
 }
 
 html {
@@ -1249,11 +1249,9 @@ nav ul li a:hover, nav ul li a.active {
     color: #ccc;
 }
 
-.product-card .price {
-    font-size: 1.25rem;
-    font-weight: bold;
-    color: #00abf0;
-    margin: 1rem 0;
+.cart-item-price {
+    white-space: nowrap;
+    color: #007bff;
 }
 
 .add-to-cart-btn {
