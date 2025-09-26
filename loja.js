@@ -4,6 +4,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const subtotalPriceElement = document.getElementById('subtotal-price');
     const SHIPPING_COST = 14.30; // Fixed shipping cost
 
+    // Filter elements
+    const filterNameInput = document.getElementById('filter-name');
+    const filterPriceMinInput = document.getElementById('filter-price-min');
+    const filterPriceMaxInput = document.getElementById('filter-price-max');
+    const applyFiltersBtn = document.getElementById('apply-filters-btn');
+    const clearFiltersBtn = document.getElementById('clear-filters-btn');
+
     let products = [];
     let cart = JSON.parse(localStorage.getItem('shoppingCart')) || {};
     let currentLang = localStorage.getItem('lang') || 'pt';
@@ -13,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
         try {
             const response = await fetch('products.json');
             products = await response.json();
-            renderProducts();
+            renderProducts(products); // Render all products initially
             updateCartDisplay();
         } catch (error) {
             console.error('Erro ao carregar produtos:', error);
@@ -21,9 +28,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Renderiza os produtos na galeria
-    function renderProducts() {
+    function renderProducts(productsToRender) { // Accept products to render as argument
         productGallery.innerHTML = '';
-        products.forEach(product => {
+        productsToRender.forEach(product => {
             const productDetails = product.details[currentLang];
             const productElement = document.createElement('div');
             productElement.classList.add('product-card');
@@ -142,7 +149,38 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // Event Listeners
+    // Filter products function
+    function filterProducts() {
+        const nameFilter = filterNameInput.value.toLowerCase();
+        const priceMin = parseFloat(filterPriceMinInput.value);
+        const priceMax = parseFloat(filterPriceMaxInput.value);
+
+        let filtered = products.filter(product => {
+            const productName = product.details[currentLang].name.toLowerCase();
+            const productPrice = product.price;
+
+            const matchesName = productName.includes(nameFilter);
+            const matchesPrice = (!isNaN(priceMin) ? productPrice >= priceMin : true) &&
+                                 (!isNaN(priceMax) ? productPrice <= priceMax : true);
+
+            return matchesName && matchesPrice;
+        });
+        renderProducts(filtered);
+    }
+
+    // Clear filters function
+    function clearFilters() {
+        filterNameInput.value = '';
+        filterPriceMinInput.value = '';
+        filterPriceMaxInput.value = '';
+        renderProducts(products); // Render all products
+    }
+
+    // Event Listeners for filters
+    applyFiltersBtn.addEventListener('click', filterProducts);
+    clearFiltersBtn.addEventListener('click', clearFilters);
+    filterNameInput.addEventListener('input', filterProducts); // Live filter by name
+
     productGallery.addEventListener('click', (e) => {
         if (e.target.classList.contains('add-to-cart-btn')) {
             const productId = e.target.getAttribute('data-id');
@@ -162,7 +200,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const langSelect = document.getElementById('language-switcher');
     langSelect.addEventListener('change', (e) => {
         currentLang = e.target.value;
-        renderProducts();
+        renderProducts(products); // Re-render all products with new language
         updateCartDisplay();
     });
 

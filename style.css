@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root {
-    --app-version: "1.191";
+    --app-version: "1.193";
 }
 
 html {
@@ -953,6 +953,87 @@ nav ul li a:hover, nav ul li a.active {
     padding: 2rem;
     gap: 2rem;
     flex: 1 0 auto; /* Faz a loja ocupar o espaço principal */
+}
+
+.filters-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #0a2133;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 171, 240, 0.1);
+    align-items: center;
+    justify-content: center;
+}
+
+.filter-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.filters-container label {
+    color: #ededed;
+    font-weight: 500;
+}
+
+.filters-container input[type="text"],
+.filters-container input[type="number"] {
+    padding: 8px 12px;
+    border: 1px solid #00abf0;
+    border-radius: 5px;
+    background-color: #081b29;
+    color: #ededed;
+    font-size: 1em;
+    outline: none;
+}
+
+.filters-container input[type="text"]::placeholder,
+.filters-container input[type="number"]::placeholder {
+    color: #ccc;
+}
+
+.filters-container input[type="number"] {
+    width: 80px;
+}
+
+.filters-container span {
+    color: #ededed;
+}
+
+.filters-container button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #00abf0;
+    color: #081b29;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.filters-container button:hover {
+    background-color: #007bff;
+    box-shadow: 0 0 10px rgba(0, 171, 240, 0.5);
+}
+
+@media (max-width: 768px) {
+    .filters-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .filter-group {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .filters-container input[type="text"],
+    .filters-container input[type="number"] {
+        width: 100%;
+    }
 }
 
 .loja-container h1 {

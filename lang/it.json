@@ -77,5 +77,9 @@
     "addToCart": "Aggiungi al Carrello",
     "emptyCart": "Il tuo carrello è vuoto.",
     "shop_title": "Negozio - Edney Pugliese",
-    "site_logo": ""
+    "site_logo": "",
+    "filter_by_name": "Filtra per Nome:",
+    "filter_by_price": "Filtra per Prezzo:",
+    "apply_filters": "Applica Filtri",
+    "clear_filters": "Cancella Filtri"
 }

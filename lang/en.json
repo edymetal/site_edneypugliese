@@ -78,5 +78,9 @@
     "addToCart": "Add to Cart",
     "emptyCart": "Your cart is empty.",
     "shop_title": "Shop - Edney Pugliese",
-    "site_logo": ""
+    "site_logo": "",
+    "filter_by_name": "Filter by Name:",
+    "filter_by_price": "Filter by Price:",
+    "apply_filters": "Apply Filters",
+    "clear_filters": "Clear Filters"
 }
