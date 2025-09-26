@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root {
-    --app-version: "1.170";
+    --app-version: "1.172";
 }
 
 html {
@@ -784,8 +784,8 @@ nav ul li a:hover, nav ul li a.active {
 
 .close-button {
     position: absolute;
-    top: 15px;
-    right: 15px;
+    top: 10px;
+    right: 10px;
     color: #fff;
     font-size: 35px;
     font-weight: bold;
