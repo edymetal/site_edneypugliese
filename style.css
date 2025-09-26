@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root {
-    --app-version: "1.229";
+    --app-version: "1.230";
 }
 
 html {
@@ -887,11 +887,13 @@ nav ul li a:hover, nav ul li a.active {
         /* flex-direction: column; - Removed as it's now default */
     }
 
+@media (max-width: 480px) {
     .modal-info-grid {
-        grid-template-columns: 1fr; /* Stack columns on mobile */
+        grid-template-columns: 1fr; /* Stack columns on very small mobile */
         padding-left: 0;
         padding-top: 20px;
     }
+}
 }
 
 /* Lightbox styles */
