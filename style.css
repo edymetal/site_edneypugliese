@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root {
-    --app-version: "1.158";
+    --app-version: "1.160";
 }
 
 html {
@@ -684,45 +684,6 @@ nav ul li a:hover, nav ul li a.active {
 }
 
 .modal-image {
-    flex: 1;
-}
-
-.modal-info {
-    flex: 1;
-    padding-left: 30px;
-    color: #fff;
-}
-
-.modal-info h3 i {
-    font-size: 0.8em;
-}
-
-.technologies {
-    list-style: none;
-    padding: 0;
-}
-
-.technologies li {
-    background-color: #0a2133;
-    padding: 5px 10px;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 10px;
-}
-
-.close-button {
-    position: absolute;
-    top: 10px;
-    right: 25px;
-    color: #fff;
-    font-size: 35px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.modal-image {
     flex: 2;
 }
 
@@ -737,7 +698,7 @@ nav ul li a:hover, nav ul li a.active {
     color: #fff;
 }
 
-.modal-info h2 {
+.modal-info h3 {
     margin-top: 0;
     color: #00abf0;
     font-size: 2em;
