@@ -4,6 +4,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const subtotalPriceElement = document.getElementById('subtotal-price');
     const SHIPPING_COST = 14.30; // Fixed shipping cost
 
+    // Floating cart icon elements
+    const floatingCartIcon = document.getElementById('floating-cart-icon');
+    const floatingCartCount = document.getElementById('floating-cart-count');
+    const shoppingCartSection = document.getElementById('shopping-cart'); // Reference to the shopping cart section
+
     // Filter elements
     const filterCategorySelect = document.getElementById('filter-category');
     const clearFiltersBtn = document.getElementById('clear-filters-btn');
@@ -97,12 +102,19 @@ document.addEventListener('DOMContentLoaded', () => {
     function updateCartDisplay() {
         cartItemsContainer.innerHTML = '';
         let subtotal = 0;
+        let totalCartItems = 0; // Para contar o total de itens no carrinho
 
         if (Object.keys(cart).length === 0) {
             cartItemsContainer.innerHTML = `<p data-i18n="emptyCart">Seu carrinho está vazio.</p>`;
             applyTranslations();
             subtotalPriceElement.textContent = `€ 0.00`;
             renderPayPalButton(0);
+            if (floatingCartIcon) {
+                floatingCartIcon.style.display = 'none'; // Oculta o ícone flutuante
+            }
+            if (floatingCartCount) {
+                floatingCartCount.textContent = '0';
+            }
             return;
         } else {
             for (const productId in cart) {
@@ -111,6 +123,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     const quantity = cart[productId];
                     const itemTotal = product.price * quantity;
                     subtotal += itemTotal;
+                    totalCartItems += quantity; // Incrementa o contador de itens
 
                     const cartItemElement = document.createElement('div');
                     cartItemElement.classList.add('cart-item');
@@ -123,6 +136,12 @@ document.addEventListener('DOMContentLoaded', () => {
                     `;
                     cartItemsContainer.appendChild(cartItemElement);
                 }
+            }
+            if (floatingCartIcon) {
+                floatingCartIcon.style.display = 'flex'; // Exibe o ícone flutuante
+            }
+            if (floatingCartCount) {
+                floatingCartCount.textContent = totalCartItems;
             }
         }
 
@@ -253,4 +272,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Carregamento inicial
     loadProducts();
+
+    // Evento de clique para o ícone do carrinho flutuante
+    if (floatingCartIcon && shoppingCartSection) {
+        floatingCartIcon.addEventListener('click', () => {
+            shoppingCartSection.scrollIntoView({ behavior: 'smooth' });
+        });
+    }
 });
