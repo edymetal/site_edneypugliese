@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root {
-    --app-version: "1.207";
+    --app-version: "1.208";
 }
 
 html {
@@ -1310,11 +1310,21 @@ nav ul li a:hover, nav ul li a.active {
     padding: 0.75rem 0;
     border-bottom: 1px solid #1c3a50;
     color: #ededed;
+    /* Adicionar flex-wrap para permitir quebra de linha se necessário */
+    flex-wrap: wrap;
 }
 
-.cart-item-price {
-    white-space: nowrap;
-    color: #00abf0;
+.cart-item > span { /* Seleciona o span diretamente dentro de .cart-item (nome do produto) */
+    flex-basis: 60%; /* Ocupa 60% da largura, permitindo quebra de linha */
+    word-break: break-word; /* Permite quebra de palavras longas */
+    margin-right: 10px; /* Espaçamento à direita */
+}
+
+.cart-item-actions {
+    display: flex; /* Torna um flex container */
+    align-items: center;
+    gap: 10px; /* Espaçamento entre o preço e o botão */
+    flex-basis: auto; /* Deixa o flex-basis automático */
 }
 
 .cart-summary {
