@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
     async function loadTranslations(lang) {
         console.log('Loading translations for:', lang);
         try {
-            const response = await fetch(`./lang/${lang}.json`);
+            const response = await fetch(`./lang/${lang}.json?v=${new Date().getTime()}`);
             translations = await response.json();
             console.log('Translations loaded:');
             applyTranslations();
