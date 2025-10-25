@@ -99,6 +99,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     a.target = '_blank';
                     a.rel = 'noopener noreferrer';
                     a.innerHTML = `<i class="${iconClass}"></i>`;
+                    a.setAttribute('aria-label', `Link para ${name}`); // Adiciona aria-label para acessibilidade
                     contactLinks.appendChild(a);
                 }
             }
