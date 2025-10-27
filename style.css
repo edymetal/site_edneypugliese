@@ -1452,3 +1452,9 @@ nav ul li a:hover, nav ul li a.active {
 .remove-from-cart-btn:hover {
     color: #ff4757;
 }
+
+/* Estilos para ícones SVG */
+.social-media a svg {
+width: 20px;
+height: 20px;
+}
