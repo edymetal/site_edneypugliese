@@ -447,6 +447,7 @@ nav ul li a:hover, nav ul li a.active {
     .hexagon-background {
         width: 220px;
         height: 250px;
+        bottom: -20px;
     }
 
     .carousel-container {
