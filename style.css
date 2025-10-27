@@ -1458,3 +1458,17 @@ nav ul li a:hover, nav ul li a.active {
 width: 20px;
 height: 20px;
 }
+
+/* Estilos para ícones SVG na página de habilidades */
+.skill-category .category-title .skill-icon {
+    width: 28px;  /* Define a largura do ícone */
+    height: 28px; /* Define a altura do ícone */
+    color: #00abf0; /* Define a cor do ícone */
+    margin-right: 5px; /* Adiciona um pequeno espaço à direita */
+    vertical-align: middle; /* Alinha o ícone verticalmente com o texto */
+}
+
+/* Remove os ícones antigos que estavam nas listas */
+.skill-category ul li i {
+    display: none;
+}
