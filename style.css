@@ -1479,3 +1479,9 @@ height: 20px;
 .skill-category ul li i {
     display: none;
 }
+
+.hamburger-menu .hamburger-icon {
+    width: 24px;
+    height: 24px;
+    color: #ededed;
+}
