@@ -1464,8 +1464,15 @@ height: 20px;
     width: 28px;  /* Define a largura do ícone */
     height: 28px; /* Define a altura do ícone */
     color: #00abf0; /* Define a cor do ícone */
-    margin-right: 5px; /* Adiciona um pequeno espaço à direita */
+    margin-right: 10px; /* Aumentei um pouco o espaço à direita */
     vertical-align: middle; /* Alinha o ícone verticalmente com o texto */
+    flex-shrink: 0; /* Impede que o ícone encolha */
+}
+
+/* Garante que o título e o ícone fiquem alinhados */
+.skill-category .category-title {
+    display: flex;
+    align-items: center;
 }
 
 /* Remove os ícones antigos que estavam nas listas */
