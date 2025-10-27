@@ -415,6 +415,7 @@ nav ul li a:hover, nav ul li a.active {
 
     .image-content {
         margin-bottom: 0;
+        align-items: center;
     }
 
     .text-content h1 {
@@ -440,6 +441,7 @@ nav ul li a:hover, nav ul li a.active {
 
     .profile-image {
         width: 200px;
+        transform: translateY(0);
     }
 
     .hexagon-background {
