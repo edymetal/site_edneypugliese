@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root {
-    --app-version: "1.267";
+    --app-version: "1.268";
 }
 
 html {
@@ -1475,15 +1475,13 @@ height: 20px;
     align-items: center;
 }
 
-/* Remove os ícones antigos que estavam nas listas */
-.skill-category ul li i {
-    display: none;
-}
+
 
 .hamburger-menu .hamburger-icon {
     width: 24px;
     height: 24px;
     color: #ededed;
 }
+
 
 
