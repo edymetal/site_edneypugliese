@@ -2,13 +2,20 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
-    <link rel="preconnect" href="https://www.google-analytics.com">
-    <title data-i18n="page_title_portfolio">Portfólio - Edney Pugliese</title>
-    <link rel="stylesheet" href="style.css?v=1.175">
+<!-- Carregamento Otimizado de Fontes e CSS -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" media="print" onload="this.media='all'">
+
+<!-- Carrega seu CSS principal de forma não-bloqueante -->
+<link rel="stylesheet" href="style.css?v=1.215" media="print" onload="this.media='all'">
+
+<!-- Fallback para navegadores sem JavaScript -->
+<noscript>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+  <link rel="stylesheet" href="style.css?v=1.215">
+</noscript>
 <!-- Google tag (gtag.js) -->
 <script defer src="https://www.googletagmanager.com/gtag/js?id=G-6Z46PBPZ30"></script>
 <script>
