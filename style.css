@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root {
-    --app-version: "1.271";
+    --app-version: "1.272";
 }
 
 html {
@@ -591,11 +591,17 @@ nav ul li a:hover, nav ul li a.active {
     line-height: 1.6;
     margin-bottom: 50px;
     color: #ccc;
+    text-align: left;
 }
 
 @media (max-width: 768px) {
     .skill-category {
         padding: 20px;
+        text-align: center;
+    }
+
+    .page-content {
+        text-align: center;
     }
 
     .skill-category .category-title {
@@ -1482,6 +1488,7 @@ height: 20px;
     height: 24px;
     color: #ededed;
 }
+
 
 
 
